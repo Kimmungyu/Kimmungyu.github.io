@@ -143,12 +143,15 @@ a:hover {color:#911e5e;text-decoration: none;}
 .map-block h3.title {
 	color: #313231;
 	font-weight: 600;
-	font-size: 16px;
-	margin-top: 48px;
+	font-size: 20px;
 	margin-bottom: 14px;
-	padding-top: 48px;
+	padding-top: 52px;
 	padding-bottom: 14px;
 	border-bottom: 1px solid #e4e4e4;
+	background-repeat: no-repeat;
+	background-size: 48px 48px;
+	background-position: top center;
+	text-align: center;
 }
 
 .news-block .article-item {
@@ -221,3 +224,7 @@ footer.footer-block {
     -o-transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;
 }
+
+.icon-small-parking { background-image: url(../images/icon_crewshop_small_parking.png); }
+.icon-small-car { background-image: url(../images/icon_crewshop_small_car.png); }
+.icon-small-bus { background-image: url(../images/icon_crewshop_small_bus.png); }
