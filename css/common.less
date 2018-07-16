@@ -4,6 +4,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css);
 
 body {
+	color: #969ea4;
 	font-family: sans-serif;
 	font-weight: 500;
 	letter-spacing: -0.01em;
@@ -25,6 +26,7 @@ button {
 
 /*-- common --*/
 .divider { width: 100%; height: 1px; border-top: 1px solid #efefef; }
+.divider-sub { width: 100%; height: 1px; margin: 48px 0; border-top: 1px solid #efefef; }
 
 .concept-hero { background-image: url(../images/introduce-back.jpg); }
 .contact-hero { background-image: url(../images/contact-back.jpg); }
@@ -58,7 +60,7 @@ button {
 }
 
 .block {
-	padding: 64px 0;
+	padding: 58px 0;
 
 	.header,
 	.header-sub,
@@ -71,12 +73,11 @@ button {
 		color: #44494c;
 		font-size: 36px;
 		font-weight: 600;
-		margin-bottom: 36px;
 	}
 
 	.header-sub {
-		color: #14232b;
-		font-size: 18px;
+		color: #7a8187;
+		font-size: 16px;
 		margin: 8px 0 40px 0;
 	}
 
@@ -92,9 +93,10 @@ button {
 		letter-spacing: -0.04em;
 	}
 
+	/*--
 	h3.paragraph-header:before {
-		content: "";
-		display: inline-block;
+		content: "'";
+		display: inline;
 		width: 48px;
 		height: 48px;
 		margin-right: -8px;
@@ -109,8 +111,8 @@ button {
 	}
 
 	h3.paragraph-header:after {
-		content: "";
-		display: inline-block;
+		content: "'";
+		display: inline;
 		width: 48px;
 		height: 64px;
 		margin-left: -8px;
@@ -122,13 +124,13 @@ button {
 			 -o-background-size: 48px;
 				background-size: 48px;
 		z-index: 1;
-
 	}
+  --*/
 
 	p {
 		margin-bottom: 36px;
-		font-size: 16px;
-		line-height: 170%;
+		font-size: 15px;
+		line-height: 180%;
 		text-align: center;
 	}
 
@@ -218,32 +220,6 @@ button {
 	}
 }
 
-.concept-block {
-	color: #fff;
-
-	.header {
-		color: #fff;
-	}
-
-	.description {
-		line-height: 170%;
-	}
-
-	.paragraph {
-		font-size: 16px;
-		line-height: 200%;
-		word-break: keep-all;
-	}
-
-	.paragraph strong {
-		display: inline-block;
-		font-size: 20px;
-		line-height: 200%;
-		word-break: keep-all;
-		text-align: center;
-	}
-}
-
 .brand-block {
 	.brand-item {
 		height: 190px;
@@ -316,16 +292,15 @@ button {
 }
 
 .cafe-block {
-	color: #fff;
-	width: 100%;
-	background-color: #FAFAFA;
-	padding: 68px 0;
-
 	h2.header {
 		color: #fff;
 	}
 
 	h3.header-sub {
+		color: #bfc8cf;
+	}
+
+	p {
 		color: #fff;
 	}
 }
@@ -361,26 +336,6 @@ button {
 		}
 	}
 } --*/
-
-.direction-block {
-	width: 100%;
-	background-color: #FAFAFA;
-	padding: 68px 0;
-
-	h3.title {
-		color: #313231;
-		font-weight: 600;
-		font-size: 20px;
-		margin-bottom: 14px;
-		padding-top: 76px;
-		padding-bottom: 14px;
-		border-bottom: 1px solid #e4e4e4;
-		background-repeat: no-repeat;
-		background-size: 72px 72px;
-		background-position: top center;
-		text-align: center;
-	}
-}
 
 .contact-block {
 	color: #fff;
@@ -458,6 +413,77 @@ footer.footer-block {
 
 
 @media screen and (max-width: 767px) {
+	.intro-header {
+		height: 600px;
+
+		.nav-custom {
+			li {
+				font-size: 14px;
+				margin: 0 4px;
+				padding-right: 9px;
+				border-right: 1px solid rgba(255,255,255,0.1);
+			}
+
+			li:last-child {
+				margin: 0 0 0 3px;
+			}
+		}
+
+		h1 {
+			font-size: 48px;
+			margin-top: 86px;
+		}
+
+		h2 {
+			font-size: 16px;
+			margin-top: 24px;
+		}
+
+		.btn-more-info {
+			padding-top: 68px;
+			text-align: center;
+		}
+	}
+
+	.block {
+		padding: 25px 0;
+
+		.header {
+			font-size: 30px;
+		}
+
+		.header-sub {
+			color: #7a8187;
+			font-size: 15px;
+			margin: 8px 0 24px 0;
+		}
+
+		h3.paragraph-header {
+			font-size: 24px;
+		}
+
+		p {
+			margin-bottom: 24px;
+			font-size: 13px;
+		}
+	}
+
+	.contact-block {
+		padding: 25px 0;
+
+		.header-sub {
+			color: #fff;
+		}
+
+		.contact-item {
+			font-size: 24px;
+
+			strong {
+				font-size: 15px;
+			}
+		}
+	}
+
 	.sub-header {
 		.nav-custom {
 			display: inline-block;
