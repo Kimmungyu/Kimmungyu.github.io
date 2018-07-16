@@ -270,7 +270,7 @@ button {
 /*-- hero --*/
 .intro-header {
   width: 100%;
-  height: 900px;
+  height: 800px;
   color: #fff;
 }
 .intro-header .logo {
@@ -485,7 +485,7 @@ footer.footer-block {
 }
 @media screen and (max-width: 767px) {
   .intro-header {
-    height: 600px;
+    height: 500px;
   }
   .intro-header .nav-custom li {
     font-size: 14px;
@@ -571,5 +571,14 @@ footer.footer-block {
     -moz-background-size: 80px;
     -o-background-size: 80px;
     background-size: 80px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .intro-header {
+    height: 600px;
+  }
+  .intro-header .btn-more-info {
+    padding-top: 48px;
+    text-align: center;
   }
 }
