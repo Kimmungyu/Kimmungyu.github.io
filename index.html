@@ -40,6 +40,7 @@
       gtag('config', 'UA-130770440-1');
     </script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
   </head>
   <body>
@@ -473,9 +474,34 @@
           </div>
         </div>
       </div>
+      <div id="toneRed" class="color-tone">
+        <div class="color-block" v-for="(item, colorTone) in items" v-if="colorTone='Red'">
+          <div class="color-chip">
+            <div class="color-box-main" :class="[ item.colorName ]">
+            {{ item.colorName }}
+            </div>
+            <div class="color-box-sub step-100" :class="[ item.colorName ]"></div>
+            <div class="color-box-sub step-070" :class="[ item.colorName ]"></div>
+            <div class="color-box-sub step-050" :class="[ item.colorName ]"></div>
+            <div class="color-box-sub step-030" :class="[ item.colorName ]"></div>
+            <div class="color-box-sub step-000" :class="[ item.colorName ]"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="footer">
       (C) 2018 kimmungyu.github.io
     </div>
   </body>
+  <script>
+    var toneRed = new Vue({
+      el: '#toneRed',
+      data: {
+        items: [
+          { colorName: 'red-910', colorTone:'Red'},
+          { colorName: 'red-920', colorTone:'Blue'}
+        ]
+      }
+    })
+  </script>
 </html>
