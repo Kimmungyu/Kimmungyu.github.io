@@ -138,7 +138,7 @@ body {
   color: #122032;
 }
 .share {
-  margin: 36px 0 0 0;
+  margin: 16px 0 36px 0;
   padding: 0;
 }
 .share li {
@@ -147,7 +147,7 @@ body {
 }
 .chips {
   width: 100%;
-  padding: 24px;
+  padding: 4px 24px 24px 24px;
   background-color: #f5f5f5;
 }
 .description {
@@ -162,9 +162,10 @@ body {
   color: #FAA20E;
 }
 .color-tone {
-  min-width: 1600px;
+  width: 100%;
   margin: 24px 0 48px 0;
   vertical-align: top;
+  overflow-y: auto;
 }
 .color-tone .color-block {
   display: inline-block;
@@ -179,6 +180,12 @@ body {
   -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+}
+.color-tone .color-chip .color-name {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
 }
 .color-tone .color-chip .color-box-main {
   width: 150px;
@@ -215,6 +222,9 @@ body {
 }
 .footer {
   padding: 24px 24px 68px 24px;
-  font-size: 9px;
+  font-size: 12px;
   border-top: 1px solid #efefef;
+}
+.footer .thanksto {
+  color: #9f9f9f;
 }
