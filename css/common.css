@@ -154,6 +154,13 @@ body {
   color: #3D3F3F;
   margin: 86px 0 0 0;
 }
+.description a {
+  color: #02275B;
+  text-decoration: none;
+}
+.description a:hover {
+  color: #FAA20E;
+}
 .color-tone {
   min-width: 1600px;
   margin: 24px 0 48px 0;
