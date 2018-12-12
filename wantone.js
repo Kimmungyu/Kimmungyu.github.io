@@ -84,6 +84,7 @@ var toneGreen = new Vue({
 			{ colorName: 'Green 620', colorTone:'purple', colorCode: 'green-620', colorHex: '#1D9343'},
 			{ colorName: 'Green 710', colorTone:'purple', colorCode: 'green-710', colorHex: '#32B618'},
 			{ colorName: 'Green 720', colorTone:'purple', colorCode: 'green-720', colorHex: '#8DAB28'},
+			{ colorName: 'Green 730', colorTone:'purple', colorCode: 'green-730', colorHex: '#35B37E'},
 			{ colorName: 'Green 810', colorTone:'purple', colorCode: 'green-810', colorHex: '#08D34A'},
 			{ colorName: 'Green 820', colorTone:'purple', colorCode: 'green-820', colorHex: '#C7E500'},
 			{ colorName: 'Green 830', colorTone:'purple', colorCode: 'green-830', colorHex: '#08D34A'},
