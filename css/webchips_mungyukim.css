@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+.gray-110 {
+  color: #fff;
+  background-color: #141311;
+}
+.gray-310 {
+  color: #fff;
+  background-color: #2E3030;
+}
+.gray-510 {
+  color: #fff;
+  background-color: #3D3F3F;
+}
+.gray-520 {
+  color: #fff;
+  background-color: #434036;
+}
+.gray-710 {
+  color: #fff;
+  background-color: #818281;
+}
+.gray-720 {
+  color: #fff;
+  background-color: #76776F;
+}
+.gray-810 {
+  color: #fff;
+  background-color: #BAA99F;
+}
+.gray-820 {
+  background-color: #DAD3C7;
+}
+.blue-210 {
+  color: #fff;
+  background-color: #122032;
+}
+.blue-410 {
+  color: #fff;
+  background-color: #02275B;
+}
+.blue-510 {
+  color: #fff;
+  background-color: #00348C;
+}
+.blue-610 {
+  color: #fff;
+  background-color: #006BAE;
+}
+.blue-620 {
+  color: #fff;
+  background-color: #017C7C;
+}
+.blue-630 {
+  color: #fff;
+  background-color: #4E6278;
+}
+.blue-710 {
+  color: #fff;
+  background-color: #3C75AA;
+}
+.blue-720 {
+  color: #fff;
+  background-color: #148BA8;
+}
+.blue-730 {
+  color: #fff;
+  background-color: #1095B6;
+}
+.blue-740 {
+  color: #fff;
+  background-color: #4186A2;
+}
+.blue-810 {
+  color: #fff;
+  background-color: #69A1D2;
+}
+.blue-910 {
+  color: #fff;
+  background-color: #B3D9CD;
+}
+.red-310 {
+  color: #fff;
+  background-color: #970F15;
+}
+.red-410 {
+  color: #fff;
+  background-color: #B11717;
+}
+.red-510 {
+  color: #fff;
+  background-color: #D24F08;
+}
+.red-610 {
+  color: #fff;
+  background-color: #F52711;
+}
+.red-710 {
+  color: #fff;
+  background-color: #ED5F16;
+}
+.red-720 {
+  color: #fff;
+  background-color: #EC7D17;
+}
+.red-810 {
+  color: #fff;
+  background-color: #FAA20E;
+}
+.red-820 {
+  color: #fff;
+  background-color: #EBBB1E;
+}
+.red-830 {
+  color: #fff;
+  background-color: #D2B20A;
+}
+.red-910 {
+  color: #fff;
+  background-color: #EDCC71;
+}
+.red-920 {
+  color: #fff;
+  background-color: #EFD765;
+}
+.purple-210 {
+  color: #fff;
+  background-color: #301554;
+}
+.purple-310 {
+  color: #fff;
+  background-color: #580B53;
+}
+.purple-410 {
+  color: #fff;
+  background-color: #362D77;
+}
+.purple-420 {
+  color: #fff;
+  background-color: #A3154C;
+}
+.purple-430 {
+  color: #fff;
+  background-color: #7F1A5D;
+}
+.purple-510 {
+  color: #fff;
+  background-color: #884994;
+}
+.purple-520 {
+  color: #fff;
+  background-color: #41418E;
+}
+.purple-610 {
+  color: #fff;
+  background-color: #C53878;
+}
+.purple-710 {
+  color: #fff;
+  background-color: #9F81B7;
+}
+.purple-720 {
+  color: #fff;
+  background-color: #DE82B4;
+}
+.purple-730 {
+  color: #fff;
+  background-color: #F761A6;
+}
+.purple-810 {
+  color: #fff;
+  background-color: #D694A8;
+}
+.green-210 {
+  color: #fff;
+  background-color: #173024;
+}
+.green-410 {
+  color: #fff;
+  background-color: #0E5F27;
+}
+.green-510 {
+  color: #fff;
+  background-color: #066C33;
+}
+.green-520 {
+  color: #fff;
+  background-color: #696A3B;
+}
+.green-610 {
+  color: #fff;
+  background-color: #52765C;
+}
+.green-620 {
+  color: #fff;
+  background-color: #1D9343;
+}
+.green-710 {
+  color: #fff;
+  background-color: #32B618;
+}
+.green-720 {
+  color: #fff;
+  background-color: #8DAB28;
+}
+.green-810 {
+  color: #fff;
+  background-color: #08D34A;
+}
+.green-820 {
+  color: #fff;
+  background-color: #C7E500;
+}
+.green-830 {
+  color: #fff;
+  background-color: #08D34A;
+}
+.green-910 {
+  color: #fff;
+  background-color: #C2E17C;
+}
+.brown-210 {
+  color: #fff;
+  background-color: #3F2417;
+}
+.brown-220 {
+  color: #fff;
+  background-color: #452318;
+}
+.brown-310 {
+  color: #fff;
+  background-color: #581817;
+}
+.brown-510 {
+  color: #fff;
+  background-color: #903F1D;
+}
+.brown-520 {
+  color: #fff;
+  background-color: #725F42;
+}
+.brown-610 {
+  color: #fff;
+  background-color: #685C52;
+}
+.brown-620 {
+  color: #fff;
+  background-color: #9D5D33;
+}
+.brown-630 {
+  color: #fff;
+  background-color: #80514B;
+}
+.brown-710 {
+  color: #fff;
+  background-color: #C47144;
+}
+.brown-810 {
+  color: #fff;
+  background-color: #BDA46D;
+}
+.brown-820 {
+  color: #fff;
+  background-color: #E9B66F;
+}
+.brown-830 {
+  color: #fff;
+  background-color: #DFAB85;
+}
