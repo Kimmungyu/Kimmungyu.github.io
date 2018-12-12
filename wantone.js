@@ -9,7 +9,9 @@ var toneGray = new Vue({
 			{ colorName: 'Gray 710', colorTone:'gray', colorCode: 'gray-710', colorHex: '#818281'},
 			{ colorName: 'Gray 720', colorTone:'gray', colorCode: 'gray-720', colorHex: '#76776F'},
 			{ colorName: 'Gray 810', colorTone:'gray', colorCode: 'gray-810', colorHex: '#BAA99F'},
-			{ colorName: 'Gray 820', colorTone:'gray', colorCode: 'gray-820', colorHex: '#DAD3C7'}
+			{ colorName: 'Gray 820', colorTone:'gray', colorCode: 'gray-820', colorHex: '#DAD3C7'},
+			{ colorName: 'Gray 830', colorTone:'gray', colorCode: 'gray-830', colorHex: '#DBE0E4'},
+			{ colorName: 'Gray 910', colorTone:'gray', colorCode: 'gray-910', colorHex: '#E9ECEE'}
 		]
 	}
 });
@@ -40,6 +42,7 @@ var toneRed = new Vue({
 			{ colorName: 'Red 410', colorTone:'red', colorCode: 'red-410', colorHex: '#B11717'},
 			{ colorName: 'Red 510', colorTone:'red', colorCode: 'red-510', colorHex: '#D24F08'},
 			{ colorName: 'Red 610', colorTone:'red', colorCode: 'red-610', colorHex: '#F52711'},
+			{ colorName: 'Red 620', colorTone:'red', colorCode: 'red-620', colorHex: '#F94E36'},
 			{ colorName: 'Red 710', colorTone:'red', colorCode: 'red-710', colorHex: '#ED5F16'},
 			{ colorName: 'Red 720', colorTone:'red', colorCode: 'red-720', colorHex: '#EC7D17'},
 			{ colorName: 'Red 810', colorTone:'red', colorCode: 'red-810', colorHex: '#FAA20E'},

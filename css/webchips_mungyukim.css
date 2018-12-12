@@ -30,6 +30,12 @@
 .gray-820 {
   background-color: #DAD3C7;
 }
+.gray-830 {
+  background-color: #DBE0E4;
+}
+.gray-910 {
+  background-color: #E9ECEE;
+}
 .blue-210 {
   color: #fff;
   background-color: #122032;
@@ -93,6 +99,10 @@
 .red-610 {
   color: #fff;
   background-color: #F52711;
+}
+.red-620 {
+  color: #fff;
+  background-color: #F94E36;
 }
 .red-710 {
   color: #fff;
