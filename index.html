@@ -77,8 +77,8 @@
         <div class="color-block" v-for="item in items" v-if="colorTone='Red'">
           <div class="color-chip">
             <div class="color-box-main" :class="[ item.colorCode ]">
-            <h4 class="color-name">{{ item.colorName }}</h4>
-            <span class="color-hex">{{ item.colorHex }}</span>
+              <h4 class="color-name">{{ item.colorName }}</h4>
+              <span class="color-hex">{{ item.colorHex }}</span>
             </div>
             <div class="color-box-sub step-100" :class="[ item.colorCode ]"></div>
             <div class="color-box-sub step-070" :class="[ item.colorCode ]"></div>
@@ -93,7 +93,8 @@
         <div class="color-block" v-for="item in items" v-if="colorTone='Red'">
           <div class="color-chip">
             <div class="color-box-main" :class="[ item.colorCode ]">
-            <h4 class="color-name">{{ item.colorName }}</h4>
+              <h4 class="color-name">{{ item.colorName }}</h4>
+              <span class="color-hex">{{ item.colorHex }}</span>
             </div>
             <div class="color-box-sub step-100" :class="[ item.colorCode ]"></div>
             <div class="color-box-sub step-070" :class="[ item.colorCode ]"></div>
@@ -108,7 +109,56 @@
         <div class="color-block" v-for="item in items" v-if="colorTone='Red'">
           <div class="color-chip">
             <div class="color-box-main" :class="[ item.colorCode ]">
-            <h4 class="color-name">{{ item.colorName }}</h4>
+              <h4 class="color-name">{{ item.colorName }}</h4>
+              <span class="color-hex">{{ item.colorHex }}</span>
+            </div>
+            <div class="color-box-sub step-100" :class="[ item.colorCode ]"></div>
+            <div class="color-box-sub step-070" :class="[ item.colorCode ]"></div>
+            <div class="color-box-sub step-050" :class="[ item.colorCode ]"></div>
+            <div class="color-box-sub step-030" :class="[ item.colorCode ]"></div>
+            <div class="color-box-sub step-000" :class="[ item.colorCode ]"></div>
+          </div>
+        </div>
+      </div>
+      <div class="color-tone" id="tonePurple">
+        <h3>Purple tone</h3>
+        <div class="color-block" v-for="item in items" v-if="colorTone='Red'">
+          <div class="color-chip">
+            <div class="color-box-main" :class="[ item.colorCode ]">
+              <h4 class="color-name">{{ item.colorName }}</h4>
+              <span class="color-hex">{{ item.colorHex }}</span>
+            </div>
+            <div class="color-box-sub step-100" :class="[ item.colorCode ]"></div>
+            <div class="color-box-sub step-070" :class="[ item.colorCode ]"></div>
+            <div class="color-box-sub step-050" :class="[ item.colorCode ]"></div>
+            <div class="color-box-sub step-030" :class="[ item.colorCode ]"></div>
+            <div class="color-box-sub step-000" :class="[ item.colorCode ]"></div>
+          </div>
+        </div>
+      </div>
+      <div class="color-tone" id="toneGreen">
+        <h3>Green tone</h3>
+        <div class="color-block" v-for="item in items" v-if="colorTone='Red'">
+          <div class="color-chip">
+            <div class="color-box-main" :class="[ item.colorCode ]">
+              <h4 class="color-name">{{ item.colorName }}</h4>
+              <span class="color-hex">{{ item.colorHex }}</span>
+            </div>
+            <div class="color-box-sub step-100" :class="[ item.colorCode ]"></div>
+            <div class="color-box-sub step-070" :class="[ item.colorCode ]"></div>
+            <div class="color-box-sub step-050" :class="[ item.colorCode ]"></div>
+            <div class="color-box-sub step-030" :class="[ item.colorCode ]"></div>
+            <div class="color-box-sub step-000" :class="[ item.colorCode ]"></div>
+          </div>
+        </div>
+      </div>
+      <div class="color-tone" id="toneBrown">
+        <h3>Brown tone</h3>
+        <div class="color-block" v-for="item in items" v-if="colorTone='Red'">
+          <div class="color-chip">
+            <div class="color-box-main" :class="[ item.colorCode ]">
+              <h4 class="color-name">{{ item.colorName }}</h4>
+              <span class="color-hex">{{ item.colorHex }}</span>
             </div>
             <div class="color-box-sub step-100" :class="[ item.colorCode ]"></div>
             <div class="color-box-sub step-070" :class="[ item.colorCode ]"></div>
@@ -125,58 +175,5 @@
     </div>
 
   </body>
-  <script>
-    var toneGray = new Vue({
-      el: '#toneGray',
-      data: {
-        items: [
-          { colorName: 'Gray 110', colorTone:'gray', colorCode: 'gray-110', colorHex: '#141311'},
-          { colorName: 'Gray 310', colorTone:'gray', colorCode: 'gray-310', colorHex: '#2E3030'},
-          { colorName: 'Gray 510', colorTone:'gray', colorCode: 'gray-510', colorHex: '#3D3F3F'},
-          { colorName: 'Gray 520', colorTone:'gray', colorCode: 'gray-520', colorHex: '#434036'},
-          { colorName: 'Gray 710', colorTone:'gray', colorCode: 'gray-710', colorHex: '#818281'},
-          { colorName: 'Gray 720', colorTone:'gray', colorCode: 'gray-720', colorHex: '#76776F'},
-          { colorName: 'Gray 810', colorTone:'gray', colorCode: 'gray-810', colorHex: '#BAA99F'},
-          { colorName: 'Gray 820', colorTone:'gray', colorCode: 'gray-820', colorHex: '#DAD3C7'}
-        ]
-      }
-    });
-    var toneBlue = new Vue({
-      el: '#toneBlue',
-      data: {
-        items: [
-          { colorName: 'Blue 210', colorTone:'blue', colorCode: 'blue-210'},
-          { colorName: 'Blue 410', colorTone:'blue', colorCode: 'blue-410'},
-          { colorName: 'Blue 510', colorTone:'blue', colorCode: 'blue-510'},
-          { colorName: 'Blue 610', colorTone:'blue', colorCode: 'blue-610'},
-          { colorName: 'Blue 620', colorTone:'blue', colorCode: 'blue-620'},
-          { colorName: 'Blue 630', colorTone:'blue', colorCode: 'blue-630'},
-          { colorName: 'Blue 710', colorTone:'blue', colorCode: 'blue-710'},
-          { colorName: 'Blue 720', colorTone:'blue', colorCode: 'blue-720'},
-          { colorName: 'Blue 730', colorTone:'blue', colorCode: 'blue-730'},
-          { colorName: 'Blue 740', colorTone:'blue', colorCode: 'blue-740'},
-          { colorName: 'Blue 810', colorTone:'blue', colorCode: 'blue-810'},
-          { colorName: 'Blue 910', colorTone:'blue', colorCode: 'blue-910'}
-        ]
-      }
-    });
-    var toneRed = new Vue({
-      el: '#toneRed',
-      data: {
-        items: [
-          { colorName: 'Red 310', colorTone:'red', colorCode: 'red-310'},
-          { colorName: 'Red 410', colorTone:'red', colorCode: 'red-410'},
-          { colorName: 'Red 510', colorTone:'red', colorCode: 'red-510'},
-          { colorName: 'Red 610', colorTone:'red', colorCode: 'red-610'},
-          { colorName: 'Red 710', colorTone:'red', colorCode: 'red-710'},
-          { colorName: 'Red 720', colorTone:'red', colorCode: 'red-720'},
-          { colorName: 'Red 810', colorTone:'red', colorCode: 'red-810'},
-          { colorName: 'Red 820', colorTone:'red', colorCode: 'red-820'},
-          { colorName: 'Red 830', colorTone:'red', colorCode: 'red-830'},
-          { colorName: 'Red 910', colorTone:'red', colorCode: 'red-910'},
-          { colorName: 'Red 920', colorTone:'red', colorCode: 'red-920'}
-        ]
-      }
-    });
-  </script>
+  <script src="wantone.js"></script>
 </html>
