@@ -276,7 +276,7 @@ body {
   padding: 0;
 }
 .title-wrap {
-  margin: 24px;
+  margin: 32px;
 }
 .title {
   color: #122032;
@@ -310,10 +310,14 @@ body {
 .color-tone {
   width: 100%;
   margin: 24px 0 48px 0;
+  padding: 0;
   vertical-align: top;
   transform: translateZ(0);
   position: relative;
   z-index: 10;
+}
+.color-tone h3 {
+  margin: 0 8px 16px 8px;
 }
 .color-tone .color-block {
   display: inline-block;
