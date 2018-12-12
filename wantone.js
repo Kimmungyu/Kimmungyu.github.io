@@ -64,6 +64,7 @@ var tonePurple = new Vue({
 			{ colorName: 'Purple 610', colorTone:'purple', colorCode: 'purple-610', colorHex: '#C53878'},
 			{ colorName: 'Purple 710', colorTone:'purple', colorCode: 'purple-710', colorHex: '#9F81B7'},
 			{ colorName: 'Purple 720', colorTone:'purple', colorCode: 'purple-720', colorHex: '#DE82B4'},
+			{ colorName: 'Purple 730', colorTone:'purple', colorCode: 'purple-730', colorHex: '#F761A6'},
 			{ colorName: 'Purple 810', colorTone:'purple', colorCode: 'purple-810', colorHex: '#D694A8'}
 		]
 	}

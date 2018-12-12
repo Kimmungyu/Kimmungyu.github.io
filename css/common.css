@@ -162,6 +162,10 @@
   color: #fff;
   background-color: #DE82B4;
 }
+.purple-730 {
+  color: #fff;
+  background-color: #F761A6;
+}
 .purple-810 {
   color: #fff;
   background-color: #D694A8;
@@ -300,7 +304,8 @@ body {
   text-decoration: none;
 }
 .description a:hover {
-  color: #FAA20E;
+  color: #fff;
+  background-color: #F761A6;
 }
 .color-tone {
   width: 100%;
