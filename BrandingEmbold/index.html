@@ -1,0 +1,200 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="ROBOTS" content="ALL">
+    <title itemprop="name">embold Design Library</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+  </head>
+  <body>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-12">
+          <!-- paragraph split -->
+          <section id="1">
+          <div class="paragraph-body row">
+            <div class="col-md-12">
+              <div class="logo-main"></div>
+              <h5 class="title-description">Design Library / 15 Jan. 2019</h5>
+            </div>
+          </div>
+          </section>
+          <!-- paragraph split -->
+          <section>
+            <div class="paragraph-body row">
+              <div class="col-md-12">
+                <h4 class="block-title">Color Logo</h4>
+                <div class="color-logo"></div>
+                <div>
+                  <span>Please keep a margin size that around logo shape.</span>
+                </div>
+              </div>
+            </div>
+            <div class="paragraph-body row">
+              <div class="col-md-6">
+                <h4 class="block-title">Inverted Logo</h4>
+                <div class="inverted-logo"></div>
+              </div>
+              <div class="col-md-6">
+                <h4 class="block-title">B/W Logo</h4>
+                <div class="bw-logo"></div>
+              </div>
+            </div>
+          </section>
+          <!-- paragraph split -->
+          <section>
+            <div class="paragraph-body row">
+              <div class="col-md-12">
+                <h3 class="paragraph-title">Primary Colors</h3>
+              </div>
+              <!-- color tone -->
+              <div class="col-md-4">
+                <div class="color-tones">
+                  <div class="color-tone" id="neutral">
+                    <h3 class="block-title">Neutral</h3>
+                    <div class="row">
+                      <div class="color-block col-md-12" v-for="item in items" v-if="colorTone='neutral'">
+                        <div class="color-chip">
+                          <div class="color-box-main" :class="[ item.colorCode ]">
+                            <span class="color-name">{{ item.colorName }}</span>
+                            <span class="color-hex">{{ item.colorHex }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- color tone -->
+              <div class="col-md-4">
+                <div class="color-tones">
+                  <div class="color-tone" id="blue">
+                    <h3 class="block-title">Blue</h3>
+                    <div class="row">
+                      <div class="color-block col-md-12" v-for="item in items" v-if="colorTone='blue'">
+                        <div class="color-chip">
+                          <div class="color-box-main" :class="[ item.colorCode ]">
+                            <span class="color-name">{{ item.colorName }}</span>
+                            <span class="color-hex">{{ item.colorHex }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- color tone -->
+              <div class="col-md-4">
+                <div class="color-tones">
+                  <div class="color-tone" id="orange">
+                    <h3 class="block-title">Orange</h3>
+                    <div class="row">
+                      <div class="color-block col-md-12" v-for="item in items" v-if="colorTone='orange'">
+                        <div class="color-chip">
+                          <div class="color-box-main" :class="[ item.colorCode ]">
+                            <span class="color-name">{{ item.colorName }}</span>
+                            <span class="color-hex">{{ item.colorHex }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="paragraph-title">Secondary Colors</h3>
+              </div>
+              <!-- color tone -->
+              <div class="col-md-4">
+                <div class="color-tones">
+                  <div class="color-tone" id="green">
+                    <h3 class="block-title">Green</h3>
+                    <div class="row">
+                      <div class="color-block col-md-12" v-for="item in items" v-if="colorTone='green'">
+                        <div class="color-chip">
+                          <div class="color-box-main" :class="[ item.colorCode ]">
+                            <span class="color-name">{{ item.colorName }}</span>
+                            <span class="color-hex">{{ item.colorHex }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- color tone -->
+              <div class="col-md-4">
+                <div class="color-tones">
+                  <div class="color-tone" id="Red">
+                    <h3 class="block-title">Red</h3>
+                    <div class="row">
+                      <div class="color-block col-md-12" v-for="item in items" v-if="colorTone='red'">
+                        <div class="color-chip">
+                          <div class="color-box-main" :class="[ item.colorCode ]">
+                            <span class="color-name">{{ item.colorName }}</span>
+                            <span class="color-hex">{{ item.colorHex }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- color tone -->
+              <div class="col-md-4">
+                <div class="color-tones">
+                  <div class="color-tone" id="Purple">
+                    <h3 class="block-title">Purple</h3>
+                    <div class="row">
+                      <div class="color-block col-md-12" v-for="item in items" v-if="colorTone='purple'">
+                        <div class="color-chip">
+                          <div class="color-box-main" :class="[ item.colorCode ]">
+                            <span class="color-name">{{ item.colorName }}</span>
+                            <span class="color-hex">{{ item.colorHex }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- paragraph split -->
+          <section>
+            <div class="paragraph-body row">
+              <div class="col-md-12">
+                <h4 class="block-title">Usage</h4>
+                <div>
+                  <object type="image/svg+xml" data="/svg/embold_color_usage.svg" width="100%"></object>
+                </div>
+              </div>
+            </div>
+          </section>
+
+  			</div>
+  		</div>
+      <!-- footer -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer">
+            <h5>embold</h5>
+            Acellere GmbH
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+  	</div>
+  </body>
+  <script src="embold_color.js"></script>
+</html>
