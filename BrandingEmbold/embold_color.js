@@ -94,3 +94,48 @@ var purple = new Vue({
 		]
 	}
 });
+
+var mint = new Vue({
+	el: '#mint',
+	data: {
+		items: [
+			{ colorName: 'Mint 900', colorTone:'mint', colorCode: 'mint-900', colorHex: '#00c1bc'},
+			{ colorName: 'Mint 800', colorTone:'mint', colorCode: 'mint-800', colorHex: '#26c9c5'},
+			{ colorName: 'Mint 700', colorTone:'mint', colorCode: 'mint-700', colorHex: '#4bd1ce'},
+			{ colorName: 'Mint 600', colorTone:'mint', colorCode: 'mint-600', colorHex: '#71dad7'},
+			{ colorName: 'Mint 500', colorTone:'mint', colorCode: 'mint-500', colorHex: '#97e2df'},
+			{ colorName: 'Mint 400', colorTone:'mint', colorCode: 'mint-400', colorHex: '#bceae8'},
+			{ colorName: 'Mint 300', colorTone:'mint', colorCode: 'mint-300', colorHex: '#e2f2f1'}
+		]
+	}
+});
+
+var yellow = new Vue({
+	el: '#yellow',
+	data: {
+		items: [
+			{ colorName: 'Yellow 900', colorTone:'yellow', colorCode: 'yellow-900', colorHex: '#ffbd03'},
+			{ colorName: 'Yellow 800', colorTone:'yellow', colorCode: 'yellow-800', colorHex: '#fec629'},
+			{ colorName: 'Yellow 700', colorTone:'yellow', colorCode: 'yellow-700', colorHex: '#fcce4e'},
+			{ colorName: 'Yellow 600', colorTone:'yellow', colorCode: 'yellow-600', colorHex: '#fbd774'},
+			{ colorName: 'Yellow 500', colorTone:'yellow', colorCode: 'yellow-500', colorHex: '#fae099'},
+			{ colorName: 'Yellow 400', colorTone:'yellow', colorCode: 'yellow-400', colorHex: '#f8e8be'},
+			{ colorName: 'Yellow 300', colorTone:'yellow', colorCode: 'yellow-300', colorHex: '#f7f1e4'}
+		]
+	}
+});
+
+var lightbrown = new Vue({
+	el: '#light-brown',
+	data: {
+		items: [
+			{ colorName: 'Light-brown 900', colorTone:'light-brown', colorCode: 'light-brown-900', colorHex: '#c17a44'},
+			{ colorName: 'Light-brown 800', colorTone:'light-brown', colorCode: 'light-brown-800', colorHex: '#ca8e60'},
+			{ colorName: 'Light-brown 700', colorTone:'light-brown', colorCode: 'light-brown-700', colorHex: '#d3a17c'},
+			{ colorName: 'Light-brown 600', colorTone:'light-brown', colorCode: 'light-brown-600', colorHex: '#dcb598'},
+			{ colorName: 'Light-brown 500', colorTone:'light-brown', colorCode: 'light-brown-500', colorHex: '#e5c8b3'},
+			{ colorName: 'Light-brown 400', colorTone:'light-brown', colorCode: 'light-brown-400', colorHex: '#eedbcf'},
+			{ colorName: 'Light-brown 300', colorTone:'light-brown', colorCode: 'light-brown-300', colorHex: '#f7efeb'}
+		]
+	}
+});

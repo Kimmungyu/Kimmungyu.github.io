@@ -29,6 +29,7 @@
           </section>
           <!-- paragraph split -->
           <section>
+            <h3 class="paragraph-title">Logos</h3>
             <div class="paragraph-body row">
               <div class="col-md-12">
                 <h4 class="block-title">Color Logo</h4>
@@ -46,7 +47,20 @@
               <div class="col-md-6">
                 <h4 class="block-title">B/W Logo</h4>
                 <div class="bw-logo"></div>
-                <p>CMYK 0, 0, 0, 98% / PANTONE Black 7 U</p>
+                <p class="image-description"><b>CMYK</b> 0, 0, 0, 98% or <b>PANTONE</b> Black 7 U</p>
+              </div>
+            </div>
+          </section>
+          <!-- paragraph split -->
+          <section>
+            <div class="paragraph-body row">
+              <div class="col-md-12">
+                <h3 class="paragraph-title">Typefaces</h3>
+                <div>
+                  <p>
+                    Still work in progress
+                  </p>
+                </div>
               </div>
             </div>
           </section>
@@ -55,12 +69,17 @@
             <div class="paragraph-body row">
               <div class="col-md-12">
                 <h3 class="paragraph-title">Primary Colors</h3>
+                <p>
+                  Embold has 3 primary colors.<br />
+                  <b>Neutral</b> color is using as making a default tone.<br />
+                  <b>Blue</b> and <b>Orange</b> colors are using as Point-color.
+                </p>
               </div>
               <!-- color tone -->
               <div class="col-md-4">
                 <div class="color-tones">
                   <div class="color-tone" id="neutral">
-                    <h3 class="block-title">Neutral</h3>
+                    <h4 class="block-title">Neutral</h4>
                     <div class="row">
                       <div class="color-block col-md-12" v-for="item in items" v-if="colorTone='neutral'">
                         <div class="color-chip">
@@ -78,7 +97,7 @@
               <div class="col-md-4">
                 <div class="color-tones">
                   <div class="color-tone" id="blue">
-                    <h3 class="block-title">Blue</h3>
+                    <h4 class="block-title">Blue</h4>
                     <div class="row">
                       <div class="color-block col-md-12" v-for="item in items" v-if="colorTone='blue'">
                         <div class="color-chip">
@@ -96,7 +115,7 @@
               <div class="col-md-4">
                 <div class="color-tones">
                   <div class="color-tone" id="orange">
-                    <h3 class="block-title">Orange</h3>
+                    <h4 class="block-title">Orange</h4>
                     <div class="row">
                       <div class="color-block col-md-12" v-for="item in items" v-if="colorTone='orange'">
                         <div class="color-chip">
@@ -119,7 +138,7 @@
               <div class="col-md-4">
                 <div class="color-tones">
                   <div class="color-tone" id="green">
-                    <h3 class="block-title">Green</h3>
+                    <h4 class="block-title">Green</h4>
                     <div class="row">
                       <div class="color-block col-md-12" v-for="item in items" v-if="colorTone='green'">
                         <div class="color-chip">
@@ -137,7 +156,7 @@
               <div class="col-md-4">
                 <div class="color-tones">
                   <div class="color-tone" id="Red">
-                    <h3 class="block-title">Red</h3>
+                    <h4 class="block-title">Red</h4>
                     <div class="row">
                       <div class="color-block col-md-12" v-for="item in items" v-if="colorTone='red'">
                         <div class="color-chip">
@@ -155,9 +174,63 @@
               <div class="col-md-4">
                 <div class="color-tones">
                   <div class="color-tone" id="Purple">
-                    <h3 class="block-title">Purple</h3>
+                    <h4 class="block-title">Purple</h4>
                     <div class="row">
                       <div class="color-block col-md-12" v-for="item in items" v-if="colorTone='purple'">
+                        <div class="color-chip">
+                          <div class="color-box-main" :class="[ item.colorCode ]">
+                            <span class="color-name">{{ item.colorName }}</span>
+                            <span class="color-hex">{{ item.colorHex }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- color tone -->
+              <div class="col-md-4">
+                <div class="color-tones">
+                  <div class="color-tone" id="Mint">
+                    <h4 class="block-title">Mint</h4>
+                    <div class="row">
+                      <div class="color-block col-md-12" v-for="item in items" v-if="colorTone='mint'">
+                        <div class="color-chip">
+                          <div class="color-box-main" :class="[ item.colorCode ]">
+                            <span class="color-name">{{ item.colorName }}</span>
+                            <span class="color-hex">{{ item.colorHex }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- color tone -->
+              <div class="col-md-4">
+                <div class="color-tones">
+                  <div class="color-tone" id="Yellow">
+                    <h4 class="block-title">Yellow</h4>
+                    <div class="row">
+                      <div class="color-block col-md-12" v-for="item in items" v-if="colorTone='yellow'">
+                        <div class="color-chip">
+                          <div class="color-box-main" :class="[ item.colorCode ]">
+                            <span class="color-name">{{ item.colorName }}</span>
+                            <span class="color-hex">{{ item.colorHex }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- color tone -->
+              <div class="col-md-4">
+                <div class="color-tones">
+                  <div class="color-tone" id="Light-brown">
+                    <h4 class="block-title">Light-brown</h4>
+                    <div class="row">
+                      <div class="color-block col-md-12" v-for="item in items" v-if="colorTone='light-brown'">
                         <div class="color-chip">
                           <div class="color-box-main" :class="[ item.colorCode ]">
                             <span class="color-name">{{ item.colorName }}</span>
@@ -175,9 +248,37 @@
           <section>
             <div class="paragraph-body row">
               <div class="col-md-12">
-                <h4 class="block-title">Usage</h4>
+                <h3 class="paragraph-title">Usage in User-interface design</h3>
                 <div>
                   <object type="image/svg+xml" data="./svg/embold_color_usage.svg" width="100%"></object>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- paragraph split -->
+          <section>
+            <div class="paragraph-body row">
+              <div class="col-md-12">
+                <h3 class="paragraph-title">Applications example</h3>
+                <div>
+                  <h4 class="block-title">Stickers</h4>
+                  <p>
+                    All applications(inc. Digital and Printed matters) for embold must be design by this guideline (e.g Colors, Visual styles.).
+                  </p>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img src="./img/1_eat_your_dog_food.png" width="100%" height="auto" />
+                      <p class="image-description">Internal Campaign</p>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="./img/2_toc_g2crowd_1.png" width="100%" height="auto" />
+                      <p class="image-description">Review text from external services</p>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="./img/3_sentinel.png" width="100%" height="auto" />
+                      <p class="image-description">Internal Campaign</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -187,10 +288,9 @@
   		</div>
       <!-- footer -->
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-10 col-md-offset-1">
           <div class="footer">
-            <h5>embold</h5>
-            Acellere GmbH
+            <h5>embold</h5> All rights reserved. 2019
           </div>
         </div>
       </div>
