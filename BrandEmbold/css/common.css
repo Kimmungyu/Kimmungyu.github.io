@@ -571,6 +571,19 @@ h3.paragraph-title {
   .col-md-12 {
     width: 100%;
   }
+  .color-chip-primary-color {
+    height: 80px;
+    margin-bottom: 0 !important;
+    background-color: #fff;
+  }
+  .color-block:hover {
+    -ms-transform: scale(1) !important;
+    /* IE 9 */
+    -webkit-transform: scale(1) !important;
+    /* Safari 3-8 */
+    transform: scale(1) !important;
+    z-index: 999;
+  }
 }
 @media (max-width: 758px) {
   .logo-main {
@@ -597,5 +610,18 @@ h3.paragraph-title {
   }
   .col-md-12 {
     width: 100%;
+  }
+  .color-chip-primary-color {
+    height: 80px;
+    margin-bottom: 0;
+    background-color: #fff;
+  }
+  .color-block:hover {
+    -ms-transform: scale(1) !important;
+    /* IE 9 */
+    -webkit-transform: scale(1) !important;
+    /* Safari 3-8 */
+    transform: scale(1) !important;
+    z-index: 999;
   }
 }
