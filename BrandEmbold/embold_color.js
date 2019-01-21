@@ -2,7 +2,7 @@ var neutral = new Vue({
 	el: '#neutral',
 	data: {
 		items: [
-			{ colorName: 'Neutral 900', colorTone:'neutral', colorCode: 'neutral-900', colorHex: '#0f1c3a  /  CMYK 96%, 86%, 46%, 56%'},
+			{ colorName: 'Neutral 900', colorTone:'neutral', colorCode: 'neutral-900', colorHex: '#0f1c3a', colorCMYK: 'CMYK 96%, 86%, 46%, 56%'},
 			{ colorName: 'Neutral 800', colorTone:'neutral', colorCode: 'neutral-800', colorHex: '#213351'},
 			{ colorName: 'Neutral 700', colorTone:'neutral', colorCode: 'neutral-700', colorHex: '#2a3e5d'},
 			{ colorName: 'Neutral 600', colorTone:'neutral', colorCode: 'neutral-600', colorHex: '#334968'},
@@ -15,7 +15,7 @@ var neutral = new Vue({
 			{ colorName: 'Neutral 60', colorTone:'neutral', colorCode: 'neutral-60', colorHex: '#d7dfe3'},
 			{ colorName: 'Neutral 40', colorTone:'neutral', colorCode: 'neutral-40', colorHex: '#e3e8ec'},
 			{ colorName: 'Neutral 20', colorTone:'neutral', colorCode: 'neutral-20', colorHex: '#eff2f4'},
-			{ colorName: 'Neutral 0', colorTone:'neutral', colorCode: 'neutral-0', colorHex: '#ffffff'}
+			{ colorName: 'Neutral 0', colorTone:'neutral', colorCode: 'neutral-0', colorHex: '#ffffff', description: 'Pure White'}
 		]
 	}
 });
@@ -24,7 +24,8 @@ var blue = new Vue({
 	el: '#blue',
 	data: {
 		items: [
-			{ colorName: 'Blue 900', colorTone:'blue', colorCode: 'blue-900', colorHex: '#004bb7  /  CMYK 94%, 77%, 0%, 0%'},
+			{ colorName: 'Blue 1000', colorTone:'blue', colorCode: 'blue-900', colorHex: '#004393'},
+			{ colorName: 'Blue 900', colorTone:'blue', colorCode: 'blue-900', colorHex: '#004bb7', colorCMYK: 'CMYK 94%, 77%, 0%, 0%', description: 'Main Blue Color'},
 			{ colorName: 'Blue 800', colorTone:'blue', colorCode: 'blue-800', colorHex: '#1b69c7'},
 			{ colorName: 'Blue 700', colorTone:'blue', colorCode: 'blue-700', colorHex: '#3786d6'},
 			{ colorName: 'Blue 600', colorTone:'blue', colorCode: 'blue-600', colorHex: '#52a4e6'},
@@ -39,7 +40,8 @@ var orange = new Vue({
 	el: '#orange',
 	data: {
 		items: [
-			{ colorName: 'Orange 900', colorTone:'orange', colorCode: 'orange-900', colorHex: '#f46c21  /  CMYK 0%, 72%, 98%, 0%'},
+			{ colorName: 'Orange 900', colorTone:'orange', colorCode: 'orange-1000', colorHex: '#e85b15'},
+			{ colorName: 'Orange 900', colorTone:'orange', colorCode: 'orange-900', colorHex: '#f46c21', colorCMYK: 'CMYK 0%, 72%, 98%, 0%', description: 'Main Orange Color'},
 			{ colorName: 'Orange 800', colorTone:'orange', colorCode: 'orange-800', colorHex: '#f58040'},
 			{ colorName: 'Orange 700', colorTone:'orange', colorCode: 'orange-700', colorHex: '#f5935f'},
 			{ colorName: 'Orange 600', colorTone:'orange', colorCode: 'orange-600', colorHex: '#f6a77f'},
