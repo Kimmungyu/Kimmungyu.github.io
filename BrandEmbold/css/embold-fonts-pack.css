@@ -46,7 +46,7 @@ h4 {
 }
 .btn-candidate {
   width: 100%;
-  height: 200px;
+  height: 140px;
   padding: 35px 24px 24px 24px;
   text-align: center;
   border: 1px solid #e3e8ec;
@@ -58,7 +58,7 @@ h4 {
 .btn-candidate .title {
   display: block;
   color: #334968;
-  height: 98px;
+  height: 48px;
   font-size: 40px;
   margin-bottom: 8px;
   line-height: 120%;
@@ -104,4 +104,20 @@ h4 {
   padding-bottom: 24px;
   margin-bottom: 24px;
   border-bottom: 1px solid #e3e8ec;
+}
+.btn-full-width {
+  display: block;
+  color: #fff !important;
+  width: 100%;
+  margin-bottom: 8px !important;
+  padding: 24px 0 !important;
+  font-size: 20px !important;
+  font-family: 'Sofia-pro', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  background-color: #004bb7;
+  border-radius: 6px !important;
+}
+.btn-full-width:hover {
+  background-color: #004393;
 }
