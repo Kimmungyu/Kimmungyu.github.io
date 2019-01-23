@@ -1,23 +1,95 @@
-// out: embold-pack-sofia.css
+// out: embold-compare-fonts.css
 @import url("https://use.typekit.net/rop6ibq.css");
+@import url("https://use.typekit.net/gua6lws.css");
+
 body {
 	font-size: 14px;
+	padding: 24px;
 }
 
 b {
-	font-weight: 700;
+	font-weight: 600;
 }
 
-.font-upgrade {
+.navbar {
+	color: #fff;
+	width: 100%;
+	height: 68px;
+	background-color: #0f1c3a !important;
+	padding: 0 108px 0 32px;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 999;
+	opacity: 0;
+
+	h1 {
+		color: #fff;
+		font-size: 24px;
+		height: 24px;
+	}
+
+	.section-header {
+		width: 47%;
+	}
+
+	.section-header:nth-child(odd) { float: left; }
+	.section-header:nth-child(even) { float: right; margin-right: 34px; }
+	.section-header:nth-child(even):after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+.navbar-visible {
+	opacity: 1;
+}
+
+#navbar {
+	-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+}
+
+.font-benton {
 	color: #334968;
-	font-family: 'Sofia-pro', sans-serif;
+	font-family: 'benton-sans', sans-serif;
 	font-weight: 400;
 	font-style: normal;
+
+	.btn {
+		font-family: 'benton-sans', sans-serif;
+	}
+}
+
+.font-pack {
+	width: 47%;
+}
+
+.font-pack:nth-child(odd) {
+	float: left;
+}
+
+.font-pack:nth-child(even) {
+	float: right;
+}
+
+.font-sofia {
+	color: #334968;
+	font-family: 'sofia-pro', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+
+	.btn {
+		font-family: 'sofia-pro', sans-serif;
+	}
 }
 
 .container {
 	position: relative;
-	width: 960px;
+	width: 100%;
 	margin: auto;
 }
 
@@ -31,29 +103,51 @@ h1 {
 	font-weight: 600;
 	margin-top: 16px;
 	margin-bottom: 8px;
+	height: 70px;
 }
 
 h2 {
 	color: #0f1c3a;
 	font-size: 30px;
 	margin: 18px 0 8px 0;
+	height: 40px;
 }
 
 h3 {
 	font-size: 24px;
 	margin: 4px 0 4px 0;
+	height: 30px;
 }
 
 h4 {
 	color: #506682;
+	height: 30px;
 	font-size: 20px;
 	margin: 1.2em 0 0.6em 0;
 }
 
 h5 {
 	color: #506682;
+	height: 25px;
 	font-size: 17px;
 	margin: 0.6em 0 0.6em 0;
+}
+
+/*-- block --*/
+
+.section-title {
+	height: 140px;
+}
+
+.section-fs {
+	top: 140px;
+	height: 900px;
+
+	.fs-light,
+	.fs-regular,
+	.fs-bold,
+	.fs-italic,
+	.fs-bold-italic { height: 60px; }
 }
 
 .btn-back { position: absolute; top: 24px; right: 0; text-decoration: none; }
@@ -62,6 +156,7 @@ h5 {
 .header-available-media {
 	margin-top: 8px;
 	margin-bottom: 48px;
+	height: 24px;
 }
 
 .section-left {
@@ -77,7 +172,7 @@ h5 {
 .section {
 	margin-bottom: 24px;
 	padding-bottom: 16px;
-	border-bottom: 1px solid #efefef;
+	border-bottom: 1px solid #d7dfe3;
 }
 
 .section-last {
@@ -100,6 +195,8 @@ h5 {
 	font-size: 20px;
 
 	.summary {
+		height: 45px;
+		top: 96px;
 		font-size: 14px;
 		padding: 18px;
 		text-align: center;
@@ -110,11 +207,12 @@ h5 {
 		display: inline-block;
 		color: #a3b3c1;
 		font-size: 12px;
-		font-weight: 500;
+		font-weight: 600;
 		margin-bottom: 24px;
 		padding-bottom: 2px;
 		text-transform: uppercase;
 		border-bottom: 1px solid #e3e8ec;
+		height: 24px;
 	}
 
 	.description-last {
@@ -126,26 +224,28 @@ h5 {
 	}
 }
 
-.fs-light { font-family: 'Sofia-pro', sans-serif; font-weight: 200; }
-.fs-regular {}
+.fs-light { font-weight: 300; }
+.fs-regular { font-weight: 400; }
 .fs-bold { font-weight: 600; }
-.fs-italic { font-style: italic; }
+.fs-italic { font-weight: 400; font-style: italic; }
 .fs-bold-italic { font-weight: 600; font-style: italic; }
 
 .pm-paragraph {
 	border: 1px solid #efefef;
 	padding: 24px 30px;
+	height: 200px;
 }
 
 .pm-size-variation {
 	border: 1px solid #efefef;
 	padding: 24px 30px;
+	height: 420px;
 
 	.description {
 		display: block;
 		color: #a3b3c1;
 		font-size: 12px;
-		font-weight: 500;
+		font-weight: 600;
 		margin-bottom: 16px;
 		text-transform: uppercase;
 	}
@@ -218,18 +318,25 @@ h5 {
 	clear: both;
 }
 
-.ui-headings,
-.ui-paragraph {
+.ui-headings {
+	height: 340px;
 	border: 1px solid #efefef;
 	padding: 24px;
 
 	h1, h2, h3, h4, h5 {
 		margin: 8px 0;
+		height: auto;
 	}
 
 	h1 {
 		margin-top: 0;
 	}
+}
+
+.ui-paragraph {
+	height: 180px;
+	border: 1px solid #efefef;
+	padding: 24px;
 }
 
 .h6 {
@@ -254,7 +361,6 @@ h5 {
 	margin-bottom: 0;
 	font-size: 14px;
 	font-weight: 400;
-	font-family: 'Sofia-pro', sans-serif;
 	line-height: 1.42857143;
 	text-align: center;
 	white-space: nowrap;
@@ -378,6 +484,7 @@ h5 {
 	margin-bottom: 8px;
 	padding: 14px;
 	border: 1px solid #e3e8ec;
+	height: 20px;
 }
 
 .ui-alert-success {

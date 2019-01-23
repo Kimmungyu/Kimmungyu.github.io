@@ -4,6 +4,16 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/embold-pack-sofia.css">
     <title></title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./node_modules/simple-lightbox/dist/simpleLightbox.min.css">
+  <script src="./node_modules/simple-lightbox/dist/simpleLightbox.min.js"></script>
   </head>
   <body class="font-upgrade container">
     <div>
@@ -76,17 +86,35 @@
           <span class="description">Font size 13px in Display, 13pt in Print</span>
         </p>
       </div>
+      <div class="block">
+        <h5 class="print-visible">Example: Branding</h5>
+        <a href="./img/sofia-pro/branding-screen-sofia.png" target="_blank"><img src="./img/sofia-pro/branding-screen-sofia.png" width="100%" height="auto" class="screenshot-brand" /></a>
+      </div>
       <div>
-        <h5 class="print-visible">Example: Paragraph</h5>
-        <p class="pm-paragraph print-visible">
-          Maecenas id diam at nunc condimentum efficitur at tincidunt purus. Praesent finibus, eros convallis tempus fermentum, nibh eros imperdiet justo, quis cursus dui ligula eget dui. Sed convallis ut diam at egestas. Duis sed mi ut massa eleifend consectetur. Proin turpis felis, congue vel ipsum et, rutrum semper purus. Nullam lacinia, eros vitae tempor viverra, massa ligula egestas elit, quis rhoncus dui quam nec risus. Suspendisse elementum ut ex non malesuada. Vivamus laoreet, dui sed sollicitudin consequat, quam justo interdum mi, at ornare mi nibh eget justo. Curabitur efficitur magna bibendum eros elementum vehicula. Sed eget dolor elementum, fringilla erat quis, dapibus elit. Quisque at velit ac quam efficitur bibendum. Sed tellus est, dictum nec tempus vitae, fringilla eu elit. Donec non nunc euismod, dictum nulla non, volutpat nibh.
-        </p>
+        <h5 class="print-visible">Example: Official Documents</h5>
+        <a href="letter-sofia.pdf" class="btn btn-full-width " target="_blank">Download Sample of Official Letter</a>
+        <a href="gamma_template_sofia.pdf" class="btn btn-full-width " target="_blank">Download Sample of PPT</a>
       </div>
     </div>
     <div class="section-last">
       <h2>Font in Digital Materials</h2>
       <div>
         <h4>Usage in UI</h4>
+        <div class="block">
+          <h5>Example: Apply to Gamma present version</h5>
+          <div class="ui-screens screens-benton">
+            <!-- <a href="./img/benton-sans/benton-sans-1.png" class="link-screenshot"><img src="./img/benton-sans/benton-sans-1.png" width="100%" height="auto" class="screenshot" /></a> -->
+            <a href="./img/benton-sans/benton-sans-2.png" class="link-screenshot"><img src="./img/benton-sans/benton-sans-2.png" width="100%" height="auto" class="screenshot" /></a>
+            <!-- <a href="./img/benton-sans/benton-sans-3.png" class="link-screenshot"><img src="./img/benton-sans/benton-sans-3.png" width="100%" height="auto" class="screenshot" /></a> -->
+            <a href="./img/benton-sans/benton-sans-4.png" class="link-screenshot"><img src="./img/benton-sans/benton-sans-4.png" width="100%" height="auto" class="screenshot" /></a>
+            <a href="./img/benton-sans/benton-sans-5.png" class="link-screenshot"><img src="./img/benton-sans/benton-sans-5.png" width="100%" height="auto" class="screenshot" /></a>
+            <a href="./img/benton-sans/benton-sans-6.png" class="link-screenshot"><img src="./img/benton-sans/benton-sans-6.png" width="100%" height="auto" class="screenshot" /></a>
+            <!-- <a href="./img/benton-sans/benton-sans-7.png" class="link-screenshot"><img src="./img/benton-sans/benton-sans-7.png" width="100%" height="auto" class="screenshot" /></a> -->
+            <!-- <a href="./img/benton-sans/benton-sans-8.png" class="link-screenshot"><img src="./img/benton-sans/benton-sans-8.png" width="100%" height="auto" class="screenshot" /></a> -->
+            <a href="./img/benton-sans/benton-sans-9.png" class="link-screenshot"><img src="./img/benton-sans/benton-sans-9.png" width="100%" height="auto" class="screenshot" /></a>
+            <!-- <a href="./img/benton-sans/benton-sans-10.png" class="link-screenshot"><img src="./img/benton-sans/benton-sans-10.png" width="100%" height="auto" class="screenshot" /></a> -->
+          </div>
+        </div>
         <div class="block">
           <h5>Example: Headings</h5>
           <div class="ui-headings">
@@ -166,5 +194,9 @@
     <div class="footer">
       <span>This is a Package of Testing Fonts for Embold</span>
     </div>
+    <script>
+      new SimpleLightbox({elements: '.screens-benton a'});
+      new SimpleLightbox({elements: '.screens-sofia a'});
+    </script>
   </body>
 </html>
