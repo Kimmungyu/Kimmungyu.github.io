@@ -155,7 +155,8 @@ h5 {
   font-size: 24px;
 }
 .pm-font-size-14 {
-  font-size: 14px;
+  font-size: 10px;
+  font-weight: bold;
 }
 .btn-full-width {
   color: #fff !important;
