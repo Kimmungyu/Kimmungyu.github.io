@@ -2,12 +2,22 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/embold-pack-interstate.css">
+    <link rel="stylesheet" href="css/embold-pack.css">
     <title></title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./node_modules/simple-lightbox/dist/simpleLightbox.min.css">
+  <script src="./node_modules/simple-lightbox/dist/simpleLightbox.min.js"></script>
   </head>
-  <body class="font-interstate container">
+  <body class="font-acumin container">
     <div>
-      <h1 class="print-visible">Interstate</h1>
+      <h1 class="print-visible">Acumin</h1>
       <p class="print-visible header-available-service">Available from <b>Typekit</b>&nbsp;&nbsp;/&nbsp;&nbsp;Available in <b>Web-fonts</b> and <b>Adobe CC</b></p>
     </div>
     <div>
@@ -19,7 +29,7 @@
         <h5 class="print-visible">Style and Weight</h5>
         <p class="summary">
            <b>Font style</b><br />
-           Interstate, Interstate Compressed, Interstate Condensed
+           Acumin
         </p>
         <p class="fs-light">
           Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br />
@@ -73,20 +83,33 @@
           <span class="pm-font-size pm-font-size-14">
             We believe software should be transparent
           </span>
-          <span class="description">Font size 13px in Display, 13pt in Print</span>
+          <span class="description">Font size 10px in Display, 10pt in Print</span>
         </p>
       </div>
+      <!--
+      <div class="block">
+        <h5 class="print-visible">Example: Branding</h5>
+        <a href="./img/benton-sans/branding-screen-benton.png" target="_blank"><img src="./img/benton-sans/branding-screen-benton.png" width="100%" height="auto" class="screenshot-brand" /></a>
+      </div>
+      -->
       <div>
-        <h5 class="print-visible">Example: Paragraph</h5>
-        <p class="pm-paragraph print-visible">
-          Maecenas id diam at nunc condimentum efficitur at tincidunt purus. Praesent finibus, eros convallis tempus fermentum, nibh eros imperdiet justo, quis cursus dui ligula eget dui. Sed convallis ut diam at egestas. Duis sed mi ut massa eleifend consectetur. Proin turpis felis, congue vel ipsum et, rutrum semper purus. Nullam lacinia, eros vitae tempor viverra, massa ligula egestas elit, quis rhoncus dui quam nec risus. Suspendisse elementum ut ex non malesuada. Vivamus laoreet, dui sed sollicitudin consequat, quam justo interdum mi, at ornare mi nibh eget justo. Curabitur efficitur magna bibendum eros elementum vehicula. Sed eget dolor elementum, fringilla erat quis, dapibus elit. Quisque at velit ac quam efficitur bibendum. Sed tellus est, dictum nec tempus vitae, fringilla eu elit. Donec non nunc euismod, dictum nulla non, volutpat nibh.
-        </p>
+        <h5 class="print-visible">Example: Official Documents</h5>
+        <a href="letter-acumin.pdf" class="btn btn-full-width " target="_blank">Download Sample of Official Letter</a>
+        <!-- <a href="gamma_template_benton.pdf" class="btn btn-full-width " target="_blank">Download Sample of PPT</a> -->
       </div>
     </div>
     <div class="section-last">
       <h2>Font in Digital Materials</h2>
       <div>
         <h4>Usage in UI</h4>
+        <div class="block">
+          <h5>Example: Apply to Gamma present version</h5>
+          <div class="ui-screens screens-acumin">
+            <a href="./acumin-1.png" class="link-screenshot"><img src="./acumin-1.png" width="100%" height="auto" class="screenshot" /></a>
+            <a href="./acumin-2.png" class="link-screenshot"><img src="./acumin-2.png" width="100%" height="auto" class="screenshot" /></a>
+            <a href="./acumin-3.png" class="link-screenshot"><img src="./acumin-3.png" width="100%" height="auto" class="screenshot" /></a>
+          </div>
+        </div>
         <div class="block">
           <h5>Example: Headings</h5>
           <div class="ui-headings">
@@ -166,5 +189,13 @@
     <div class="footer">
       <span>This is a Package of Testing Fonts for Embold</span>
     </div>
+    <script>
+      new SimpleLightbox({elements: '.screens-benton a'});
+      new SimpleLightbox({elements: '.screens-sofia a'});
+      new SimpleLightbox({elements: '.screens-proxima a'});
+      new SimpleLightbox({elements: '.screens-gill-sans a'});
+      new SimpleLightbox({elements: '.screens-montserrat a'});
+      new SimpleLightbox({elements: '.screens-acumin a'});
+    </script>
   </body>
 </html>
