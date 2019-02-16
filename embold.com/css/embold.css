@@ -11,9 +11,19 @@
 .ic-gift-box {
   background-image: url('../images/ic-md-gift-box.svg');
 }
+.ic-cloud-code {
+  background-image: url('../images/ic-md-cloud-code.svg');
+}
+.ic-servers {
+  background-image: url('../images/ic-md-servers.svg');
+}
+.ic-building-big {
+  background-image: url('../images/ic-md-building-big.svg');
+}
 /* -- prefix --*/
 .sofia {
   font-family: 'Sofia Pro', sans-serif;
+  letter-spacing: -0.02em;
 }
 .background-no-repeat {
   background-repeat: no-repeat;
@@ -221,6 +231,62 @@ nav .nav-wrap-items .nav-item-main {
   margin-right: 16px;
   font-size: 18px;
 }
+.product-pricing {
+  margin-top: 0;
+  padding-top: 0;
+}
+.product-pricing .pricing-tab {
+  width: 100%;
+  display: inline-block;
+  padding: 24px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+}
+.product-pricing .pricing-tab .icon-md {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.product-pricing .pricing-tab .pricing-title {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin: 4px 0 0 0;
+  font-family: 'Sofia Pro', sans-serif;
+  letter-spacing: -0.02em;
+}
+.product-pricing .pricing-tab .pricing-description {
+  color: #9AA0AD;
+  font-size: 1em;
+  margin: 0;
+}
+.product-pricing .pricing-tab:hover,
+.product-pricing .active {
+  color: #fff;
+  background-color: #2A3141;
+}
+.product-pricing .pricing-tab:hover .pricing-description,
+.product-pricing .active .pricing-description {
+  color: #9AA0AD;
+}
+.product-pricing .pricing-tab:hover .ic-cloud-code,
+.product-pricing .active .ic-cloud-code {
+  background-image: url('../images/ic-md-cloud-code-wh.svg');
+}
+.product-pricing .pricing-tab:hover .ic-servers,
+.product-pricing .active .ic-servers {
+  background-image: url('../images/ic-md-servers-wh.svg');
+}
+.product-pricing .pricing-tab:hover .ic-building-big,
+.product-pricing .active .ic-building-big {
+  background-image: url('../images/ic-md-building-big-wh.svg');
+}
 .partnership-review {
   position: relative;
   padding: 30px;
@@ -320,6 +386,7 @@ nav .nav-wrap-items .nav-item-main {
   font-size: 1em;
   vertical-align: middle;
   font-family: 'Sofia Pro', sans-serif;
+  letter-spacing: -0.02em;
 }
 .tab-role .tab-wrap .active,
 .tab-role .tab-wrap .tab-item:hover {
@@ -366,6 +433,7 @@ nav .nav-wrap-items .nav-item-main {
   font-size: 1.8em;
   text-align: left;
   font-family: 'Sofia Pro', sans-serif;
+  letter-spacing: -0.02em;
 }
 .block-user-story .wrap-content h4 {
   color: #EF7E53;
@@ -384,6 +452,7 @@ nav .nav-wrap-items .nav-item-main {
   line-height: 1;
   margin-top: 0;
   font-family: 'Sofia Pro', sans-serif;
+  letter-spacing: -0.02em;
 }
 .block-user-story .tab-user-story {
   margin-bottom: 16px;
@@ -445,6 +514,77 @@ nav .nav-wrap-items .nav-item-main {
 }
 .team-value .wrap-value-left {
   margin-top: 36px;
+}
+.company-about-status .block-column,
+.company-benefit .block-column {
+  display: inline-block;
+  width: 100%;
+  margin-right: 8px;
+}
+.company-about-status .block-column .icon,
+.company-benefit .block-column .icon {
+  width: 48px;
+  height: 48px;
+  margin-top: 4px;
+  margin-right: 12px;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.company-about-status .block-column .title,
+.company-benefit .block-column .title {
+  color: #EF7E53;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Sofia Pro', sans-serif;
+  letter-spacing: -0.02em;
+}
+.company-about-status .block-column .description,
+.company-benefit .block-column .description {
+  font-size: 0.8em;
+}
+.company-about-status .active,
+.company-benefit .active,
+.company-about-status .tab-item:hover,
+.company-benefit .tab-item:hover {
+  color: #fff;
+  background-color: #2A3141;
+}
+.job-opening .job-opening-list .job-table .job-title {
+  display: inline-block;
+  color: #2A3141;
+  width: 20rem;
+  margin-right: 20px;
+  font-size: 1.4em;
+  font-weight: bold;
+  font-family: 'Sofia Pro', sans-serif;
+  letter-spacing: -0.02em;
+}
+.job-opening .job-opening-list .job-table .location {
+  display: inline-block;
+  color: #787E8D;
+  width: 13rem;
+  margin-right: 20px;
+  font-size: 1em;
+}
+.job-opening .job-opening-list .job-table .show-more {
+  display: inline-block;
+  color: #EF7E53;
+  margin-top: 8px;
+  font-size: 0.9em;
+  float: right;
+}
+.job-opening .job-opening-list .job-table .wrap-title .job-title,
+.job-opening .job-opening-list .job-table .wrap-title .location {
+  color: #9AA0AD;
+  font-size: 0.7em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.job-opening .job-opening-list .job-table .job-row {
+  padding: 24px 0 18px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #E2E5EB;
 }
 .bg-product-features {
   background-image: url('../images/header-sub-product-features.svg');

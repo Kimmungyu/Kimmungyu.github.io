@@ -1,1 +1,50 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><defs><style>.cls-1{fill:none;stroke:#2a3141;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}.cls-2{fill:#2a3141;}</style></defs><title>ic-md-servers</title><rect class="cls-1" x="17" y="7" width="24" height="8"/><rect class="cls-1" x="11" y="19" width="16.69" height="7"/><rect class="cls-1" x="30.64" y="19" width="7.36" height="7"/><rect class="cls-1" x="17" y="31" width="24" height="8"/><circle class="cls-1" cx="36" cy="11" r="1"/><circle class="cls-1" cx="35.5" cy="35" r="1"/><circle class="cls-2" cx="14.5" cy="22.75" r="1"/><circle class="cls-2" cx="17.5" cy="22.75" r="1"/><circle class="cls-2" cx="20.5" cy="22.75" r="1"/><path class="cls-1" d="M17,11H10a6,6,0,0,0-6,6H4a6,6,0,0,0,6,6h1"/><path class="cls-1" d="M17,35H10a6,6,0,0,1-6-6H4a6,6,0,0,1,6-6h1"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#2A3141;}
+</style>
+<g>
+	<title>ic-md-servers</title>
+	<g>
+		<path class="st0 svg-fill" d="M39.6,16.5H17.4c-0.5,0-0.9-0.4-0.9-0.9V8.2c0-0.5,0.4-0.9,0.9-0.9h22.2c0.5,0,0.9,0.4,0.9,0.9v7.4
+			C40.5,16.1,40.1,16.5,39.6,16.5z M18.3,14.7h20.3V9.2H18.3V14.7z"/>
+	</g>
+	<g>
+		<path class="st0 svg-fill" d="M27.3,26.7H11.9c-0.5,0-0.9-0.4-0.9-0.9v-6.5c0-0.5,0.4-0.9,0.9-0.9h15.4c0.5,0,0.9,0.4,0.9,0.9v6.5
+			C28.2,26.3,27.8,26.7,27.3,26.7z M12.8,24.8h13.6v-4.6H12.8V24.8z"/>
+	</g>
+	<g>
+		<path class="st0 svg-fill" d="M36.8,26.7H30c-0.5,0-0.9-0.4-0.9-0.9v-6.5c0-0.5,0.4-0.9,0.9-0.9h6.8c0.5,0,0.9,0.4,0.9,0.9v6.5
+			C37.7,26.3,37.3,26.7,36.8,26.7z M30.9,24.8h4.9v-4.6h-4.9V24.8z"/>
+	</g>
+	<g>
+		<path class="st0 svg-fill" d="M39.6,38.7H17.4c-0.5,0-0.9-0.4-0.9-0.9v-7.4c0-0.5,0.4-0.9,0.9-0.9h22.2c0.5,0,0.9,0.4,0.9,0.9v7.4
+			C40.5,38.3,40.1,38.7,39.6,38.7z M18.3,36.8h20.3v-5.5H18.3V36.8z"/>
+	</g>
+	<g>
+		<circle class="st0 svg-fill" cx="35" cy="11.9" r="1.8"/>
+	</g>
+	<g>
+		<circle class="st0 svg-fill" cx="34.5" cy="34.1" r="1.8"/>
+	</g>
+	<g>
+		<circle class="st0 svg-fill" cx="15.1" cy="22.8" r="0.9"/>
+	</g>
+	<g>
+		<circle class="st0 svg-fill" cx="17.9" cy="22.8" r="0.9"/>
+	</g>
+	<g>
+		<circle class="st0 svg-fill" cx="20.7" cy="22.8" r="0.9"/>
+	</g>
+	<g>
+		<path class="st0 svg-fill" d="M11.9,23.9H11c-3.6,0-6.5-2.9-6.5-6.5S7.4,11,11,11h6.5c0.5,0,0.9,0.4,0.9,0.9s-0.4,0.9-0.9,0.9H11
+			c-2.5,0-4.6,2.1-4.6,4.6s2.1,4.6,4.6,4.6h0.9c0.5,0,0.9,0.4,0.9,0.9S12.4,23.9,11.9,23.9z"/>
+	</g>
+	<g>
+		<path class="st0 svg-fill" d="M17.4,35H11c-3.6,0-6.5-2.9-6.5-6.5s2.9-6.5,6.5-6.5h0.9c0.5,0,0.9,0.4,0.9,0.9s-0.4,0.9-0.9,0.9H11
+			c-2.5,0-4.6,2.1-4.6,4.6s2.1,4.6,4.6,4.6h6.5c0.5,0,0.9,0.4,0.9,0.9S17.9,35,17.4,35z"/>
+	</g>
+</g>
+</svg>

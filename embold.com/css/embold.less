@@ -9,6 +9,7 @@
 
 .sofia {
   font-family: 'Sofia Pro', sans-serif;
+  letter-spacing: -0.02em;
 }
 
 .background-no-repeat {
@@ -265,6 +266,56 @@ nav {
   .icon-sns {
     margin-right: 16px;
     font-size: 18px;
+  }
+}
+
+.product-pricing {
+  margin-top: 0;
+  padding-top: 0;
+  
+  .pricing-tab {
+    width: 100%;
+    display: inline-block;
+    padding: 24px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    .box-shadow;
+
+    .icon-md {
+      display: block;
+      width: 48px;
+      height: 48px;
+      margin: 0 auto;
+      .background-no-repeat;
+    }
+
+    .pricing-title {
+      font-size: 1.8em;
+      font-weight: 600;
+      margin: 4px 0 0 0;
+      .sofia;
+    }
+
+    .pricing-description {
+      color: @gray600;
+      font-size: 1em;
+      margin: 0;
+    }
+  }
+
+  .pricing-tab:hover,
+  .active {
+    color: @white;
+    background-color: @gray800;
+
+    .pricing-description {
+      color: @gray600;
+    }
+
+    .ic-cloud-code { background-image: url('../images/ic-md-cloud-code-wh.svg'); }
+    .ic-servers { background-image: url('../images/ic-md-servers-wh.svg'); }
+    .ic-building-big { background-image: url('../images/ic-md-building-big-wh.svg'); }
   }
 }
 
@@ -532,6 +583,89 @@ nav {
 
   .wrap-value-left {
     margin-top: 36px;
+  }
+}
+
+.company-about-status,
+.company-benefit {
+  .block-column {
+    display: inline-block;
+    width: 100%;
+    margin-right: 8px;
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      margin-top: 4px;
+      margin-right: 12px;
+      float: left;
+      .background-no-repeat;
+    }
+
+    .title {
+      color: @orange800;
+      font-size: 1.2em;
+      font-weight: bold;
+      .sofia;
+    }
+
+    .description {
+      font-size: 0.8em;
+    }
+  }
+
+  .active,
+  .tab-item:hover {
+    color: @white;
+    background-color: @gray800;
+  }
+}
+
+.job-opening {
+  .job-opening-list {
+    .job-table {
+      .job-title {
+        display: inline-block;
+        color: @gray800;
+        width: 20rem;
+        margin-right: 20px;
+        font-size: 1.4em;
+        font-weight: bold;
+        .sofia;
+      }
+
+      .location {
+        display: inline-block;
+        color: @gray700;
+        width: 13rem;
+        margin-right: 20px;
+        font-size: 1em;
+      }
+
+      .show-more {
+        display: inline-block;
+        color: @orange800;
+        margin-top: 8px;
+        font-size: 0.9em;
+        float: right;
+      }
+
+      .wrap-title {
+        .job-title,
+        .location {
+          color: @gray600;
+          font-size: 0.7em;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+
+      .job-row {
+        padding: 24px 0 18px;
+        margin-bottom: 4px;
+        border-bottom: 1px solid @gray400;
+      }
+    }
   }
 }
 
