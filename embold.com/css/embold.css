@@ -2,6 +2,27 @@
 .ic-sm-user-executive {
   background-image: url('../images/ic-sm-user-executive.svg');
 }
+.ic-sm-user-executive-wh {
+  background-image: url('../images/ic-sm-user-executive-wh.svg');
+}
+.ic-sm-user-developer {
+  background-image: url('../images/ic-sm-user-developer.svg');
+}
+.ic-sm-user-developer-wh {
+  background-image: url('../images/ic-sm-user-developer-wh.svg');
+}
+.ic-sm-user-architect {
+  background-image: url('../images/ic-sm-user-architect.svg');
+}
+.ic-sm-user-architect-wh {
+  background-image: url('../images/ic-sm-user-architect-wh.svg');
+}
+.ic-sm-user-pm {
+  background-image: url('../images/ic-sm-user-pm.svg');
+}
+.ic-sm-user-pm-wh {
+  background-image: url('../images/ic-sm-user-pm-wh.svg');
+}
 .ic-door-open {
   background-image: url('../images/ic-md-door-open.svg');
 }
@@ -883,8 +904,8 @@ button:focus {
   cursor: pointer;
 }
 .tab-role .tab-wrap .tab-item .tab-item-icon {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
   margin-right: 4px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -906,7 +927,19 @@ button:focus {
 }
 .tab-role .tab-wrap .active .ic-sm-user-executive,
 .tab-role .tab-wrap .tab-item:hover .ic-sm-user-executive {
-  background-image: url('../images/ic-sm-user-executive-white.svg');
+  background-image: url('../images/ic-sm-user-executive-wh.svg');
+}
+.tab-role .tab-wrap .active .ic-sm-user-developer,
+.tab-role .tab-wrap .tab-item:hover .ic-sm-user-developer {
+  background-image: url('../images/ic-sm-user-developer-wh.svg');
+}
+.tab-role .tab-wrap .active .ic-sm-user-architect,
+.tab-role .tab-wrap .tab-item:hover .ic-sm-user-architect {
+  background-image: url('../images/ic-sm-user-architect-wh.svg');
+}
+.tab-role .tab-wrap .active .ic-sm-user-pm,
+.tab-role .tab-wrap .tab-item:hover .ic-sm-user-pm {
+  background-image: url('../images/ic-sm-user-pm-wh.svg');
 }
 .block-sub-menu {
   position: relative;
@@ -1173,6 +1206,61 @@ button:focus {
 .company-about-status .tab-item:hover {
   color: #fff;
   background-color: #2A3141;
+}
+.timeline {
+  position: relative;
+  /* optional: show position indicator in red */
+}
+.timeline .wrap-timeline {
+  width: 100%;
+  overflow: scroll;
+  overflow-y: hidden;
+  border-top: 1px solid #E2E5EB;
+  margin-top: 2.4em;
+  padding-top: 2.4em;
+  padding-bottom: 1em;
+}
+.timeline .wrap-timeline .content-timeline {
+  width: 2700px;
+  height: 480px;
+  background-image: url('../images/timeline-sample.svg');
+  background-size: 50%;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.timeline ::-webkit-scrollbar {
+  width: 0;
+  /* remove scrollbar space */
+  height: 18px;
+  background: #F5F6F8;
+  transition: all 0.5s;
+}
+.timeline ::-webkit-scrollbar-thumb {
+  width: 24px;
+  background: #E2E5EB;
+  transition: all 0.5s;
+}
+.timeline ::-webkit-scrollbar-thumb:hover {
+  background: #EF7E53;
+  transition: all 0.5s;
+}
+.timeline .arrow-right {
+  width: 48px;
+  height: 48px;
+  top: 23em;
+  right: 0.5em;
+  position: absolute;
+  background-image: url('../images/arrow-light-right.svg');
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transition: all 0.5s;
+}
+.timeline .arrow-right:hover {
+  opacity: 1;
 }
 .company-offices .wrap-office {
   width: 100%;
