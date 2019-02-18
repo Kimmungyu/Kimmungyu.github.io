@@ -63,8 +63,7 @@
   background-image: url('../images/ic-logo-sq-deutsche-leasing.svg');
 }
 .bg-index-hero {
-  background-image: url('../images/header-index-hero.svg');
-  z-index: 1;
+  background-image: url('../images/header-index-hero.png');
 }
 .bg-product-overview {
   background-image: url('../images/header-sub-product-overview.svg');
@@ -88,7 +87,7 @@
   background-image: url('../images/header-sub-user-stories-team-size.svg');
 }
 .bg-user-stories-industry {
-  background-image: url('../images/header-sub-user-stories-industry.svg');
+  background-image: url('../images/header-sub-user-stories-industry.png');
 }
 .bg-user-stories-solution-approach {
   background-image: url('../images/header-sub-user-stories-solution-approach.svg');
@@ -115,7 +114,16 @@
   background-image: url('../images/header-sub-company-news.svg');
 }
 .il-index-features {
-  background-image: url('../images/illustration-index-features.png');
+  background-image: url('../images/il-index-features.png');
+}
+.il-index-locations {
+  background-image: url('../images/il-index-locations.png');
+}
+.il-product-features-smart-priori {
+  background-image: url('../images/il-product-features-smart-priori.png');
+}
+.il-product-features-anti-pattern {
+  background-image: url('../images/il-product-features-anti-pattern.png');
 }
 .photo-developer-1 {
   background-image: url('../images/photo-developer-1.png');
@@ -163,6 +171,10 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+.body-illustration {
+  height: 300px;
+  background-size: 70%;
 }
 * {
   box-sizing: border-box;
@@ -405,12 +417,8 @@ button:focus {
   margin-top: 14em;
   margin-bottom: 3em;
   padding: 2em;
-  background-color: #fff;
   z-index: 20;
   position: relative;
-  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
 }
 .block-index-hero .wrap-hero-content h1.headcopy {
   margin: 0;
@@ -431,13 +439,13 @@ button:focus {
   width: 20em;
 }
 .block-index-hero .header-image {
-  width: 640px;
-  height: 480px;
+  width: 50rem;
+  height: 34rem;
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  top: 4em;
-  right: 6em;
+  top: 6em;
+  right: 0;
   z-index: 1;
 }
 .block-index-workflow {
@@ -624,6 +632,10 @@ button:focus {
   margin-bottom: 1.5em;
   background-size: 960px;
 }
+.il-index-locations {
+  height: 30em;
+  background-size: auto 100%;
+}
 .product-pricing {
   margin-top: 0;
   padding-top: 0;
@@ -802,6 +814,7 @@ button:focus {
 }
 .block-section-sub .section-title {
   font-size: 2.3em;
+  margin-top: 0.8em;
 }
 .block-section-sub .description {
   color: #9AA0AD;
@@ -1082,14 +1095,48 @@ button:focus {
   margin-right: 0.4em;
   font-size: 1.3em;
 }
-.company-about-status .block-column,
+.company-about-status .block-column {
+  display: inline-block;
+  width: 16em;
+  margin-top: 48px;
+  margin-right: 0.6em;
+  padding-top: 0.4em;
+  padding-right: 0.8em;
+  border-right: 1px solid #ECEDEF;
+}
+.company-about-status .block-column .icon {
+  width: 48px;
+  height: 48px;
+  margin-top: 0;
+  margin-right: 0.2em;
+  float: left;
+}
+.company-about-status .block-column .title {
+  color: #2A3141;
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: 'Sofia Pro', sans-serif;
+  letter-spacing: -0.02em;
+}
+.company-about-status .block-column .description {
+  font-size: 0.8em;
+}
+.company-about-status .block-column:last-of-type {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: 0;
+}
+.company-about-status .active,
+.company-about-status .tab-item:hover {
+  color: #fff;
+  background-color: #2A3141;
+}
 .company-benefit .block-column {
   display: inline-block;
   width: 100%;
   margin-top: 48px;
   border-bottom: 3px solid #ECEDEF;
 }
-.company-about-status .block-column .icon,
 .company-benefit .block-column .icon {
   width: 48px;
   height: 48px;
@@ -1097,21 +1144,17 @@ button:focus {
   margin-right: 4px;
   float: left;
 }
-.company-about-status .block-column .title,
 .company-benefit .block-column .title {
-  color: #EF7E53;
+  color: #2A3141;
   font-size: 1.3em;
   font-weight: bold;
   font-family: 'Sofia Pro', sans-serif;
   letter-spacing: -0.02em;
 }
-.company-about-status .block-column .description,
 .company-benefit .block-column .description {
   font-size: 0.8em;
 }
-.company-about-status .active,
 .company-benefit .active,
-.company-about-status .tab-item:hover,
 .company-benefit .tab-item:hover {
   color: #fff;
   background-color: #2A3141;
