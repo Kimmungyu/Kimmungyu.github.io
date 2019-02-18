@@ -24,7 +24,7 @@
       </div>
       <div class="nav-wrap-items">
         <div class="nav-item-main">
-          Product <i class="fas fa-angle-down"></i>
+          <span class="active">Product</span> <i class="fas fa-angle-down"></i>
         </div>
         <div class="nav-item-main">
           User Stories <i class="fas fa-angle-down"></i>
@@ -33,7 +33,7 @@
           Resources <i class="fas fa-angle-down"></i>
         </div>
         <div class="nav-item-main">
-          <span class="active">Company</span> <i class="fas fa-angle-down"></i>
+          Company <i class="fas fa-angle-down"></i>
         </div>
       </div>
       <div class="nav-item-sign">
@@ -80,68 +80,131 @@
 
   <div class="container block block-header-sub">
     <div class="row">
-      <div class="col-8">
-        <h1 class="header-sub-title">
-          We need to change<br />
-          how we write code. Period
-        </h1>
+      <div class="col-6">
+        <h1 class="header-sub-title">Pricing</h1>
       </div>
     </div>
-    <div class="header-image bg-company-about"></div>
+    <div class="header-image bg-product-pricing"></div>
   </div>
-  <section class="container block block-section-sub company-about-status">
+
+  <div class="container product-pricing block">
     <div class="row">
-      <div class="body-content">
-        <div class="col-12">
-          <div class="block-column">
-            <div class="icon ic-people">
-            </div>
-            <div class="title">
-              50+ Embolder
-            </div>
-            <div class="description">
-              Great Colleagues into One Team
-            </div>
-          </div>
-          <div class="block-column">
-            <div class="icon ic-office">
-            </div>
-            <div class="title">
-              3 Offices
-            </div>
-            <div class="description">
-              Let’s put Coffee into your brains
-            </div>
-          </div>
-          <div class="block-column">
-            <div class="icon ic-flag">
-            </div>
-            <div class="title">
-              7 Nationalities
-            </div>
-            <div class="description">
-              Let’s put Coffee into your brains
-            </div>
-          </div>
-          <div class="block-column">
-            <div class="icon ic-gender">
-            </div>
-            <div class="title">
-              46% Women
-            </div>
-            <div class="description">
-              Let’s put Coffee into your brains
-            </div>
-          </div>
+      <div class="col-4">
+        <div class="pricing-tab" onclick="window.location.href='./product-pricing.html'">
+          <i class="icon-md ic-cloud-code"></i>
+          <h3 class="pricing-title">Cloud-Based</h3>
+          <p class="pricing-description">
+            Free for all open source projects
+          </p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="pricing-tab active">
+          <i class="icon-md ic-servers"></i>
+          <h3 class="pricing-title">On-Premise</h3>
+          <p class="pricing-description">
+            Free for all open source projects
+          </p>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="pricing-tab" onclick="window.location.href='./product-pricing-enterprise.html'">
+          <i class="icon-md ic-building-big"></i>
+          <h3 class="pricing-title">Enterprise</h3>
+          <p class="pricing-description">
+            Free for all open source projects
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="container block block-section-sub pricing-plan">
+    <div class="row">
+      <div class="col-12">
+        <span class="icon-section ic-servers"></span>
+        <h2 class="section-title">On-Premise</h2>
+        <p class="block-description">embold is trusted by 1,000+ developers and 10+ Mega Companies.
+          They are improving their codes and applications via embold.
+          And also many developers and project managers want to use
+          Embold to improve a progress in writing codes
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="pricing-terms">
+          <a href="#" class="monthly plan-terms active">Monthly Payment</a>
+          <a href="#" class="yearly plan-terms">Yearly Payment</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="pricing-plan-box">
+          <h4 class="plan-name">Startup</h4>
+          <h3 class="price">€45,00</h3>
+          <span class="description">Per Month</span>
+          <ul class="features">
+            <li>10 Users</li>
+            <li>50,000 LOC</li>
+            <li>Unlimited scan</li>
+          </ul>
+          <button class="btn btn-default btn-sm btn-more sofia">Choose plan</button>
+        </div>
+        <div class="pricing-plan-box">
+          <h4 class="plan-name">Startup</h4>
+          <h3 class="price">€45,00</h3>
+          <span class="description">Per Month</span>
+          <ul class="features">
+            <li>10 Users</li>
+            <li>50,000 LOC</li>
+            <li>Unlimited scan</li>
+          </ul>
+          <button class="btn btn-default btn-sm btn-more sofia">Choose plan</button>
+        </div>
+        <div class="pricing-plan-box">
+          <h4 class="plan-name">Startup</h4>
+          <h3 class="price">€45,00</h3>
+          <span class="description">Per Month</span>
+          <ul class="features">
+            <li>10 Users</li>
+            <li>50,000 LOC</li>
+            <li>Unlimited scan</li>
+          </ul>
+          <button class="btn btn-default btn-sm btn-more sofia">Choose plan</button>
+        </div>
+        <div class="pricing-plan-box">
+          <h4 class="plan-name">Startup</h4>
+          <h3 class="price">€45,00</h3>
+          <span class="description">Per Month</span>
+          <ul class="features">
+            <li>10 Users</li>
+            <li>50,000 LOC</li>
+            <li>Unlimited scan</li>
+          </ul>
+          <button class="btn btn-default btn-sm btn-more sofia">Choose plan</button>
+        </div>
+        <div class="pricing-plan-box">
+          <h4 class="plan-name">Startup</h4>
+          <h3 class="price">€45,00</h3>
+          <span class="description">Per Month</span>
+          <ul class="features">
+            <li>10 Users</li>
+            <li>50,000 LOC</li>
+            <li>Unlimited scan</li>
+          </ul>
+          <button class="btn btn-default btn-sm btn-more sofia">Choose plan</button>
         </div>
       </div>
     </div>
   </section>
+
   <section class="container block block-section-sub block-section-left">
     <div class="row">
       <div class="col-6">
         <!-- <h4>Language Support</h4> -->
-        <h2 class="section-title">We are a software company building products for the future</h2>
+        <h2 class="section-title">From Good to Great</h2>
         <p class="description">embold is trusted by 1,000+ developers and 10+ Mega Companies. They are improving their codes and applications via embold. And also many developers and project managers want to use Embold to improve a progress in writing codes</p>
       </div>
       <div class="col-6">
@@ -156,7 +219,7 @@
       </div>
       <div class="col-6">
         <!-- <h4>Language Support</h4> -->
-        <h2 class="section-title">We are a diverse, Global team</h2>
+        <h2 class="section-title">Multi-Dimensional Static Analysis</h2>
         <p class="description">embold is trusted by 1,000+ developers and 10+ Mega Companies. They are improving their codes and applications via embold. And also many developers and project managers want to use Embold to improve a progress in writing codes</p>
       </div>
     </div>
@@ -165,7 +228,7 @@
     <div class="row">
       <div class="col-6">
         <!-- <h4>Language Support</h4> -->
-        <h2 class="section-title">We are a software company building products for the future</h2>
+        <h2 class="section-title">Smart Prioritization</h2>
         <p class="description">embold is trusted by 1,000+ developers and 10+ Mega Companies. They are improving their codes and applications via embold. And also many developers and project managers want to use Embold to improve a progress in writing codes</p>
       </div>
       <div class="col-6">
@@ -173,67 +236,34 @@
       </div>
     </div>
   </section>
-  <section class="container block block-section-sub team-value">
+  <section class="container block block-section-sub block-section-right">
     <div class="row">
-      <div class="col-12">
-        <span class="icon-section ic-star-glow"></span>
-        <h2 class="section-title">Timeline</h2>
-        <p class="block-description">embold is trusted by 1,000+ developers and 10+ Mega Companies. They are improving their codes and applications via embold. And also many developers and project managers want to use Embold to improve a progress in writing codes</p>
+      <div class="col-6">
+        image
       </div>
-      <div class="body-content">
-        <div class="col-12">
-          <div class="member-big">
-            <div class="member-photo">
-
-            </div>
-            <div class="member-detail">
-
-            </div>
-          </div>
-        </div>
+      <div class="col-6">
+        <!-- <h4>Language Support</h4> -->
+        <h2 class="section-title">Anti-Pattern</h2>
+        <p class="description">embold is trusted by 1,000+ developers and 10+ Mega Companies. They are improving their codes and applications via embold. And also many developers and project managers want to use Embold to improve a progress in writing codes</p>
       </div>
     </div>
   </section>
-  <section class="container block block-section-sub block-section-left company-offices">
+  <section class="container block block-section-sub company-benefit">
     <div class="row">
       <div class="col-12">
-        <span class="icon-section ic-star-glow"></span>
-        <h2 class="section-title">Offices</h2>
-        <p class="block-description">embold is trusted by 1,000+ developers and 10+ Mega Companies. They are improving their codes and applications via embold. And also many developers and project managers want to use Embold to improve a progress in writing codes</p>
+        <span class="icon-section ic-gift-box"></span>
+        <h2 class="section-title">Cloud-Based FAQ</h2>
+        <p class="block-description">embold is trusted by 1,000+ developers and 10+ Mega Companies.
+          They are improving their codes and applications via embold.
+          And also many developers and project managers want to use Embold to improve a progress in writing codes
+        </p>
       </div>
-      <div class="body-content">
-        <div class="col-12">
-          <div class="background-no-repeat il-index-locations">
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="wrap-office">
-            <div class="photo bg-team-value-international photo-office-frankfurt"></div>
-            <h3 class="title">Frankfurt am Main<br />Germany</h3>
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et scelerisque enim. Donec porttitor bibendum dui, a fringilla nisl ullamcorper quis. Class aptent taciti sociosqu ad litora torquent per conubia.
-            </p>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="wrap-office">
-            <div class="photo bg-team-value-international photo-office-pune"></div>
-            <h3 class="title">Pune<br />India</h3>
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et scelerisque enim. Donec porttitor bibendum dui, a fringilla nisl ullamcorper quis. Class aptent taciti sociosqu ad litora torquent per conubia.
-            </p>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="wrap-office">
-            <div class="photo bg-team-value-international photo-office-tokyo"></div>
-            <h3 class="title">Tokyo<br />Japan</h3>
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et scelerisque enim. Donec porttitor bibendum dui, a fringilla nisl ullamcorper quis. Class aptent taciti sociosqu ad litora torquent per conubia.
-            </p>
-          </div>
-        </div>
-      </div>
+    </div>
+    <div class="row">
+
+    </div>
+    <div class="row">
+
     </div>
   </section>
 

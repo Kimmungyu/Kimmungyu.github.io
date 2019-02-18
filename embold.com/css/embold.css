@@ -47,6 +47,9 @@
 .ic-flag {
   background-image: url('../images/ic-md-flag.svg');
 }
+.ic-coffee {
+  background-image: url('../images/ic-md-coffee.svg');
+}
 .ic-logo-deutsche-leasing {
   background-image: url('../images/ic-logo-deutsche-leasing.svg');
 }
@@ -119,11 +122,20 @@
 .il-index-locations {
   background-image: url('../images/il-index-locations.png');
 }
+.il-product-overview-ruleless-static {
+  background-image: url('../images/il-product-overview-ruleless-static.png');
+}
+.il-product-features-multi-dimension {
+  background-image: url('../images/il-product-features-multi-dimension.png');
+}
 .il-product-features-smart-priori {
   background-image: url('../images/il-product-features-smart-priori.png');
 }
 .il-product-features-anti-pattern {
   background-image: url('../images/il-product-features-anti-pattern.png');
+}
+.photo-vishal-rai-big {
+  background-image: url('../images/photo-vishal-rai-big.jpg');
 }
 .photo-developer-1 {
   background-image: url('../images/photo-developer-1.png');
@@ -136,6 +148,24 @@
 }
 .photo-member-vishal {
   background-image: url('../images/photo-member-vishal.png');
+}
+.photo-company-team-value-1 {
+  background-image: url('../images/photo-company-careers-team-value-1.jpg');
+}
+.photo-company-team-value-2 {
+  background-image: url('../images/photo-company-careers-team-value-2.jpg');
+}
+.photo-company-team-value-3 {
+  background-image: url('../images/photo-company-careers-team-value-3.jpg');
+}
+.photo-office-pune {
+  background-image: url('../images/photo-office-pune.jpg');
+}
+.photo-office-frankfurt {
+  background-image: url('../images/photo-office-frankfurt.jpg');
+}
+.photo-office-tokyo {
+  background-image: url('../images/photo-office-tokyo.jpg');
 }
 /* -- prefix --*/
 .sofia {
@@ -411,21 +441,30 @@ button:focus {
   margin-right: 16px;
   font-size: 18px;
 }
+.block-section-fw {
+  width: 100%;
+  background-color: #F5F6F8;
+  position: relative;
+}
 /*-- section - index --*/
 .block-index-hero .wrap-hero-content {
   width: 40em;
-  margin-top: 14em;
+  margin-top: 20em;
   margin-bottom: 3em;
-  padding: 2em;
+  padding: 2.4em;
+  background-color: #fff;
   z-index: 20;
   position: relative;
+  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
 }
 .block-index-hero .wrap-hero-content h1.headcopy {
   margin: 0;
   padding: 0;
-  font-size: 3.4em;
+  font-size: 4em;
   text-align: left;
-  line-height: 1.3;
+  line-height: 1.2;
   font-family: 'Sofia Pro', sans-serif;
   letter-spacing: -0.02em;
 }
@@ -439,13 +478,13 @@ button:focus {
   width: 20em;
 }
 .block-index-hero .header-image {
-  width: 50rem;
-  height: 34rem;
-  background-size: cover;
+  width: 54rem;
+  height: 50rem;
+  background-size: 100%;
   background-repeat: no-repeat;
   position: absolute;
   top: 6em;
-  right: 0;
+  right: 1.5em;
   z-index: 1;
 }
 .block-index-workflow {
@@ -790,7 +829,7 @@ button:focus {
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
 }
 .block-header-sub {
-  height: 360px;
+  height: 400px;
   margin-top: 60px;
   position: relative;
 }
@@ -806,7 +845,7 @@ button:focus {
 .block-header-sub .header-image {
   width: 580px;
   height: 350px;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
@@ -981,22 +1020,26 @@ button:focus {
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
 }
 .team-value .wrap-value .photo {
-  height: 80px;
+  width: 100%;
+  height: 13em;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 .team-value .wrap-value .title {
-  color: #EF7E53;
-  font-size: 1.3em;
-  text-align: left;
-  padding: 0 24px;
+  color: #2A3141;
+  font-size: 1.8em;
+  text-align: center;
+  padding: 0 1.5em;
+  margin: 1em 0 0.6em 0;
+  font-family: 'Sofia Pro', sans-serif;
+  letter-spacing: -0.02em;
 }
 .team-value .wrap-value .description {
-  padding: 0 24px;
+  padding: 0 1.5em;
 }
 .team-value .wrap-value-left {
-  margin-top: 36px;
+  margin-top: 15em;
 }
 .team .block-description {
   margin-bottom: 2em;
@@ -1131,6 +1174,35 @@ button:focus {
   color: #fff;
   background-color: #2A3141;
 }
+.company-offices .wrap-office {
+  width: 100%;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding-bottom: 24px;
+  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+}
+.company-offices .wrap-office .photo {
+  width: 100%;
+  height: 13em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.company-offices .wrap-office .title {
+  color: #2A3141;
+  font-size: 1.8em;
+  padding: 0 1.5rem;
+  margin: 1em 0 0.6em 0;
+  font-weight: 300;
+  text-align: left;
+  font-family: 'Sofia Pro', sans-serif;
+  letter-spacing: -0.02em;
+}
+.company-offices .wrap-office .description {
+  padding: 0 1.5em;
+}
 .company-benefit .block-column {
   display: inline-block;
   width: 100%;
@@ -1158,6 +1230,47 @@ button:focus {
 .company-benefit .tab-item:hover {
   color: #fff;
   background-color: #2A3141;
+}
+.philosophy {
+  height: 25em;
+  margin: 6em 0 1.8em 0;
+  padding: 0;
+}
+.philosophy .photo {
+  width: 40em;
+  height: 25em;
+  left: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+}
+.philosophy .description {
+  margin-left: 40em;
+  padding: 3.6em 4.8em 2.4em 2.4em;
+}
+.philosophy .paragraph {
+  color: #787E8D;
+  font-size: 1.3em;
+  font-weight: 400;
+  line-height: 1.6;
+  font-family: 'Sofia Pro', sans-serif;
+  letter-spacing: -0.02em;
+}
+.philosophy .author {
+  padding-top: 3.5em;
+  color: #787E8D;
+}
+.philosophy .author .name {
+  display: block;
+  color: #2A3141;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: 'Sofia Pro', sans-serif;
+  letter-spacing: -0.02em;
 }
 .job-opening .job-opening-list .job-table .job-title {
   display: inline-block;

@@ -336,23 +336,31 @@ button:focus {
   }
 }
 
+.block-section-fw {
+  width: 100%;
+  background-color: @gray200;
+  position: relative;
+}
+
 /*-- section - index --*/
 
 .block-index-hero {
   .wrap-hero-content {
     width: 40em;
-    margin-top: 14em;
+    margin-top: 20em;
     margin-bottom: 3em;
-    padding: 2em;
+    padding: 2.4em;
+    background-color: @white;
     z-index: 20;
     position: relative;
+    .box-shadow;
 
     h1.headcopy {
       margin: 0;
       padding: 0;
-      font-size: 3.4em;
+      font-size: 4em;
       text-align: left;
-      line-height: 1.3;
+      line-height: 1.2;
       .sofia;
     }
 
@@ -370,13 +378,13 @@ button:focus {
   }
 
   .header-image {
-    width: 50rem;
-    height: 34rem;
-    background-size: cover;
+    width: 54rem;
+    height: 50rem;
+    background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
     top: 6em;
-    right: 0;
+    right: 1.5em;
     z-index: 1;
   }
 }
@@ -746,7 +754,7 @@ button:focus {
 }
 
 .block-header-sub {
-  height: 360px;
+  height: 400px;
   margin-top: 60px;
   position: relative;
 
@@ -763,7 +771,7 @@ button:focus {
   .header-image {
     width: 580px;
     height: 350px;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
@@ -969,24 +977,27 @@ button:focus {
     .box-shadow;
 
     .photo {
-      height: 80px;
+      width: 100%;
+      height: 13em;
       .background-no-repeat;
     }
 
     .title {
-      color: @orange800;
-      font-size: 1.3em;
-      text-align: left;
-      padding: 0 24px;
+      color: @gray800;
+      font-size: 1.8em;
+      text-align: center;
+      padding: 0 1.5em;
+      margin: 1em 0 0.6em 0;
+      .sofia;
     }
 
     .description {
-      padding: 0 24px;
+      padding: 0 1.5em;
     }
   }
 
   .wrap-value-left {
-    margin-top: 36px;
+    margin-top: 15em;
   }
 }
 
@@ -1141,6 +1152,36 @@ button:focus {
   }
 }
 
+.company-offices {
+  .wrap-office {
+    width: 100%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-bottom: 24px;
+    .box-shadow;
+
+    .photo {
+      width: 100%;
+      height: 13em;
+      .background-no-repeat;
+    }
+
+    .title {
+      color: @gray800;
+      font-size: 1.8em;
+      padding: 0 1.5rem;
+      margin: 1em 0 0.6em 0;
+      font-weight: 300;
+      text-align: left;
+      .sofia;
+    }
+
+    .description {
+      padding: 0 1.5em;
+    }
+  }
+}
+
 .company-benefit {
   .block-column {
     display: inline-block;
@@ -1172,6 +1213,51 @@ button:focus {
   .tab-item:hover {
     color: @white;
     background-color: @gray800;
+  }
+}
+
+.philosophy {
+  height: 25em;
+  margin: 6em 0 1.8em 0;
+  padding: 0;
+
+  .photo {
+    width: 40em;
+    height: 25em;
+    left: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+  }
+
+  .description {
+    margin-left: 40em;
+    padding: 3.6em 4.8em 2.4em 2.4em;
+  }
+
+  .paragraph {
+    color: @gray700;
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.6;
+    .sofia;
+  }
+
+  .author {
+    padding-top: 3.5em;
+    color: @gray700;
+
+    .name {
+      display: block;
+      color: @gray800;
+      font-size: 1.6em;
+      font-weight: bold;
+      .sofia;
+    }
   }
 }
 
