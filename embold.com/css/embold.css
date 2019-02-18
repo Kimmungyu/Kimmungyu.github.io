@@ -155,6 +155,9 @@
 .il-product-features-anti-pattern {
   background-image: url('../images/il-product-features-anti-pattern.png');
 }
+.il-product-features-from-to {
+  background-image: url('../images/il-product-features-from-to.png');
+}
 .photo-vishal-rai-big {
   background-image: url('../images/photo-vishal-rai-big.jpg');
 }
@@ -505,7 +508,7 @@ button:focus {
   background-repeat: no-repeat;
   position: absolute;
   top: 6em;
-  right: 1.5em;
+  right: 3em;
   z-index: 1;
 }
 .block-index-workflow {
