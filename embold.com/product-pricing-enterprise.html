@@ -14,7 +14,73 @@
   crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="nav-product"></div>
+  <div class="nav-product">
+
+      <nav class="nav nav-grid nav-index nav-default">
+        <div class="nav-item-logo">
+          <a href="index.html"><img src="images/logo-embold.svg" width="113" height="20" /></a>
+        </div>
+        <div class="nav-wrap-items">
+          <div class="nav-item-main">
+            <span class="product active">Product</span> <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="nav-item-main">
+            <span class="user-stories">User Stories</span> <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="nav-item-main">
+            <span class="resources">Resources</span> <i class="fas fa-angle-down"></i>
+          </div>
+          <div class="nav-item-main">
+            <span class="company">Company</span> <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+        <div class="nav-item-sign">
+          <a href="#" class="btn btn-md btn-orange">Sign-up</a>
+        </div>
+        <div class="nav-item-sign">
+          Sign-in
+        </div>
+      </nav>
+      <div>
+        <div class="nav-grid nav-sub nav-default">
+          <div class="nav-item-logo">
+            &nbsp;
+          </div>
+          <div class="nav-wrap-items">
+            <div class="nav-item-main">
+              <a href="product-overview.html" class="nav-menu-link">Overview</a>
+              <a href="product-features.html" class="nav-menu-link">Features</a>
+              <a href="product-use-cases.html" class="nav-menu-link">Use Cases</a>
+              <a href="product-pricing.html" class="nav-menu-link">Pricing</a>
+              <a href="product-partnership.html" class="nav-menu-link">Partnership</a>
+            </div>
+            <div class="nav-item-main">
+              <a href="user-stories-user-roles.html" class="nav-menu-link">By User Role</a>
+              <a href="user-stories-team-size.html" class="nav-menu-link">By Team Size</a>
+              <a href="user-stories-industry.html" class="nav-menu-link">By Industry</a>
+              <a href="user-stories-solution-approach.html" class="nav-menu-link">Solution Approach</a>
+            </div>
+            <div class="nav-item-main">
+              <a href="resources-product.html" class="nav-menu-link">Product</a>
+              <a href="resources-download.html" class="nav-menu-link">Download</a>
+              <a href="resources-media.html" class="nav-menu-link">Media</a>
+            </div>
+            <div class="nav-item-main">
+              <a href="company-about.html" class="nav-menu-link">About</a>
+              <a href="company-team.html" class="nav-menu-link">Team</a>
+              <a href="company-careers.html" class="nav-menu-link">Careers</a>
+              <a href="company-news.html" class="nav-menu-link">News</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        $('.nav').click(function(){
+          $('.nav-sub').fadeToggle(200);
+        });
+      </script>
+
+  </div>
 
   <div class="container block block-header-sub">
     <div class="row">
