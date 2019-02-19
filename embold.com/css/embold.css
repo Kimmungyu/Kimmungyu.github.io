@@ -197,7 +197,7 @@
 /* -- prefix --*/
 .sofia {
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .background-no-repeat {
   background-repeat: no-repeat;
@@ -273,6 +273,7 @@ nav {
 nav .nav-wrap-items .nav-item-main {
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .nav-grid {
   width: 100%;
@@ -387,7 +388,7 @@ nav .nav-wrap-items .nav-item-main {
 }
 .btn-orange:hover,
 .btn-orange:active {
-  background-color: #EF7E53;
+  background-color: #E26640;
 }
 .input {
   padding: 12px 18px;
@@ -489,7 +490,7 @@ button:focus {
   text-align: left;
   line-height: 1.2;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .block-index-hero .wrap-hero-content .description {
   color: #787E8D;
@@ -535,14 +536,14 @@ button:focus {
   padding: 0;
   font-weight: 300;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .block-index-workflow .wrap-workflow .step-title {
   margin: -9px 0 0 0;
   padding: 0;
   font-size: 1.2em;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .block-index-workflow .wrap-workflow .description {
   color: #9AA0AD;
@@ -655,14 +656,14 @@ button:focus {
   font-weight: 200;
   text-align: left;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .block-index-user-stories .wrap-user .description {
   color: #D0D4E0;
   width: 60%;
   font-size: 1em;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
   transition: all 0.5s;
 }
 .block-index-user-stories .wrap-user .link-arrow {
@@ -728,7 +729,7 @@ button:focus {
   font-weight: 600;
   margin: 4px 0 0 0;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .product-pricing .pricing-tab .pricing-description {
   color: #9AA0AD;
@@ -779,7 +780,7 @@ button:focus {
   background-color: #E2E5EB;
   text-align: center;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
   transition: all 0.5s;
 }
 .pricing-plan .pricing-terms .monthly {
@@ -827,22 +828,31 @@ button:focus {
   margin: 0 0 -8px 0;
   padding: 0;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .pricing-plan .pricing-plan-box .description {
+  display: block;
   font-size: 0.8rem;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #E2E5EB;
 }
 .pricing-plan .pricing-plan-box ul.features {
   color: #2A3141;
   display: block;
   width: 180px;
-  margin: 24px auto 24px auto;
+  margin: 1em auto 24px auto;
   padding: 0 0 0 16px;
-  list-style: url('../images/ic-sm-check.svg');
   text-align: left;
 }
 .pricing-plan .pricing-plan-box ul.features li {
   font-size: 0.9rem;
+  margin: 0;
+  padding-left: 1.3em;
+  list-style: none;
+  background-image: url('../images/ic-sm-check-gr.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 0.8em;
 }
 .box-default {
   width: 100%;
@@ -941,7 +951,7 @@ button:focus {
   font-size: 1em;
   vertical-align: middle;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .tab-role .tab-wrap .active,
 .tab-role .tab-wrap .tab-item:hover {
@@ -1000,7 +1010,7 @@ button:focus {
   font-size: 1.8em;
   text-align: left;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .block-user-story .wrap-content h4 {
   color: #EF7E53;
@@ -1019,7 +1029,7 @@ button:focus {
   line-height: 1;
   margin-top: 0;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .block-user-story .tab-user-story {
   margin-bottom: 16px;
@@ -1095,7 +1105,7 @@ button:focus {
   padding: 0 1.5em;
   margin: 1em 0 0.6em 0;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .team-value .wrap-value .description {
   padding: 0 1.5em;
@@ -1134,7 +1144,7 @@ button:focus {
   font-size: 1.8em;
   text-align: left;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .team .member-big .member-detail .role {
   display: block;
@@ -1143,7 +1153,7 @@ button:focus {
   padding: 0;
   font-size: 1.2em;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .team .member-big .member-sns .icon-sns {
   color: #787E8D;
@@ -1180,7 +1190,7 @@ button:focus {
   padding: 0;
   font-size: 1.5em;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .team .member-small .member-detail .role {
   display: block;
@@ -1190,7 +1200,7 @@ button:focus {
   font-size: 1em;
   text-align: center;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .team .member-small .member-sns {
   text-align: center;
@@ -1221,7 +1231,7 @@ button:focus {
   font-size: 1.3em;
   font-weight: bold;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .company-about-status .block-column .description {
   font-size: 0.8em;
@@ -1315,7 +1325,7 @@ button:focus {
   font-weight: 300;
   text-align: left;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .company-offices .wrap-office .description {
   padding: 0 1.5em;
@@ -1338,7 +1348,7 @@ button:focus {
   font-size: 1.3em;
   font-weight: bold;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .company-benefit .block-column .description {
   font-size: 0.8em;
@@ -1375,7 +1385,7 @@ button:focus {
   font-weight: 400;
   line-height: 1.6;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .philosophy .author {
   padding-top: 3.5em;
@@ -1387,7 +1397,7 @@ button:focus {
   font-size: 1.6em;
   font-weight: bold;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .job-opening .job-opening-list .job-table .job-title {
   display: inline-block;
@@ -1397,7 +1407,7 @@ button:focus {
   font-size: 1.4em;
   font-weight: bold;
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 .job-opening .job-opening-list .job-table .location {
   display: inline-block;

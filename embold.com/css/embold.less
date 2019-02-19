@@ -9,7 +9,7 @@
 
 .sofia {
   font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.005em;
 }
 
 .background-no-repeat {
@@ -98,6 +98,7 @@ nav {
     .nav-item-main {
       font-weight: bold;
       text-transform: uppercase;
+      cursor: pointer;
     }
   }
 }
@@ -241,7 +242,7 @@ nav {
 
 .btn-orange:hover,
 .btn-orange:active {
-  background-color: @orange800;
+  background-color: @orange900;
 }
 
 .input {
@@ -726,20 +727,29 @@ button:focus {
     }
 
     .description {
+      display: block;
       font-size: 0.8rem;
+      padding-bottom: 1em;
+      border-bottom: 1px solid @gray400;
     }
 
     ul.features {
       color: @gray800;
       display: block;
       width: 180px;
-      margin: 24px auto 24px auto;
+      margin: 1em auto 24px auto;
       padding: 0 0 0 16px;
-      list-style: url('../images/ic-sm-check.svg');
       text-align: left;
 
       li {
         font-size: 0.9rem;
+        margin: 0;
+        padding-left: 1.3em;
+      	list-style: none;
+      	background-image: url('../images/ic-sm-check-gr.svg');
+      	background-repeat: no-repeat;
+      	background-position: left center;
+      	background-size: 0.8em;
       }
     }
   }
