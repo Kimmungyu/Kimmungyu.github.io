@@ -71,6 +71,27 @@
 .ic-coffee {
   background-image: url('../images/ic-md-coffee.svg');
 }
+.ic-documents {
+  background-image: url('../images/ic-md-documents.svg');
+}
+.ic-timeline {
+  background-image: url('../images/ic-md-timeline.svg');
+}
+.ic-office-location {
+  background-image: url('../images/ic-md-office-location.svg');
+}
+.ic-mountain-flag {
+  background-image: url('../images/ic-md-mountain-flag.svg');
+}
+.ic-members {
+  background-image: url('../images/ic-md-members.svg');
+}
+.ic-focus {
+  background-image: url('../images/ic-md-focus.svg');
+}
+.ic-faq {
+  background-image: url('../images/ic-md-faq.svg');
+}
 .ic-logo-deutsche-leasing {
   background-image: url('../images/ic-logo-deutsche-leasing.svg');
 }
@@ -161,6 +182,9 @@
 .il-product-features-from-to {
   background-image: url('../images/il-product-features-from-to.png');
 }
+.il-alt {
+  background-image: url('../images/il-alt.png');
+}
 .photo-vishal-rai-big {
   background-image: url('../images/photo-vishal-rai-big.jpg');
 }
@@ -231,7 +255,7 @@
 }
 .body-illustration {
   height: 300px;
-  background-size: 70%;
+  background-size: auto 100%;
 }
 * {
   box-sizing: border-box;
@@ -407,7 +431,7 @@ button:focus {
 }
 /* -- ui elements --*/
 .block {
-  padding: 53px 0;
+  padding: 18px 0;
 }
 .block h1,
 .block h2,
@@ -420,7 +444,7 @@ button:focus {
   display: block;
   width: 48px;
   height: 48px;
-  margin: 0 auto;
+  margin: 0 auto -2.4em auto;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -432,6 +456,9 @@ button:focus {
   font-size: 1rem;
   font-weight: normal;
   text-align: center;
+}
+.block:last-of-type {
+  padding-bottom: 63px;
 }
 .block:after {
   display: block;
@@ -475,10 +502,17 @@ button:focus {
   position: relative;
 }
 /*-- section - index --*/
+.index .block {
+  padding: 5em 0;
+}
+.block-index-hero {
+  position: relative;
+}
 .block-index-hero .wrap-hero-content {
-  margin-top: 20.5em;
+  display: inline-block;
+  margin-top: 19.5em;
   margin-bottom: 3em;
-  padding: 2.4em;
+  padding: 1.5em;
   z-index: 20;
   position: relative;
   overflow: visible;
@@ -491,11 +525,11 @@ button:focus {
   font-weight: 300;
   text-align: left;
   line-height: 1.2;
-  overflow: visible;
   font-family: 'Sofia Pro', sans-serif;
   letter-spacing: -0.005em;
 }
 .block-index-hero .wrap-hero-content .description {
+  width: 35em;
   color: #787E8D;
 }
 .block-index-hero .wrap-hero-content .wrap-sign-up {
@@ -911,7 +945,7 @@ button:focus {
 }
 .block-section-sub .section-title {
   font-size: 2.3em;
-  margin-top: 0.8em;
+  margin-top: 1.3em;
 }
 .block-section-sub .description {
   color: #9AA0AD;
@@ -920,7 +954,7 @@ button:focus {
   font-weight: normal;
 }
 .block-section-sub:first-of-type {
-  margin-top: 0;
+  margin-top: 2em;
   padding-top: 0;
 }
 .tab-role .tab-title {
@@ -978,6 +1012,9 @@ button:focus {
 .tab-role .tab-wrap .tab-item:hover .ic-sm-user-pm {
   background-image: url('../images/ic-sm-user-pm-wh.svg');
 }
+.block-sub-user-stories {
+  margin-top: 1.2em;
+}
 .block-sub-menu {
   position: relative;
   top: inherit;
@@ -985,7 +1022,7 @@ button:focus {
 }
 .block-sub-menu-fix {
   position: fixed;
-  top: 90px;
+  top: 7.3em;
 }
 .block-sub-menu-fix-bottom {
   position: absolute;

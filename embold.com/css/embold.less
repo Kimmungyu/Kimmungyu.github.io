@@ -48,7 +48,7 @@
 
 .body-illustration {
   height: 300px;
-  background-size: 70%;
+  background-size: auto 100%;
 }
 
 * {
@@ -266,7 +266,7 @@ button:focus {
 /* -- ui elements --*/
 
 .block {
-  padding: 53px 0;
+  padding: 18px 0;
 
   h1,
   h2,
@@ -280,7 +280,7 @@ button:focus {
     display: block;
     width: 48px;
     height: 48px;
-    margin: 0 auto;
+    margin: 0 auto -2.4em auto;
     .background-no-repeat;
   }
 
@@ -292,6 +292,10 @@ button:focus {
     font-weight: normal;
     .text-center;
   }
+}
+
+.block:last-of-type {
+  padding-bottom: 63px;
 }
 
 .block:after {
@@ -345,14 +349,24 @@ button:focus {
 
 /*-- section - index --*/
 
+.index {
+  .block {
+    padding: 5em 0;
+  }
+}
+
 .block-index-hero {
+  position: relative;
+
   .wrap-hero-content {
-    margin-top: 20.5em;
+    display: inline-block;
+    margin-top: 19.5em;
     margin-bottom: 3em;
-    padding: 2.4em;
+    padding: 1.5em;
     z-index: 20;
     position: relative;
     overflow: visible;
+    // background-color: @white;
     // .box-shadow;
 
     h1.headcopy {
@@ -363,11 +377,11 @@ button:focus {
       font-weight: 300;
       text-align: left;
       line-height: 1.2;
-      overflow: visible;
       .sofia;
     }
 
     .description {
+      width: 35em;
       color: @gray700;
     }
 
@@ -380,7 +394,7 @@ button:focus {
     }
   }
 
-    .header-image {
+  .header-image {
     width: 53rem;
     height: 50rem;
     background-size: 100%;
@@ -821,7 +835,7 @@ button:focus {
 .block-section-sub {
   .section-title {
     font-size: 2.3em;
-    margin-top: 0.8em;
+    margin-top: 1.3em;
   }
 
   .description {
@@ -833,7 +847,7 @@ button:focus {
 }
 
 .block-section-sub:first-of-type {
-  margin-top: 0;
+  margin-top: 2em;
   padding-top: 0;
 }
 
@@ -887,6 +901,10 @@ button:focus {
   }
 }
 
+.block-sub-user-stories {
+  margin-top: 1.2em;
+}
+
 .block-sub-menu {
   position: relative;
   top: inherit;
@@ -895,7 +913,7 @@ button:focus {
 
 .block-sub-menu-fix {
   position: fixed;
-  top: 90px;
+  top: 7.3em;
 }
 
 .block-sub-menu-fix-bottom {
