@@ -1,15 +1,8 @@
-$(document).ready(function () {
-  $('.nav-hover').mouseover(function (e) {
-    e.stopPropagation();
-    $('.nav').addClass('box-shadow-none')
-    $('.nav-sub').addClass('display',1000)
-  });
-  $('.nav-hover').mouseout(function (e) {
-    e.stopPropagation();
-    $('.nav').removeClass('box-shadow-none')
-    $('.nav-sub').removeClass('display',1000)
-  })
-});
+$(".nav-hover").load("../nav.html");
+$(".nav-company").load("../nav-company.html");
+$(".nav-product").load("../nav-product.html");
+$(".nav-resources").load("../nav-resources.html");
+$(".nav-user-stories").load("../nav-user-stories.html");
 
 $(window).on("scroll", function() {
   if($(window).scrollTop() > 300) {
