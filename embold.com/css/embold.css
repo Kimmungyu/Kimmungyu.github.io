@@ -1070,7 +1070,12 @@ button:focus {
 .technical-documentation .document-list li {
   color: #787E8D;
   font-size: 0.9em;
-  line-height: 1.8;
+  line-height: 2.1;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.technical-documentation .document-list li:hover {
+  color: #EF7E53;
 }
 .team-value .wrap-value {
   width: 100%;
