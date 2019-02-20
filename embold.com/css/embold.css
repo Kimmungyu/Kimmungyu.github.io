@@ -137,6 +137,9 @@
 .bg-user-stories-solution-approach {
   background-image: url('../images/header-sub-user-stories-solution-approach.svg');
 }
+.bg-solutions-solution-approach {
+  background-image: url('../images/header-sub-solutions-solution-approach.png');
+}
 .bg-resources-product {
   background-image: url('../images/header-sub-resources-product.svg');
 }
@@ -915,7 +918,7 @@ button:focus {
 .block-header-sub .header-image {
   width: 580px;
   height: 350px;
-  background-size: 100% 100%;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
