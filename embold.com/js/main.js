@@ -1,4 +1,4 @@
-$(".nav-product" ).load( "../nav-product.html" );
+$('.nav-product').load('../nav-product.html');
 
 $(window).on("scroll", function() {
   if($(window).scrollTop() > 300) {
