@@ -1,4 +1,7 @@
 $('.nav-product').load('/embold.com/nav-product.html');
+$('.nav-solutions').load('/embold.com/nav-solutions.html');
+$('.nav-resources').load('/embold.com/nav-resources.html');
+$('.nav-company').load('/embold.com/nav-company.html');
 
 $(window).on("scroll", function() {
   if($(window).scrollTop() > 300) {
