@@ -14,72 +14,196 @@
   crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="nav-user-stories">
-
-      <nav class="nav nav-grid nav-index nav-default">
+  <div class="nav-solutions">
+    <nav class="nav nav-grid nav-index nav-default">
+      <div class="nav-item-logo">
+        <a href="index.html"><img src="images/logo-embold.svg" width="113" height="20" /></a>
+      </div>
+      <div class="nav-wrap-items">
+        <div class="nav-item-main nav-item-main-product">
+          <span class="product" id="menu-item-product">Product <i class="fas fa-angle-down"></i></span>
+        </div>
+        <div class="nav-item-main nav-item-main-solutions active-menu">
+          <span class="user-stories" id="menu-item-solutions">Solutions <i class="fas fa-angle-down"></i></span>
+        </div>
+        <div class="nav-item-main nav-item-main-resources">
+          <span class="resources"id="menu-item-resources">Resources <i class="fas fa-angle-down"></i></span>
+        </div>
+        <div class="nav-item-main nav-item-main-company">
+          <span class="company"id="menu-item-company">Company <i class="fas fa-angle-down"></i></span>
+        </div>
+      </div>
+      <div class="nav-item-sign">
+        <a href="#" class="btn btn-md btn-orange">Sign-up</a>
+      </div>
+      <div class="nav-item-sign">
+        Sign-in
+      </div>
+    </nav>
+    <div>
+      <div class="nav-grid nav-sub-product nav-default nav-sub nav-grid-wide">
         <div class="nav-item-logo">
-          <a href="index.html"><img src="images/logo-embold.svg" width="113" height="20" /></a>
+          &nbsp;
         </div>
         <div class="nav-wrap-items">
           <div class="nav-item-main">
-            <span class="product">Product</span> <i class="fas fa-angle-down"></i>
+            <a href="product-overview.html" class="nav-menu-link">Overview</a>
+            <ul class="nav-item-sub-list">
+              <li>Bug Prediction</li>
+              <li>Recommendation Engine</li>
+              <li>Scoring and A.I. Base Priorization</li>
+              <li>Refactoring</li>
+            </ul>
           </div>
           <div class="nav-item-main">
-            <span class="user-stories active">Solutions</span> <i class="fas fa-angle-down"></i>
+            <a href="product-features.html" class="nav-menu-link">Features</a>
+            <ul class="nav-item-sub-list">
+              <li>Artificial Intelligence</li>
+              <li>Integrated Platform</li>
+              <li>Accuracy and Completeness</li>
+            </ul>
           </div>
           <div class="nav-item-main">
-            <span class="resources">Resources</span> <i class="fas fa-angle-down"></i>
+            <a href="product-use-cases.html" class="nav-menu-link">Use Cases</a>
+            <ul class="nav-item-sub-list">
+              <li>Productivity Management</li>
+              <li>Technical Debt Management</li>
+              <li>Supplier Monitoring</li>
+              <li>Onboarding and Training</li>
+            </ul>
           </div>
           <div class="nav-item-main">
-            <span class="company">Company</span> <i class="fas fa-angle-down"></i>
+            <a href="product-pricing.html" class="nav-menu-link">Pricing</a>
+            <ul class="nav-item-sub-list">
+              <li>Cloud</li>
+              <li>On-Premise</li>
+              <li>Assessment Services</li>
+            </ul>
           </div>
-        </div>
-        <div class="nav-item-sign">
-          <a href="#" class="btn btn-md btn-orange">Sign-up</a>
-        </div>
-        <div class="nav-item-sign">
-          Sign-in
-        </div>
-      </nav>
-      <div>
-        <div class="nav-grid nav-sub nav-default">
-          <div class="nav-item-logo">
-            &nbsp;
+          <div class="nav-item-main">
+            <a href="product-partnership.html" class="nav-menu-link">Partnership</a>
+            <ul class="nav-item-sub-list">
+              <li>Partnership</li>
+              <li>Open Source Sponsorships</li>
+              <li>Crypto</li>
+            </ul>
           </div>
-          <div class="nav-wrap-items">
-            <div class="nav-item-main">
-              <a href="product-overview.html" class="nav-menu-link">Overview</a>
-              <a href="product-features.html" class="nav-menu-link">Features</a>
-              <a href="product-use-cases.html" class="nav-menu-link">Use Cases</a>
-              <a href="product-pricing.html" class="nav-menu-link">Pricing</a>
-              <a href="product-partnership.html" class="nav-menu-link">Partnership</a>
-            </div>
-            <div class="nav-item-main">
-              <a href="user-stories-user-roles.html" class="nav-menu-link">By User Role</a>
-              <a href="user-stories-team-size.html" class="nav-menu-link">By Team Size</a>
-              <a href="user-stories-industry.html" class="nav-menu-link">By Industry</a>
-              <a href="user-stories-solution-approach.html" class="nav-menu-link">Solution Approach</a>
-            </div>
-            <div class="nav-item-main">
-              <a href="resources-product.html" class="nav-menu-link">Product</a>
-              <a href="resources-download.html" class="nav-menu-link">Download</a>
-              <a href="resources-media.html" class="nav-menu-link">Media</a>
-            </div>
-            <div class="nav-item-main">
-              <a href="company-about.html" class="nav-menu-link">About</a>
-              <a href="company-team.html" class="nav-menu-link">Team</a>
-              <a href="company-careers.html" class="nav-menu-link">Careers</a>
-              <a href="company-news.html" class="nav-menu-link">News</a>
-            </div>
-          </div>
+          <div class="cb"></div>
         </div>
       </div>
-      <script>
-        $('.nav').click(function(){
-          $('.nav-sub').fadeToggle(200);
-        });
-      </script>
-
+      <div class="nav-grid nav-sub-solutions nav-default nav-sub">
+        <div class="nav-item-logo">
+          &nbsp;
+        </div>
+        <div class="nav-wrap-items">
+          <div class="nav-item-main">
+            <a href="user-stories-user-roles.html" class="nav-menu-link">By User Role</a>
+            <ul class="nav-item-sub-list">
+              <li>Executives</li>
+              <li>Project Managers</li>
+              <li>Architects</li>
+              <li>Developers</li>
+            </ul>
+          </div>
+          <div class="nav-item-main">
+            <a href="user-stories-team-size.html" class="nav-menu-link">By Team Size</a>
+            <ul class="nav-item-sub-list">
+              <li>Individuals</li>
+              <li>Teams</li>
+              <li>Business</li>
+              <li>Enterprise</li>
+            </ul>
+          </div>
+          <div class="nav-item-main">
+            <a href="user-stories-industry.html" class="nav-menu-link">By Industry</a>
+            <ul class="nav-item-sub-list">
+              <li>Automotive</li>
+              <li>Energy</li>
+              <li>Financial and Insurance</li>
+              <li>TMT</li>
+              <li>Natural Resources</li>
+            </ul>
+          </div>
+          <div class="nav-item-main">
+            <a href="user-stories-solution-approach.html" class="nav-menu-link">Solution Approach</a>
+            <ul class="nav-item-sub-list">
+              <li>Deployment Options</li>
+              <li>Solution Engineerings Approach</li>
+              <li>Service Offerings</li>
+              <li>Customer Success</li>
+            </ul>
+          </div>
+          <div class="cb"></div>
+        </div>
+      </div>
+      <div class="nav-grid nav-sub-resources nav-default nav-sub">
+        <div class="nav-item-logo">
+          &nbsp;
+        </div>
+        <div class="nav-wrap-items">
+          <div class="nav-item-main">
+            <a href="resources-product.html" class="nav-menu-link">Product</a>
+            <ul class="nav-item-sub-list">
+              <li>FAQ</li>
+              <li>Onboarding Guide</li>
+              <li>Handbook</li>
+              <li>Technicial Documentation</li>
+              <li>Installer</li>
+            </ul>
+          </div>
+          <div class="nav-item-main">
+            <a href="resources-download.html" class="nav-menu-link">Download</a>
+            <ul class="nav-item-sub-list">
+              <li>White Papers</li>
+              <li>Case Studies</li>
+              <li>Success Stories</li>
+            </ul>
+          </div>
+          <div class="cb"></div>
+        </div>
+      </div>
+      <div class="nav-grid nav-sub-company nav-default nav-sub">
+        <div class="nav-item-logo">
+          &nbsp;
+        </div>
+        <div class="nav-wrap-items">
+          <div class="nav-item-main">
+            <a href="company-about.html" class="nav-menu-link">About</a>
+            <ul class="nav-item-sub-list">
+              <li>Overall</li>
+              <li>Timeline</li>
+              <li>Offices</li>
+            </ul>
+          </div>
+          <div class="nav-item-main">
+            <a href="company-team.html" class="nav-menu-link">Team</a>
+            <ul class="nav-item-sub-list">
+              <li>Leadership</li>
+              <li>Investers</li>
+              <li>Members</li>
+            </ul>
+          </div>
+          <div class="nav-item-main">
+            <a href="company-careers.html" class="nav-menu-link">Careers</a>
+            <ul class="nav-item-sub-list">
+              <li>Team Value</li>
+              <li>Benefits</li>
+              <li>Opening Jobs</li>
+            </ul>
+          </div>
+          <div class="nav-item-main">
+            <a href="company-news.html" class="nav-menu-link">News</a>
+            <ul class="nav-item-sub-list">
+              <li>Press Releases</li>
+              <li>Blog</li>
+              <li>Brand Kit</li>
+              <li>SNS</li>
+            </ul>
+          </div>
+          <div class="cb"></div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="container block block-header-sub">
