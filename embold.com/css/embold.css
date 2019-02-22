@@ -263,6 +263,9 @@
 .cb {
   clear: both;
 }
+.font-wh {
+  color: #fff !important;
+}
 * {
   box-sizing: border-box;
 }
@@ -307,6 +310,9 @@ nav .nav-wrap-items .nav-item-main {
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
+}
+br {
+  line-height: 1.2;
 }
 .nav-grid {
   width: 100%;
@@ -801,6 +807,58 @@ button:focus {
   height: 400px;
   margin-bottom: 1.5em;
   background-size: 960px;
+}
+.block-index-user-role {
+  position: relative;
+}
+.block-index-user-role .block-index-user-role-item {
+  position: relative;
+  padding-top: 3em;
+}
+.block-index-user-role .block-index-user-role-item h2.role-name,
+.block-index-user-role .block-index-user-role-item h4.question {
+  color: #fff;
+  text-align: left;
+  line-height: 1;
+  margin-bottom: 1.3em;
+}
+.block-index-user-role .block-index-user-role-item p.description {
+  color: #9AA0AD;
+  margin-top: 1.5em;
+  font-size: 0.9em;
+}
+.block-index-user-role .block-index-user-role-item .link-arrow {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 1em;
+  background-image: url('../images/arrow-light-right-wh.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.bg-fw-half-left {
+  color: #fff;
+  width: 50%;
+  height: 20em;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+.bg-fw-half-right {
+  color: #fff;
+  width: 50%;
+  height: 20em;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+.bg-color-gray800 {
+  background-color: #2A3141;
+}
+.bg-color-orange800 {
+  background-color: #EF7E53;
 }
 .il-index-locations {
   height: 30em;

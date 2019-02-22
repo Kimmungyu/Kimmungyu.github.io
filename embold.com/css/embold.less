@@ -55,6 +55,10 @@
   clear:both;
 }
 
+.font-wh {
+  color: @white !important;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -106,6 +110,10 @@ nav {
       cursor: pointer;
     }
   }
+}
+
+br {
+  line-height: 1.2;
 }
 
 .nav-grid {
@@ -697,6 +705,65 @@ button:focus {
     margin-bottom: 1.5em;
     background-size: 960px;
   }
+}
+
+.block-index-user-role {
+  position: relative;
+
+  .block-index-user-role-item {
+    position: relative;
+    padding-top: 3em;
+
+    h2.role-name,
+    h4.question {
+      color: @white;
+      text-align: left;
+      line-height: 1;
+      margin-bottom: 1.3em;
+    }
+
+    p.description {
+      color: @gray600;
+      margin-top: 1.5em;
+      font-size: 0.9em;
+    }
+
+    .link-arrow {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      right: 0;
+      bottom: 1em;
+      background-image: url('../images/arrow-light-right-wh.svg');
+      .background-no-repeat;
+    }
+  }
+}
+
+.bg-fw-half-left {
+  color: @white;
+  width: 50%;
+  height: 20em;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+
+.bg-fw-half-right {
+  color: @white;
+  width: 50%;
+  height: 20em;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+
+.bg-color-gray800 {
+  background-color: @gray800;
+}
+
+.bg-color-orange800 {
+  background-color: @orange800;
 }
 
 .il-index-locations {
