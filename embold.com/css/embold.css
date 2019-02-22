@@ -541,6 +541,9 @@ button:focus {
   content: '';
   clear: both;
 }
+.block-bottom-area {
+  padding-top: 3em;
+}
 .block-footer {
   color: #9AA0AD;
   font-size: 13px;
