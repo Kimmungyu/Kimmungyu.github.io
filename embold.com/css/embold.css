@@ -221,6 +221,12 @@
 .photo-office-tokyo {
   background-image: url('../images/photo-office-tokyo.jpg');
 }
+.photo-press-logo-bloomberg {
+  background-image: url('../images/photo-logo-bloomberg.jpg');
+}
+.photo-press-logo-theguardian {
+  background-image: url('../images/photo-logo-theguardian.png');
+}
 /* -- prefix --*/
 .sofia {
   font-family: 'Sofia Pro', sans-serif;
@@ -496,6 +502,16 @@ br {
   font-size: 14px;
 }
 .inline-input {
+  display: inline-block;
+}
+.input-dropdown {
+  width: 6em;
+  height: 2em;
+  border: 2px solid #ECEDEF;
+  border-radius: 0.5em;
+  font-size: 1em;
+}
+.input-title {
   display: inline-block;
 }
 input:focus,
@@ -1604,4 +1620,98 @@ button:focus {
   padding: 24px 0 18px;
   margin-bottom: 4px;
   border-bottom: 1px solid #E2E5EB;
+}
+.press-releases .block-input {
+  margin-bottom: 0.6em;
+  text-align: center;
+}
+.press-releases-table {
+  table-layout: fixed;
+  border: 0;
+  border-collapse: collapse;
+}
+.press-releases-table tbody tr:hover {
+  background-color: #F5F6F8;
+}
+.press-releases-table td {
+  border-bottom: 1px solid #ECEDEF;
+  padding: 1.5em 0;
+}
+.press-releases-table .photo {
+  width: 12em;
+  padding: 1em;
+}
+.press-releases-table .photo .bg-press-thumbnail {
+  width: 100%;
+  height: 6em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-size: 80%;
+}
+.press-releases-table .title .press-title {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.press-releases-table .title .press-summary {
+  color: #9AA0AD;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+}
+.press-releases-table .title .date {
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0;
+}
+.press-releases-table .btn {
+  width: 5em;
+  text-align: right;
+}
+.press-releases-table .btn .btn-text {
+  color: #EF7E53;
+  font-size: 0.8em;
+  padding-right: 1em;
+}
+.press-releases-table .btn .btn-text:hover {
+  text-decoration: underline;
+}
+.company-news-table {
+  table-layout: fixed;
+  border: 0;
+  border-collapse: collapse;
+}
+.company-news-table tbody tr:hover {
+  background-color: #F5F6F8;
+}
+.company-news-table td {
+  border-bottom: 1px solid #ECEDEF;
+  padding: 1.5em 0;
+}
+.company-news-table .title .press-title {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.company-news-table .title .press-summary {
+  color: #9AA0AD;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+}
+.company-news-table .title .date {
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0;
+}
+.company-news-table .btn {
+  width: 5em;
+  text-align: right;
+}
+.company-news-table .btn .btn-text {
+  color: #EF7E53;
+  font-size: 0.8em;
+  padding-right: 1em;
+}
+.company-news-table .btn .btn-text:hover {
+  text-decoration: underline;
 }

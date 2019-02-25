@@ -352,6 +352,18 @@ br {
   display: inline-block;
 }
 
+.input-dropdown {
+  width: 6em;
+  height: 2em;
+  border: 2px solid @gray300;
+  border-radius: 0.5em;
+  font-size: 1em;
+}
+
+.input-title {
+  display: inline-block;
+}
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -1585,6 +1597,125 @@ button:focus {
         margin-bottom: 4px;
         border-bottom: 1px solid @gray400;
       }
+    }
+  }
+}
+
+.press-releases {
+  .block-input {
+    margin-bottom: 0.6em;
+    text-align: center;
+  }
+}
+
+.press-releases-table {
+  table-layout: fixed;
+  border: 0;
+  border-collapse: collapse;
+
+  tbody tr:hover {
+    background-color: @gray200;
+  }
+
+  td {
+    border-bottom: 1px solid @gray300;
+    padding: 1.5em 0;
+  }
+
+  .photo {
+    width: 12em;
+    padding: 1em;
+
+    .bg-press-thumbnail {
+      width: 100%;
+      height: 6em;
+      .background-no-repeat;
+      background-size: 80%;
+    }
+  }
+
+  .title {
+    .press-title {
+      text-align: left;
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+
+    .press-summary {
+      color: @gray600;
+      font-size: 0.9em;
+      margin-top: 0.5em;
+    }
+
+    .date {
+      font-size: 0.8em;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .btn {
+    width: 5em;
+    text-align: right;
+
+    .btn-text {
+      color: @orange800;
+      font-size: 0.8em;
+      padding-right: 1em;
+    }
+
+    .btn-text:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.company-news-table {
+  table-layout: fixed;
+  border: 0;
+  border-collapse: collapse;
+
+  tbody tr:hover {
+    background-color: @gray200;
+  }
+
+  td {
+    border-bottom: 1px solid @gray300;
+    padding: 1.5em 0;
+  }
+
+  .title {
+    .press-title {
+      text-align: left;
+      margin-top: 0;
+      margin-bottom: 0.5em;
+    }
+
+    .press-summary {
+      color: @gray600;
+      font-size: 0.9em;
+      margin-top: 0.5em;
+    }
+
+    .date {
+      font-size: 0.8em;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .btn {
+    width: 5em;
+    text-align: right;
+
+    .btn-text {
+      color: @orange800;
+      font-size: 0.8em;
+      padding-right: 1em;
+    }
+
+    .btn-text:hover {
+      text-decoration: underline;
     }
   }
 }
