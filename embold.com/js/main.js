@@ -1,4 +1,4 @@
-$('.nav-hover').load('../embold.com/nav.html');
+$('.nav-index').load('../embold.com/nav.html');
 $('.nav-product').load('../embold.com/nav-product.html');
 $('.nav-solutions').load('../embold.com/nav-solutions.html');
 $('.nav-resources').load('../embold.com/nav-resources.html');

@@ -376,7 +376,6 @@ br {
 .nav-sub .nav-menu-link {
   color: #9AA0AD;
   display: block;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   font-size: 0.9em;
   font-family: 'Sofia Pro', sans-serif;
   letter-spacing: -0.005em;
