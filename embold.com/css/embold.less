@@ -353,7 +353,8 @@ br {
 }
 
 .input-dropdown {
-  width: 6em;
+  color: @gray800;
+  width: 8em;
   height: 2em;
   border: 2px solid @gray300;
   border-radius: 0.5em;
@@ -1316,18 +1317,19 @@ button:focus {
     border-bottom: 1px solid @gray300;
 
     .member-photo {
-      display: inline-block;
+      display: block;
       width: 12em;
       height: 12em;
       margin-right: 2em;
       border-radius: 7.5em;
       vertical-align: top;
       .background-no-repeat;
+      float: left;
     }
 
     .member-detail {
-      display: inline-block;
-      width: 28.5em;
+      width: auto;
+      padding-left: 14em;
 
       .name {
         display: block;
@@ -1669,10 +1671,11 @@ button:focus {
   }
 }
 
-.press-releases,
-.company-news {
+section.press-releases,
+section.company-news {
   .block-input {
     padding-bottom: 1.2em;
+    padding-right: 6em;
     border-bottom: 1px solid @gray300;
     text-align: left;
     position:relative;
@@ -1693,6 +1696,10 @@ button:focus {
       right: 0;
     }
   }
+}
+
+section.company-news {
+  margin-top: 6em;
 }
 
 .press-releases-table,

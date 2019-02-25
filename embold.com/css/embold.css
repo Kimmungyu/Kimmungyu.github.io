@@ -92,6 +92,12 @@
 .ic-faq {
   background-image: url('../images/ic-md-faq.svg');
 }
+.ic-press {
+  background-image: url('../images/ic-md-press.svg');
+}
+.ic-stars {
+  background-image: url('../images/ic-md-stars.svg');
+}
 .ic-logo-deutsche-leasing {
   background-image: url('../images/ic-logo-deutsche-leasing.svg');
 }
@@ -505,7 +511,8 @@ br {
   display: inline-block;
 }
 .input-dropdown {
-  width: 6em;
+  color: #2A3141;
+  width: 8em;
   height: 2em;
   border: 2px solid #ECEDEF;
   border-radius: 0.5em;
@@ -1369,7 +1376,7 @@ button:focus {
   border-bottom: 1px solid #ECEDEF;
 }
 .team .member-big .member-photo {
-  display: inline-block;
+  display: block;
   width: 12em;
   height: 12em;
   margin-right: 2em;
@@ -1378,10 +1385,11 @@ button:focus {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  float: left;
 }
 .team .member-big .member-detail {
-  display: inline-block;
-  width: 28.5em;
+  width: auto;
+  padding-left: 14em;
 }
 .team .member-big .member-detail .name {
   display: block;
@@ -1681,28 +1689,32 @@ button:focus {
   margin-bottom: 4px;
   border-bottom: 1px solid #E2E5EB;
 }
-.press-releases .block-input,
-.company-news .block-input {
+section.press-releases .block-input,
+section.company-news .block-input {
   padding-bottom: 1.2em;
+  padding-right: 6em;
   border-bottom: 1px solid #ECEDEF;
   text-align: left;
   position: relative;
 }
-.press-releases .block-input .wrap-checkbox-item,
-.company-news .block-input .wrap-checkbox-item {
+section.press-releases .block-input .wrap-checkbox-item,
+section.company-news .block-input .wrap-checkbox-item {
   display: inline-block;
   color: #787E8D;
   margin-left: 1em;
 }
-.press-releases .block-input .wrap-checkbox-item .input-inline,
-.company-news .block-input .wrap-checkbox-item .input-inline {
+section.press-releases .block-input .wrap-checkbox-item .input-inline,
+section.company-news .block-input .wrap-checkbox-item .input-inline {
   margin-right: 0.5em;
 }
-.press-releases .block-input .block-btn,
-.company-news .block-input .block-btn {
+section.press-releases .block-input .block-btn,
+section.company-news .block-input .block-btn {
   position: absolute;
   top: 0;
   right: 0;
+}
+section.company-news {
+  margin-top: 6em;
 }
 .press-releases-table,
 .company-news-table {
