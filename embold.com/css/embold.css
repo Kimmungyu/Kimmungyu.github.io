@@ -372,7 +372,7 @@ br {
 .nav-sub {
   display: none;
   position: fixed;
-  top: 57px;
+  top: 56px;
   background-color: #2A3141;
   z-index: 998;
   -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
@@ -471,7 +471,7 @@ br {
 }
 .btn-md {
   font-size: 14px;
-  padding: 12px 18px;
+  padding: 13px 18px 11px 18px;
   border-radius: 48px;
 }
 .btn-sm {
@@ -520,7 +520,67 @@ textarea:focus,
 button:focus {
   outline: none;
 }
-/* -- ui elements --*/
+/* Customize the label (the container) */
+.wrap-checkbox-item {
+  display: block;
+  position: relative;
+  padding-left: 1.7em;
+  cursor: pointer;
+  font-size: 0.9em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default checkbox */
+.wrap-checkbox-item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.4em;
+  width: 1.4em;
+  background-color: #eee;
+  border-radius: 0.2em;
+}
+/* On mouse-over, add a grey background color */
+.wrap-checkbox-item:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+/* When the checkbox is checked, add a blue background */
+.wrap-checkbox-item input:checked ~ .checkmark {
+  background-color: #EF7E53;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the checkmark when checked */
+.wrap-checkbox-item input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+.wrap-checkbox-item .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* -- ui elements - end --*/
 .block {
   padding: 18px 0;
 }
@@ -1621,27 +1681,51 @@ button:focus {
   margin-bottom: 4px;
   border-bottom: 1px solid #E2E5EB;
 }
-.press-releases .block-input {
-  margin-bottom: 0.6em;
-  text-align: center;
+.press-releases .block-input,
+.company-news .block-input {
+  padding-bottom: 1.2em;
+  border-bottom: 1px solid #ECEDEF;
+  text-align: left;
+  position: relative;
 }
-.press-releases-table {
+.press-releases .block-input .wrap-checkbox-item,
+.company-news .block-input .wrap-checkbox-item {
+  display: inline-block;
+  color: #787E8D;
+  margin-left: 1em;
+}
+.press-releases .block-input .wrap-checkbox-item .input-inline,
+.company-news .block-input .wrap-checkbox-item .input-inline {
+  margin-right: 0.5em;
+}
+.press-releases .block-input .block-btn,
+.company-news .block-input .block-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.press-releases-table,
+.company-news-table {
   table-layout: fixed;
   border: 0;
   border-collapse: collapse;
 }
-.press-releases-table tbody tr:hover {
+.press-releases-table tbody tr:hover,
+.company-news-table tbody tr:hover {
   background-color: #F5F6F8;
 }
-.press-releases-table td {
+.press-releases-table td,
+.company-news-table td {
   border-bottom: 1px solid #ECEDEF;
-  padding: 1.5em 0;
+  padding: 1.8em 0;
 }
-.press-releases-table .photo {
+.press-releases-table .photo,
+.company-news-table .photo {
   width: 12em;
   padding: 1em;
 }
-.press-releases-table .photo .bg-press-thumbnail {
+.press-releases-table .photo .bg-press-thumbnail,
+.company-news-table .photo .bg-press-thumbnail {
   width: 100%;
   height: 6em;
   background-repeat: no-repeat;
@@ -1649,69 +1733,42 @@ button:focus {
   background-size: cover;
   background-size: 80%;
 }
-.press-releases-table .title .press-title {
+.press-releases-table .title .press-title,
+.company-news-table .title .press-title {
   text-align: left;
-  margin-top: 0;
-  margin-bottom: 0.5em;
-}
-.press-releases-table .title .press-summary {
-  color: #9AA0AD;
-  font-size: 0.9em;
-  margin-top: 0.5em;
-}
-.press-releases-table .title .date {
-  font-size: 0.8em;
   margin: 0;
   padding: 0;
 }
-.press-releases-table .btn {
-  width: 5em;
-  text-align: right;
-}
-.press-releases-table .btn .btn-text {
-  color: #EF7E53;
-  font-size: 0.8em;
-  padding-right: 1em;
-}
-.press-releases-table .btn .btn-text:hover {
-  text-decoration: underline;
-}
-.company-news-table {
-  table-layout: fixed;
-  border: 0;
-  border-collapse: collapse;
-}
-.company-news-table tbody tr:hover {
-  background-color: #F5F6F8;
-}
-.company-news-table td {
-  border-bottom: 1px solid #ECEDEF;
-  padding: 1.5em 0;
-}
-.company-news-table .title .press-title {
-  text-align: left;
-  margin-top: 0;
-  margin-bottom: 0.5em;
-}
+.press-releases-table .title .press-summary,
 .company-news-table .title .press-summary {
   color: #9AA0AD;
   font-size: 0.9em;
-  margin-top: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 0;
+  line-height: 1.7;
 }
+.press-releases-table .title .date,
 .company-news-table .title .date {
-  font-size: 0.8em;
-  margin: 0;
+  color: #787E8D;
+  font-size: 0.85em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 1em;
   padding: 0;
+  text-transform: uppercase;
 }
+.press-releases-table .btn,
 .company-news-table .btn {
   width: 5em;
   text-align: right;
 }
+.press-releases-table .btn .btn-text,
 .company-news-table .btn .btn-text {
   color: #EF7E53;
   font-size: 0.8em;
   padding-right: 1em;
 }
+.press-releases-table .btn .btn-text:hover,
 .company-news-table .btn .btn-text:hover {
   text-decoration: underline;
 }
