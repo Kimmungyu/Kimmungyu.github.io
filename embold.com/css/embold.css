@@ -894,11 +894,18 @@ button:focus {
 }
 .block-index-features .il-index-features {
   width: 100%;
-  height: 400px;
+  height: 270px;
   margin-bottom: 1.5em;
-  background-size: 960px;
+  background-size: auto 80%;
+}
+.block-index-features .description {
+  color: #9AA0AD;
+  margin-top: 5em;
+  font-size: 1rem;
+  font-weight: normal;
 }
 .block-index-user-role {
+  padding-top: 0 !important;
   position: relative;
 }
 .block-index-user-role .block-index-user-role-item {
@@ -1250,12 +1257,14 @@ button:focus {
   color: #787E8D;
   margin: 0 0 24px 0;
   padding: 0;
-  font-size: 0.9em;
+  font-size: 1em;
   list-style: none;
+  font-family: 'Sofia Pro', sans-serif;
+  letter-spacing: -0.005em;
 }
 .sub-menu li {
   margin-bottom: 5px;
-  font-weight: 600;
+  text-transform: uppercase;
 }
 .block-user-story .wrap-content {
   margin: 36px 0;

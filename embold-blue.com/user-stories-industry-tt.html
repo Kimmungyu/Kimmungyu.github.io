@@ -44,13 +44,13 @@
             <div class="tab-item" onclick="window.location.href='./user-stories-industry.html'">
               <div class="tab-item-icon ic-sm-user-executive"></div> <span>Automotive</span>
             </div>
-            <div class="tab-item active" onclick="window.location.href='./user-stories-industry-energy.html'">
+            <div class="tab-item" onclick="window.location.href='./user-stories-industry-energy.html'">
               <div class="tab-item-icon ic-sm-user-developer"></div> <span>Energy</span>
             </div>
             <div class="tab-item" onclick="window.location.href='./user-stories-industry-financial.html'">
               <div class="tab-item-icon ic-sm-user-architect"></div> <span>Financial and Insurance</span>
             </div>
-            <div class="tab-item" onclick="window.location.href='./user-stories-industry-tmt.html'">
+            <div class="tab-item active" onclick="window.location.href='./user-stories-industry-tmt.html'">
               <div class="tab-item-icon ic-sm-user-pm"></div> <span>TMT</span>
             </div>
             <div class="tab-item" onclick="window.location.href='./user-stories-industry-natural.html'">
@@ -66,18 +66,7 @@
     <div class="container">
       <div class="row">
         <div class="col-3">
-          <div class="block-sub-menu">
-            <ul class="sub-menu">
-              <li>OVERALL</li>
-              <li>ACTUAL STORIES</li>
-              <li>USE CASES</li>
-              <li>CONTACT SALES</li>
-            </ul>
-            <ul class="sub-menu">
-              <li>DOWNLOAD</li>
-              <li>Sing-up Now</li>
-            </ul>
-          </div>
+          <div class="block-sub-menu" id="nav-sub-solutions"></div>
         </div>
         <div class="col-9">
           <div class="block-user-story">
@@ -242,7 +231,7 @@
   <script src="js/main.js" type="text/javascript"></script>
   <script>
   $(window).on("scroll", function() {
-    if($(window).scrollTop() > 570 && $(window).scrollTop() < 1950) {
+    if($(window).scrollTop() > 520 && $(window).scrollTop() < 1950) {
       $(".block-sub-menu").addClass("block-sub-menu-fix");
       $(".block-sub-menu").removeClass("block-sub-menu-fix-bottom");
     } else if ($(window).scrollTop() >= 1950) {
