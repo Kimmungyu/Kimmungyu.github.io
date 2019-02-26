@@ -414,6 +414,10 @@ br {
   padding-bottom: 0.8em;
   font-size: 0.8em;
   line-height: 1.5;
+  transition: all 0.5s;
+}
+.nav-sub .nav-item-main .nav-item-sub-list li:hover {
+  color: #EF7E53;
 }
 .nav-sub-product .nav-item-main {
   width: 220px !important;
@@ -1113,7 +1117,7 @@ button:focus {
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
 }
 .block-header-sub {
-  height: 400px;
+  height: 350px;
   margin-top: 60px;
   position: relative;
 }
