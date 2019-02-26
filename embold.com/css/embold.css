@@ -424,15 +424,16 @@ br {
   margin-left: -565px;
 }
 .nav-sub-solutions .nav-wrap-items {
-  width: 450px;
+  width: 800px;
 }
 .nav-sub-solutions .nav-item-main {
-  width: 200px !important;
+  width: 150px !important;
+  overflow-wrap: normal;
 }
 .nav-sub-solutions .nav-wrap-items {
   position: relative;
   left: 50%;
-  margin-left: -398px;
+  margin-left: -565px;
 }
 .nav-sub-resources .nav-item-main {
   width: 170px !important;
@@ -443,15 +444,15 @@ br {
   margin-left: -232px;
 }
 .nav-sub-company .nav-wrap-items {
-  width: 400px;
+  width: 800px;
 }
 .nav-sub-company .nav-item-main {
-  width: 170px !important;
+  width: 150px !important;
 }
 .nav-sub-company .nav-wrap-items {
   position: relative;
   left: 50%;
-  margin-left: -67px;
+  margin-left: -565px;
 }
 .display {
   display: block;
