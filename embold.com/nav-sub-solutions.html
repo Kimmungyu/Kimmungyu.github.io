@@ -1,9 +1,23 @@
 <ul class="sub-menu">
-  <li>Summary</li>
-  <li>Customer Stories</li>
-  <li>Use Cases</li>
-  <li>Contact Sales</li>
+  <li id="summary">Summary</li>
+  <li id="customerStories">Customer Stories</li>
+  <li id="useCases">Use Cases</li>
+  <li id="contactSales">Contact Sales</li>
 </ul>
 <ul class="sub-menu">
-  <li>DOWNLOAD</li>
+  <li><a href="#download">DOWNLOAD</a></li>
 </ul>
+<script>
+  $("#summary").click(function() {
+      $('html, body').animate({scrollTop: $("#section-summary").offset().top -140 }, 400);
+  });
+  $("#customerStories").click(function() {
+      $('html, body').animate({scrollTop: $("#section-customerStories").offset().top -140 }, 400);
+  });
+  $("#useCases").click(function() {
+      $('html, body').animate({scrollTop: $("#section-useCases").offset().top -140 }, 400);
+  });
+  $("#contactSales").click(function() {
+      $('html, body').animate({scrollTop: $("#section-contactSales").offset().top -140 }, 400);
+  });
+</script>
