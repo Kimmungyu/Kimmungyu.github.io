@@ -43,14 +43,14 @@
             Select a your role
           </div>
           <div class="tab-wrap">
+            <div class="tab-item" onclick="window.location.href='./user-stories-user-roles-architects.html'">
+              <div class="tab-item-icon ic-sm-user-architect"></div> <span>Architects</span>
+            </div>
             <div class="tab-item" onclick="window.location.href='./user-stories-user-roles.html'">
               <div class="tab-item-icon ic-sm-user-executive"></div> <span>Executive</span>
             </div>
             <div class="tab-item" onclick="window.location.href='./user-stories-user-roles-developers.html'">
               <div class="tab-item-icon ic-sm-user-developer"></div> <span>Developers</span>
-            </div>
-            <div class="tab-item" onclick="window.location.href='./user-stories-user-roles-architects.html'">
-              <div class="tab-item-icon ic-sm-user-architect"></div> <span>Architects</span>
             </div>
             <div class="tab-item active" onclick="window.location.href='./user-stories-user-roles-pm.html'">
               <div class="tab-item-icon ic-sm-user-pm"></div> <span>Product Managers</span>
@@ -275,16 +275,41 @@
   <script src="js/main.js" type="text/javascript"></script>
   <script>
     $(window).on("scroll", function() {
-      if($(window).scrollTop() > 520 && $(window).scrollTop() < 3420) {
+      if($(window).scrollTop() > 520 && $(window).scrollTop() < 2035) {
         $(".block-sub-menu").addClass("block-sub-menu-fix");
         $(".block-sub-menu").removeClass("block-sub-menu-fix-bottom");
-      } else if ($(window).scrollTop() >= 3420) {
+      } else if ($(window).scrollTop() >= 2035) {
         //remove the background property so it comes transparent again (defined in your css)
         $(".block-sub-menu").addClass("block-sub-menu-fix-bottom");
         $(".block-sub-menu").removeClass("block-sub-menu-fix");
       } else {
         $(".block-sub-menu").removeClass("block-sub-menu-fix");
         $(".block-sub-menu").removeClass("block-sub-menu-fix-bottom");
+      }
+    });
+  </script>
+  <script>
+    $(window).on("scroll", function() {
+      if($(window).scrollTop() > 570 && $(window).scrollTop() < 840) {
+        $("#summary").addClass("active");
+        $("#customerStories").removeClass("active");
+        $("#useCases").removeClass("active");
+        $("#contactSales").removeClass("active");
+      } else if ($(window).scrollTop() >= 840 && $(window).scrollTop() < 1300) {
+        $("#summary").removeClass("active");
+        $("#customerStories").addClass("active");
+        $("#useCases").removeClass("active");
+        $("#contactSales").removeClass("active");
+      } else if ($(window).scrollTop() >= 1300 && $(window).scrollTop() < 3595) {
+        $("#summary").removeClass("active");
+        $("#customerStories").removeClass("active");
+        $("#useCases").addClass("active");
+        $("#contactSales").removeClass("active");
+      } else {
+        $("#summary").removeClass("active");
+        $("#customerStories").removeClass("active");
+        $("#useCases").removeClass("active");
+        $("#contactSales").removeClass("active");
       }
     });
   </script>

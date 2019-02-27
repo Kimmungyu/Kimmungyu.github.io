@@ -93,32 +93,6 @@ $( "#as-content-5 .click" ).click(function() {
    $('#as-content-5 .arrow').toggleClass('active');
 });
 
-
-$(window).on("scroll", function() {
-  if($(window).scrollTop() > 570 && $(window).scrollTop() < 840) {
-    $("#summary").addClass("active");
-    $("#customerStories").removeClass("active");
-    $("#useCases").removeClass("active");
-    $("#contactSales").removeClass("active");
-  } else if ($(window).scrollTop() >= 840 && $(window).scrollTop() < 2750) {
-    $("#summary").removeClass("active");
-    $("#customerStories").addClass("active");
-    $("#useCases").removeClass("active");
-    $("#contactSales").removeClass("active");
-  } else if ($(window).scrollTop() >= 2750 && $(window).scrollTop() < 3595) {
-    $("#summary").removeClass("active");
-    $("#customerStories").removeClass("active");
-    $("#useCases").addClass("active");
-    $("#contactSales").removeClass("active");
-  } else {
-    $("#summary").removeClass("active");
-    $("#customerStories").removeClass("active");
-    $("#useCases").removeClass("active");
-    $("#contactSales").removeClass("active");
-  }
-});
-
-
 $("#summary").click(function() {
     $('html, body').animate({scrollTop: $("#section-summary").offset().top -140 }, 200);
 });
