@@ -341,13 +341,10 @@
   margin: 0 auto 0.8em auto;
 }
 .modal-subscribe .wrap-policy {
+  color: #7C808B;
   padding-left: 6em;
   margin-bottom: 1em;
   text-align: center;
-}
-.modal-subscribe {
-  padding: 2em;
-  font-size: 1em;
 }
 .modal-subscribe .table-no-border {
   width: 100%;
@@ -437,9 +434,6 @@
   opacity: 1;
   transition: all 0.5s;
 }
-.block-index-workflow .workflow-3:hover .wrap-animation .index-step-3 {
-  background-image: url('../images/index-step-3-animate.svg');
-}
 .block-index-workflow .workflow-3:hover .wrap-text {
   top: 210px;
   padding-bottom: 50px;
@@ -520,7 +514,6 @@
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url('../images/index-step-3.svg');
   background-size: auto 100%;
   border-radius: 8px;
 }
@@ -1108,37 +1101,39 @@ br {
   padding: 5em 0;
 }
 .block-index-hero {
+  height: 730px;
   position: relative;
 }
 .block-index-hero .wrap-hero-content {
   display: inline-block;
-  margin-top: 19.5em;
+  margin-top: 10.5em;
   margin-bottom: 3em;
-  padding: 1.5em;
   z-index: 20;
   position: relative;
   overflow: visible;
+  text-align: center;
 }
 .block-index-hero .wrap-hero-content h1.headcopy {
-  width: 12em;
   margin: 0;
   padding: 0;
   font-size: 4em;
   font-weight: 300;
-  text-align: left;
   line-height: 1.2;
   font-family: 'Sofia Pro', sans-serif;
   letter-spacing: -0.005em;
 }
+.block-index-hero .wrap-hero-content h1.headcopy strong {
+  font-weight: 800;
+  line-height: 1;
+}
 .block-index-hero .wrap-hero-content .description {
-  width: 35em;
   color: #7C808B;
 }
 .block-index-hero .wrap-hero-content .wrap-sign-up {
   margin-top: 2em;
 }
-.block-index-hero .wrap-hero-content .wrap-sign-up input.input {
-  width: 20em;
+.block-index-hero .wrap-hero-content .wrap-sign-up .btn {
+  width: 12em;
 }
 .block-index-hero .header-image {
   width: 53rem;
@@ -2100,8 +2095,8 @@ section.company-news .block-input .block-btn {
   top: 0;
   right: 0;
 }
-section.company-news {
-  margin-top: 6em;
+section.press-releases {
+  margin-top: 2em;
 }
 .press-releases-table,
 .company-news-table {

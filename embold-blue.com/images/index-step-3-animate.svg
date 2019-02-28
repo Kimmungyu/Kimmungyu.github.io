@@ -24,14 +24,14 @@
   <circle class="cls-8" cx="149.63" cy="165.08" r="2.06"/>
   <circle class="cls-8" cx="180.7" cy="169.2" r="2.06"/>
   <circle class="cls-8" cx="204.96" cy="153.2" r="2.06"/>
-  <rect class="cls-9" x="122.55" y="55.83" width="60.07" height="6.67" rx="0.5">
+  <rect class="cls-9" x="122.55" y="55.83" width="0" height="6.67" rx="0.5">
     <animate attributeType="XML" attributeName="width" from="0" to="60.07"
-        dur="0.5s" repeatCount="0" />
+        dur="0.5s" repeatCount="indefinite" begin="0.2s"  />
   </rect>
   <rect class="cls-1" x="106.57" y="54.17" width="10" height="10" rx="1"/>
-  <rect class="cls-10" x="122.55" y="72.41" width="93.45" height="6.67" rx="0.5">
+  <rect class="cls-10" x="122.55" y="72.41" width="0" height="6.67" rx="0.5">
     <animate attributeType="XML" attributeName="width" from="0" to="93.45"
-        dur="0.5s" repeatCount="0" begin="0.3s" />
+        dur="0.5s" repeatCount="indefinite" begin="0" />
   </rect>
   <rect class="cls-1" x="106.57" y="70.74" width="10" height="10" rx="1"/>
   <rect class="cls-11" x="122.55" y="88.98" width="40.05" height="6.67" rx="0.5"/>

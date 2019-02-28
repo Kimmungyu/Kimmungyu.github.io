@@ -629,40 +629,43 @@ br {
 }
 
 .block-index-hero {
+  height: 730px;
   position: relative;
 
   .wrap-hero-content {
     display: inline-block;
-    margin-top: 19.5em;
+    margin-top: 10.5em;
     margin-bottom: 3em;
-    padding: 1.5em;
     z-index: 20;
     position: relative;
     overflow: visible;
+    .text-center;
     // background-color: @white;
     // .box-shadow;
 
     h1.headcopy {
-      width: 12em;
       margin: 0;
       padding: 0;
       font-size: 4em;
       font-weight: 300;
-      text-align: left;
       line-height: 1.2;
       .sofia;
+
+      strong {
+        font-weight: 800;
+        line-height: 1;
+      }
     }
 
     .description {
-      width: 35em;
       color: @gray700;
     }
 
     .wrap-sign-up {
       margin-top: 2em;
 
-      input.input {
-        width: 20em;
+      .btn {
+        width: 12em;
       }
     }
   }
@@ -1727,8 +1730,8 @@ section.company-news {
   }
 }
 
-section.company-news {
-  margin-top: 6em;
+section.press-releases {
+  margin-top: 2em;
 }
 
 .press-releases-table,
