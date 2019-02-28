@@ -1,0 +1,217 @@
+.workflow-hover-effect {
+  .wrap-text {
+    top: 210px;
+    padding-bottom: 50px;
+    .transition;
+
+    .step-number {
+      color: @white;
+      background-color: @blue800;
+    }
+  }
+
+  .description {
+    visibility: visible;
+    opacity: 1;
+    .transition;
+  }
+}
+
+.block-index-workflow {
+  height: 720px;
+  background-color: @gray200;
+
+  .workflow-1:hover {
+    .wrap-animation {
+      .logo-github {
+        left: 4em;
+      }
+
+      .logo-bitbucket {
+        right: 1em;
+      }
+
+      .logo-jenkins {
+        left: 1.8em;
+      }
+    }
+
+    .workflow-hover-effect;
+  }
+
+  .workflow-2:hover {
+    .workflow-hover-effect;
+  }
+
+  .workflow-3:hover {
+    .wrap-animation {
+      .index-step-3 {
+        background-image: url('../images/index-step-3-animate.svg');
+      }
+    }
+
+    .workflow-hover-effect;
+  }
+
+  .wrap-workflow {
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+    .text-center;
+
+    .wrap-animation {
+      height: 240px;
+      position: relative;
+
+      .item-logo {
+        height: 60px;
+        background-color: @white;
+        margin-bottom: 0.8em;
+        background-repeat: no-repeat;
+        background-position: center center;
+        .box-shadow;
+        .transition;
+      }
+
+      .logo-github {
+        width: 140px;
+        left: 3em;
+        position: absolute;
+        background-image: url('../images/logo-github.svg');
+        background-size: 90% auto;
+      }
+
+      .logo-bitbucket {
+        width: 200px;
+        top: 72px;
+        right: 0.5em;
+        position: absolute;
+        background-image: url('../images/logo-bitbucket.svg');
+        background-size: 70% auto;
+      }
+
+      .logo-jenkins {
+        width: 160px;
+        top: 144px;
+        left: 1em;
+        position: absolute;
+        background-image: url('../images/logo-jenkins.svg');
+        background-size: 70% auto;
+      }
+
+      .logo-embold {
+        width: 80%;
+        height: 140px;
+        margin-left: 10%;
+        background-color: @white;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('../images/logo-embold.svg');
+        background-size: 70% auto;
+        position: absolute;
+        top: 35px;
+        .box-shadow;
+      }
+
+      .index-step-3 {
+        width: 200px;
+        height: 200px;
+        margin: auto auto;
+        background-color: @white;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('../images/index-step-3.svg');
+        background-size: auto 100%;
+        border-radius: 8px;
+      }
+    }
+
+    .wrap-text {
+      top: 250px;
+      position: absolute;
+    }
+
+    .icon {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .step-number {
+      display: inline-block;
+      color: @gray600;
+      width: 1.2em;
+      height: 1.3em;
+      font-size: 2.4em;
+      margin: 0.4em;
+      font-weight: 300;
+      border-radius: 0.7em;
+      .sofia;
+      .transition;
+    }
+
+    .step-title {
+      margin: -9px 0 0 0;
+      padding: 0;
+      font-size: 1.2em;
+      .sofia;
+    }
+
+    .description {
+      visibility: hidden;
+      color: @gray600;
+      font-size: 0.9em;
+      opacity: 0;
+      .transition;
+    }
+
+    .workflow-flowline,
+    .workflow-flowcircle-left,
+    .workflow-flowcircle-right {
+      top: 50%;
+      position: absolute;
+    }
+
+    .workflow-flowcircle-left,
+    .workflow-flowcircle-right {
+      width: 16px;
+      height: 16px;
+      margin-left: -8px;
+      margin-top: -6px;
+    }
+
+    .workflow-flowline {
+      display: inline-block;
+      width: 2.8em;
+      height: 4px;
+      background-color: @blue800;
+      left: 100%;
+    }
+
+    .workflow-flowcircle-right {
+      display: inline-block;
+      background-color: @white;
+      border: 4px solid @blue800;
+      border-radius: 13px;
+      left: 100%;
+    }
+
+    .workflow-flowcircle-left {
+      display: inline-block;
+      background-color: @white;
+      border: 4px solid @blue800;
+      border-radius: 13px;
+      left: 0;
+    }
+  }
+
+  .active {
+    color: @white !important;
+    background-color: @blue800;
+
+    .step-number,
+    .step-title,
+    .description {
+      color: @white;
+    }
+  }
+}
