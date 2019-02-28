@@ -300,7 +300,7 @@ h2 {
   letter-spacing: -0.025em;
 }
 h4 {
-  color: #787E8D;
+  color: #7C808B;
   font-size: 0.9rem;
   font-family: 'Sofia Pro', sans-serif;
   margin: 0 0 8px 0;
@@ -386,7 +386,7 @@ br {
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
 }
 .nav-sub .nav-menu-link {
-  color: #9AA0AD;
+  color: #A8ACB4;
   display: block;
   font-size: 0.9em;
   font-family: 'Sofia Pro', sans-serif;
@@ -613,7 +613,7 @@ button:focus {
   background-size: cover;
 }
 .block .block-description {
-  color: #9AA0AD;
+  color: #A8ACB4;
   width: 60%;
   margin: 0 auto 16px auto;
   font-size: 1rem;
@@ -632,7 +632,7 @@ button:focus {
   padding-top: 3em;
 }
 .block-footer {
-  color: #9AA0AD;
+  color: #A8ACB4;
   font-size: 13px;
   padding: 32px 0 48px 0;
   background-color: #F5F6F8;
@@ -649,7 +649,7 @@ button:focus {
   margin-bottom: 5px;
 }
 .block-copyright {
-  color: #9AA0AD;
+  color: #A8ACB4;
   font-size: 13px;
   padding: 14px 0 12px 0;
   background-color: #2A3141;
@@ -696,7 +696,7 @@ button:focus {
 }
 .block-index-hero .wrap-hero-content .description {
   width: 35em;
-  color: #787E8D;
+  color: #7C808B;
 }
 .block-index-hero .wrap-hero-content .wrap-sign-up {
   margin-top: 2em;
@@ -733,7 +733,7 @@ button:focus {
   margin: 0 auto;
 }
 .block-index-workflow .wrap-workflow .step-number {
-  color: #9AA0AD;
+  color: #A8ACB4;
   font-size: 3em;
   margin: 0;
   padding: 0;
@@ -749,7 +749,7 @@ button:focus {
   letter-spacing: -0.005em;
 }
 .block-index-workflow .wrap-workflow .description {
-  color: #9AA0AD;
+  color: #A8ACB4;
   font-size: 0.9em;
 }
 .block-index-workflow .wrap-workflow .workflow-flowline,
@@ -800,12 +800,12 @@ button:focus {
   padding: 30px;
 }
 .block-index-partnership .partnership-review .paragraph {
-  color: #787E8D;
+  color: #7C808B;
   font-size: 24px;
   font-weight: 300;
 }
 .block-index-partnership .partnership-review .name {
-  color: #787E8D;
+  color: #7C808B;
   font-size: 17px;
   position: absolute;
   bottom: 30px;
@@ -887,7 +887,7 @@ button:focus {
   -moz-filter: grayscale(0);
 }
 .block-index-user-stories .wrap-user:hover .description {
-  color: #787E8D;
+  color: #7C808B;
 }
 .block-index-user-stories .wrap-user:hover .link-arrow {
   opacity: 1;
@@ -899,7 +899,7 @@ button:focus {
   background-size: auto 80%;
 }
 .block-index-features .description {
-  color: #9AA0AD;
+  color: #A8ACB4;
   margin-top: 5em;
   font-size: 1rem;
   font-weight: normal;
@@ -920,7 +920,7 @@ button:focus {
   margin-bottom: 1.3em;
 }
 .block-index-user-role .block-index-user-role-item p.description {
-  color: #9AA0AD;
+  color: #A8ACB4;
   margin-top: 1.5em;
   font-size: 0.9em;
 }
@@ -994,7 +994,7 @@ button:focus {
   letter-spacing: -0.005em;
 }
 .product-pricing .pricing-tab .pricing-description {
-  color: #9AA0AD;
+  color: #A8ACB4;
   font-size: 1em;
   margin: 0;
 }
@@ -1005,7 +1005,7 @@ button:focus {
 }
 .product-pricing .pricing-tab:hover .pricing-description,
 .product-pricing .active .pricing-description {
-  color: #9AA0AD;
+  color: #A8ACB4;
 }
 .product-pricing .pricing-tab:hover .icon-md,
 .product-pricing .active .icon-md {
@@ -1173,7 +1173,7 @@ button:focus {
   margin-top: 1.3em;
 }
 .block-section-sub .description {
-  color: #9AA0AD;
+  color: #A8ACB4;
   margin: 0 auto 16px auto;
   font-size: 1rem;
   font-weight: normal;
@@ -1254,7 +1254,7 @@ button:focus {
   bottom: 40px;
 }
 .sub-menu {
-  color: #787E8D;
+  color: #7C808B;
   margin: 0 0 24px 0;
   padding: 0;
   font-size: 1em;
@@ -1284,7 +1284,7 @@ button:focus {
   text-align: left;
 }
 .block-user-story .wrap-content p {
-  color: #9AA0AD;
+  color: #A8ACB4;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
@@ -1341,7 +1341,7 @@ button:focus {
   list-style: none;
 }
 .technical-documentation .document-list li {
-  color: #787E8D;
+  color: #7C808B;
   font-size: 0.9em;
   line-height: 2.1;
   cursor: pointer;
@@ -1416,7 +1416,7 @@ button:focus {
 }
 .team .member-big .member-detail .role {
   display: block;
-  color: #787E8D;
+  color: #7C808B;
   margin: -8px 0 16px 0;
   padding: 0;
   font-size: 1.2em;
@@ -1424,7 +1424,7 @@ button:focus {
   letter-spacing: -0.005em;
 }
 .team .member-big .member-sns .icon-sns {
-  color: #787E8D;
+  color: #7C808B;
   margin-right: 0.4em;
   font-size: 1.6em;
 }
@@ -1462,7 +1462,7 @@ button:focus {
 }
 .team .member-small .member-detail .role {
   display: block;
-  color: #787E8D;
+  color: #7C808B;
   margin: -8px 0 16px 0;
   padding: 0;
   font-size: 1em;
@@ -1474,7 +1474,7 @@ button:focus {
   text-align: center;
 }
 .team .member-small .member-sns .icon-sns {
-  color: #9AA0AD;
+  color: #A8ACB4;
   margin-right: 0.4em;
   font-size: 1.3em;
 }
@@ -1648,7 +1648,7 @@ button:focus {
   padding: 3.6em 4.8em 2.4em 2.4em;
 }
 .philosophy .paragraph {
-  color: #787E8D;
+  color: #7C808B;
   font-size: 1.3em;
   font-weight: 400;
   line-height: 1.6;
@@ -1657,7 +1657,7 @@ button:focus {
 }
 .philosophy .author {
   padding-top: 3.5em;
-  color: #787E8D;
+  color: #7C808B;
 }
 .philosophy .author .name {
   display: block;
@@ -1679,7 +1679,7 @@ button:focus {
 }
 .job-opening .job-opening-list .job-table .location {
   display: inline-block;
-  color: #787E8D;
+  color: #7C808B;
   width: 13rem;
   margin-right: 20px;
   font-size: 1em;
@@ -1693,7 +1693,7 @@ button:focus {
 }
 .job-opening .job-opening-list .job-table .wrap-title .job-title,
 .job-opening .job-opening-list .job-table .wrap-title .location {
-  color: #9AA0AD;
+  color: #A8ACB4;
   font-size: 0.7em;
   font-weight: bold;
   text-transform: uppercase;
@@ -1714,7 +1714,7 @@ section.company-news .block-input {
 section.press-releases .block-input .wrap-checkbox-item,
 section.company-news .block-input .wrap-checkbox-item {
   display: inline-block;
-  color: #787E8D;
+  color: #7C808B;
   margin-left: 1em;
 }
 section.press-releases .block-input .wrap-checkbox-item .input-inline,
@@ -1767,7 +1767,7 @@ section.company-news {
 }
 .press-releases-table .title .press-summary,
 .company-news-table .title .press-summary {
-  color: #9AA0AD;
+  color: #A8ACB4;
   font-size: 0.9em;
   margin-top: 1em;
   margin-bottom: 0;
@@ -1775,7 +1775,7 @@ section.company-news {
 }
 .press-releases-table .title .date,
 .company-news-table .title .date {
-  color: #787E8D;
+  color: #7C808B;
   font-size: 0.85em;
   font-weight: bold;
   margin-top: 0;

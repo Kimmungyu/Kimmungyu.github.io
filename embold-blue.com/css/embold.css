@@ -103,6 +103,9 @@
 .ic-sm-user-pm-wh {
   background-image: url('../images/ic-sm-user-pm-wh.svg');
 }
+.ic-sm-copy {
+  background-image: url('../images/ic-sm-copy.svg');
+}
 .ic-door-open {
   background-image: url('../images/ic-md-door-open.svg');
 }
@@ -370,9 +373,14 @@
   width: 100%;
   padding: 0.6em;
   background-color: #ECEDEF;
+  background-image: url('../images/ic-sm-copy.svg');
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center right 4px;
   border: 0;
   border-radius: 4px;
   font-size: 0.8em;
+  cursor: pointer;
 }
 /* -- prefix --*/
 .sofia {
