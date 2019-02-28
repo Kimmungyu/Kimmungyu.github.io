@@ -12,6 +12,8 @@
   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -152,7 +154,8 @@
             <span class="checkmark"></span>
           </label>
           <div class="block-btn">
-            <a href="#" class="btn btn-md btn-default" ><i class="fas fa-rss"></i> Subscribe</a>
+            <a href="#ex1" class="btn btn-sm btn-default" rel="modal:open"><i class="far fa-envelope"></i> Subscribe</a>
+            <a href="#ex2" class="btn btn-sm btn-default" rel="modal:open"><i class="fas fa-rss"></i> RSS</a>
           </div>
         </div>
         <table class="company-news-table">
@@ -210,21 +213,83 @@
       </div>
     </div>
   </section>
-  <!--
+  <div id="ex1" class="modal modal-subscribe subscribe-email">
+    <h3>Join our newsletter</h3>
+    <input type="text" placeholder="Your E-mail Address" class="input input-fw" />
+    <div class="inline-input wrap-policy">
+      <label class="wrap-checkbox-item">
+        I agree to Gamma's privacy policy
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+    </div>
+    <button class="btn btn-md btn-default submit">Subscribe Now</button>
+  </div>
+  <div id="ex2" class="modal modal-subscribe subscribe-rss">
+    <h3>Follow RSS Feed</h3>
+    <table class="table table-no-border rss-list">
+      <tr>
+        <td class="category-name">
+          All Articles
+        </td>
+        <td>
+          <input class="input input-url" type="text" readonly placeholder="https://rss.mygamma.io/all" />
+        </td>
+      </tr>
+      <tr>
+        <td class="category-name">
+          Release Notes
+        </td>
+        <td>
+          <input class="input input-url" type="text" readonly placeholder="https://rss.mygamma.io/release-notes" />
+        </td>
+      </tr>
+      <tr>
+        <td class="category-name">
+          Company Update
+        </td>
+        <td>
+          <input class="input input-url" type="text" readonly placeholder="https://rss.mygamma.io/company-update" />
+        </td>
+      </tr>
+      <tr>
+        <td class="category-name">
+          Event
+        </td>
+        <td>
+          <input class="input input-url" type="text" readonly placeholder="https://rss.mygamma.io/event" />
+        </td>
+      </tr>
+      <tr>
+        <td class="category-name">
+          News Coverage
+        </td>
+        <td>
+          <input class="input input-url" type="text" readonly placeholder="https://rss.mygamma.io/news-coverage" />
+        </td>
+      </tr>
+      <tr>
+        <td class="category-name">
+          Newsletter
+        </td>
+        <td>
+          <input class="input input-url" type="text" readonly placeholder="https://rss.mygamma.io/newsletter" />
+        </td>
+      </tr>
+    </table>
+  </div>
   <section class="container block block-section-sub brand-kit">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 text-center">
         <span class="icon-section ic-cloud-code"></span>
         <h2 class="section-title">Press/Brand Kit</h2>
         <p class="block-description">embold is trusted by 1,000+ developers and 10+ Mega Companies.
           They are improving their codes and applications via embold.
-          And also many developers and project managers want to use
-          Embold to improve a progress in writing codes
         </p>
+        <button class="btn btn-default btn-md btn-more">Request Brand Kit</button>
       </div>
     </div>
   </section>
-  -->
 
   <!-- landing to other page block -->
   <div class="container-fluid bg-orange">

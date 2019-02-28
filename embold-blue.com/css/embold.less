@@ -5,6 +5,7 @@
 @import url("form.less");
 @import url("mosaic.less");
 @import url("icons.less");
+@import url("modal.less");
 
 /* -- prefix --*/
 
@@ -64,6 +65,157 @@
   color: @white !important;
 }
 
+.display {
+  display: block !important;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.bg-light {
+
+}
+
+.bg-orange {
+  color: @white;
+  background-color: @blue800;
+
+  h4 {
+    color: @white;
+  }
+
+  .block-description {
+    color: @white !important;
+    margin-bottom: 32px;
+  }
+}
+
+.bg-fw-half-left {
+  color: @white;
+  width: 50%;
+  height: 20em;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+
+.bg-fw-half-right {
+  color: @white;
+  width: 50%;
+  height: 20em;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+
+.bg-color-gray800 {
+  color: @white;
+  background-color: @gray800;
+}
+
+.bg-color-orange800 {
+  color: @white;
+  background-color: @blue800;
+}
+
+.bg-color-red {
+  color: @white;
+  background-color: red;
+}
+
+.bg-color-green {
+  color: @white;
+  background-color: @green800;
+}
+
+.bg-color-blue {
+  color: @white;
+  background-color: @blue800;
+}
+
+.bg-color-orange {
+  color: @white;
+  background-color: @orange800;
+}
+
+/* -- ui elements --*/
+
+.btn {
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-md {
+  font-size: 14px;
+  padding: 13px 18px 11px 18px;
+  border-radius: 48px;
+  .acumin;
+}
+
+.btn-sm {
+  font-size: 12px;
+  padding: 8px 14px 7px 14px;
+  border-radius: 48px;
+  .acumin;
+}
+
+.btn-default {
+  color: @white;
+  background-color: @gray800;
+}
+
+.btn-default:hover,
+.btn-default:active {
+  background-color: @gray900;
+}
+
+.btn-orange {
+  color: @white;
+  background-color: @blue800;
+}
+
+.btn-orange:hover,
+.btn-orange:active {
+  background-color: @blue900;
+}
+
+.input {
+  padding: 12px 18px;
+  border-radius: 24px;
+  border:1px solid @gray500;
+  font-size: 14px;
+}
+
+.input-fw {
+  display: block;
+  width: 100%;
+}
+
+.inline-input {
+  display: inline-block;
+}
+
+.input-dropdown {
+  color: @gray800;
+  width: 8em;
+  height: 2em;
+  border: 2px solid @gray300;
+  border-radius: 0.5em;
+  font-size: 1em;
+}
+
+.input-title {
+  display: inline-block;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -103,7 +255,7 @@ nav {
   position: fixed;
   background-color: @white;
   top: 0;
-  z-index: 999;
+  z-index: 990;
   .transition;
 
   .nav-wrap-items {
@@ -285,152 +437,6 @@ br {
     left: 50%;
     margin-left: -565px;
   }
-}
-
-.display {
-  display: block !important;
-}
-
-.container-fluid {
-  width: 100%;
-}
-
-.bg-light {
-
-}
-
-.bg-orange {
-  color: @white;
-  background-color: @blue800;
-
-  h4 {
-    color: @white;
-  }
-
-  .block-description {
-    color: @white !important;
-    margin-bottom: 32px;
-  }
-}
-
-.bg-fw-half-left {
-  color: @white;
-  width: 50%;
-  height: 20em;
-  position: absolute;
-  left: 0;
-  z-index: 0;
-}
-
-.bg-fw-half-right {
-  color: @white;
-  width: 50%;
-  height: 20em;
-  position: absolute;
-  right: 0;
-  z-index: 0;
-}
-
-.bg-color-gray800 {
-  color: @white;
-  background-color: @gray800;
-}
-
-.bg-color-orange800 {
-  color: @white;
-  background-color: @blue800;
-}
-
-.bg-color-red {
-  color: @white;
-  background-color: red;
-}
-
-.bg-color-green {
-  color: @white;
-  background-color: @green800;
-}
-
-.bg-color-blue {
-  color: @white;
-  background-color: @blue800;
-}
-
-.bg-color-orange {
-  color: @white;
-  background-color: @orange800;
-}
-
-/* -- ui elements --*/
-
-.btn {
-  border: 0;
-  cursor: pointer;
-}
-
-.btn-md {
-  font-size: 14px;
-  padding: 13px 18px 11px 18px;
-  border-radius: 48px;
-  .acumin;
-}
-
-.btn-sm {
-  font-size: 12px;
-  padding: 8px 14px 7px 14px;
-  border-radius: 48px;
-  .acumin;
-}
-
-.btn-default {
-  color: @white;
-  background-color: @gray800;
-}
-
-.btn-default:hover,
-.btn-default:active {
-  background-color: @gray900;
-}
-
-.btn-orange {
-  color: @white;
-  background-color: @blue800;
-}
-
-.btn-orange:hover,
-.btn-orange:active {
-  background-color: @blue900;
-}
-
-.input {
-  padding: 12px 18px;
-  border-radius: 24px;
-  border:1px solid @gray500;
-  font-size: 14px;
-}
-
-.inline-input {
-  display: inline-block;
-}
-
-.input-dropdown {
-  color: @gray800;
-  width: 8em;
-  height: 2em;
-  border: 2px solid @gray300;
-  border-radius: 0.5em;
-  font-size: 1em;
-}
-
-.input-title {
-  display: inline-block;
-}
-
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-    outline: none;
 }
 
 /* Customize the label (the container) */

@@ -313,6 +313,67 @@
 .photo-press-logo-theguardian {
   background-image: url('../images/photo-logo-theguardian.png');
 }
+.modal {
+  z-index: 999 !important;
+}
+.blocker {
+  z-index: 998 !important;
+}
+.modal-subscribe {
+  padding: 2em;
+}
+.modal-subscribe h3 {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  font-size: 1.6em;
+  text-align: center;
+  font-family: 'Sofia Pro', sans-serif;
+  letter-spacing: -0.005em;
+}
+.modal-subscribe .input-fw {
+  margin-bottom: 0.8em;
+}
+.modal-subscribe .submit {
+  display: block;
+  margin: 0 auto 0.8em auto;
+}
+.modal-subscribe .wrap-policy {
+  padding-left: 6em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.modal-subscribe {
+  padding: 2em;
+  font-size: 1em;
+}
+.modal-subscribe .table-no-border {
+  width: 100%;
+  border-collapse: collapse;
+}
+.modal-subscribe .table-no-border tr,
+.modal-subscribe .table-no-border td {
+  border: 0;
+}
+.modal-subscribe .rss-list {
+  margin-bottom: 1em;
+}
+.modal-subscribe .rss-list td {
+  padding: 0.3em 0;
+}
+.modal-subscribe .rss-list .category-name {
+  width: 9em;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.modal-subscribe .rss-list .input-url {
+  display: block;
+  width: 100%;
+  padding: 0.6em;
+  background-color: #ECEDEF;
+  border: 0;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
 /* -- prefix --*/
 .sofia {
   font-family: 'Sofia Pro', sans-serif;
@@ -361,6 +422,126 @@
 .font-wh {
   color: #fff !important;
 }
+.display {
+  display: block !important;
+}
+.container-fluid {
+  width: 100%;
+}
+.bg-orange {
+  color: #fff;
+  background-color: #004bb7;
+}
+.bg-orange h4 {
+  color: #fff;
+}
+.bg-orange .block-description {
+  color: #fff !important;
+  margin-bottom: 32px;
+}
+.bg-fw-half-left {
+  color: #fff;
+  width: 50%;
+  height: 20em;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+.bg-fw-half-right {
+  color: #fff;
+  width: 50%;
+  height: 20em;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+.bg-color-gray800 {
+  color: #fff;
+  background-color: #2A3141;
+}
+.bg-color-orange800 {
+  color: #fff;
+  background-color: #004bb7;
+}
+.bg-color-red {
+  color: #fff;
+  background-color: red;
+}
+.bg-color-green {
+  color: #fff;
+  background-color: #BACC54;
+}
+.bg-color-blue {
+  color: #fff;
+  background-color: #004bb7;
+}
+.bg-color-orange {
+  color: #fff;
+  background-color: #EF7E53;
+}
+/* -- ui elements --*/
+.btn {
+  border: 0;
+  cursor: pointer;
+}
+.btn-md {
+  font-size: 14px;
+  padding: 13px 18px 11px 18px;
+  border-radius: 48px;
+  font-family: 'Acumin Pro', sans-serif;
+}
+.btn-sm {
+  font-size: 12px;
+  padding: 8px 14px 7px 14px;
+  border-radius: 48px;
+  font-family: 'Acumin Pro', sans-serif;
+}
+.btn-default {
+  color: #fff;
+  background-color: #2A3141;
+}
+.btn-default:hover,
+.btn-default:active {
+  background-color: #111317;
+}
+.btn-orange {
+  color: #fff;
+  background-color: #004bb7;
+}
+.btn-orange:hover,
+.btn-orange:active {
+  background-color: #004393;
+}
+.input {
+  padding: 12px 18px;
+  border-radius: 24px;
+  border: 1px solid #D0D4E0;
+  font-size: 14px;
+}
+.input-fw {
+  display: block;
+  width: 100%;
+}
+.inline-input {
+  display: inline-block;
+}
+.input-dropdown {
+  color: #2A3141;
+  width: 8em;
+  height: 2em;
+  border: 2px solid #ECEDEF;
+  border-radius: 0.5em;
+  font-size: 1em;
+}
+.input-title {
+  display: inline-block;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
 * {
   box-sizing: border-box;
 }
@@ -395,7 +576,7 @@ nav {
   position: fixed;
   background-color: #fff;
   top: 0;
-  z-index: 999;
+  z-index: 990;
   transition: all 0.5s;
 }
 nav .nav-wrap-items {
@@ -540,122 +721,6 @@ br {
   position: relative;
   left: 50%;
   margin-left: -565px;
-}
-.display {
-  display: block !important;
-}
-.container-fluid {
-  width: 100%;
-}
-.bg-orange {
-  color: #fff;
-  background-color: #004bb7;
-}
-.bg-orange h4 {
-  color: #fff;
-}
-.bg-orange .block-description {
-  color: #fff !important;
-  margin-bottom: 32px;
-}
-.bg-fw-half-left {
-  color: #fff;
-  width: 50%;
-  height: 20em;
-  position: absolute;
-  left: 0;
-  z-index: 0;
-}
-.bg-fw-half-right {
-  color: #fff;
-  width: 50%;
-  height: 20em;
-  position: absolute;
-  right: 0;
-  z-index: 0;
-}
-.bg-color-gray800 {
-  color: #fff;
-  background-color: #2A3141;
-}
-.bg-color-orange800 {
-  color: #fff;
-  background-color: #004bb7;
-}
-.bg-color-red {
-  color: #fff;
-  background-color: red;
-}
-.bg-color-green {
-  color: #fff;
-  background-color: #BACC54;
-}
-.bg-color-blue {
-  color: #fff;
-  background-color: #004bb7;
-}
-.bg-color-orange {
-  color: #fff;
-  background-color: #EF7E53;
-}
-/* -- ui elements --*/
-.btn {
-  border: 0;
-  cursor: pointer;
-}
-.btn-md {
-  font-size: 14px;
-  padding: 13px 18px 11px 18px;
-  border-radius: 48px;
-  font-family: 'Acumin Pro', sans-serif;
-}
-.btn-sm {
-  font-size: 12px;
-  padding: 8px 14px 7px 14px;
-  border-radius: 48px;
-  font-family: 'Acumin Pro', sans-serif;
-}
-.btn-default {
-  color: #fff;
-  background-color: #2A3141;
-}
-.btn-default:hover,
-.btn-default:active {
-  background-color: #111317;
-}
-.btn-orange {
-  color: #fff;
-  background-color: #004bb7;
-}
-.btn-orange:hover,
-.btn-orange:active {
-  background-color: #004393;
-}
-.input {
-  padding: 12px 18px;
-  border-radius: 24px;
-  border: 1px solid #D0D4E0;
-  font-size: 14px;
-}
-.inline-input {
-  display: inline-block;
-}
-.input-dropdown {
-  color: #2A3141;
-  width: 8em;
-  height: 2em;
-  border: 2px solid #ECEDEF;
-  border-radius: 0.5em;
-  font-size: 1em;
-}
-.input-title {
-  display: inline-block;
-}
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-  outline: none;
 }
 /* Customize the label (the container) */
 .wrap-checkbox-item {
