@@ -1135,14 +1135,14 @@ br {
 .block-index-hero .wrap-hero-content .wrap-sign-up .btn {
   width: 12em;
 }
-.block-index-hero .header-image {
+.header-image {
   width: 53rem;
   height: 50rem;
   background-size: 100%;
   background-repeat: no-repeat;
   position: absolute;
   top: 5em;
-  right: 3em;
+  right: -4em;
   z-index: 1;
 }
 .block-index-partnership .partnership-review {
