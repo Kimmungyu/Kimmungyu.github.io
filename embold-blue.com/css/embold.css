@@ -908,7 +908,7 @@ br {
   border-bottom: 0;
 }
 .nav-sub .nav-menu-link:hover {
-  color: #1b69c7;
+  color: #21ABB0;
 }
 .nav-sub .nav-item-main {
   min-height: 170px;
@@ -926,7 +926,7 @@ br {
   transition: all 0.5s;
 }
 .nav-sub .nav-item-main .nav-item-sub-list li:hover {
-  color: #1b69c7;
+  color: #21ABB0;
 }
 .nav-sub-product .nav-item-main {
   width: 220px !important;
