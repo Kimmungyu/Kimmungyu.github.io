@@ -291,6 +291,7 @@ br {
 
 .nav-grid {
   width: 100%;
+  z-index: 999;
 
   .nav-item-logo,
   .nav-item-sign {
@@ -319,10 +320,10 @@ br {
     position: absolute;
 
     .active {
-      color: @white;
+      color: @gray900;
       margin-top: 0;
-      padding: 18px 12px 16px 12px;
-      background-color: @gray800;
+      padding: 14px 12px 15px 10px;
+      background-color: @gray300;
     }
 
     .active-menu {
@@ -354,12 +355,13 @@ br {
   display:none;
   position: fixed;
   top: 56px;
-  background-color: @gray800;
+  background-color: @gray300;
+  border-bottom: 4px solid @blue800;
   z-index: 998;
   .box-shadow;
 
   .nav-menu-link {
-    color: @gray600;
+    color: @gray900;
     display: block;
     font-size: 0.9em;
     .sofia;
@@ -384,7 +386,7 @@ br {
       padding: 0;
       list-style: none;
       li {
-        color: @gray400;
+        color: @gray700;
         padding-bottom: 0.8em;
         font-size: 0.8em;
         line-height: 1.5;

@@ -837,6 +837,7 @@ br {
 }
 .nav-grid {
   width: 100%;
+  z-index: 999;
 }
 .nav-grid .nav-item-logo,
 .nav-grid .nav-item-sign {
@@ -862,10 +863,10 @@ br {
   position: absolute;
 }
 .nav-grid .nav-wrap-items .active {
-  color: #fff;
+  color: #111317;
   margin-top: 0;
-  padding: 18px 12px 16px 12px;
-  background-color: #2A3141;
+  padding: 14px 12px 15px 10px;
+  background-color: #ECEDEF;
 }
 .nav-grid .nav-wrap-items .active-menu {
   padding-top: 15px !important;
@@ -888,14 +889,15 @@ br {
   display: none;
   position: fixed;
   top: 56px;
-  background-color: #2A3141;
+  background-color: #ECEDEF;
+  border-bottom: 4px solid #21ABB0;
   z-index: 998;
   -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
   -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
 }
 .nav-sub .nav-menu-link {
-  color: #A8ACB4;
+  color: #111317;
   display: block;
   font-size: 0.9em;
   font-family: 'Sofia Pro', sans-serif;
@@ -919,7 +921,7 @@ br {
   list-style: none;
 }
 .nav-sub .nav-item-main .nav-item-sub-list li {
-  color: #E2E5EB;
+  color: #7C808B;
   padding-bottom: 0.8em;
   font-size: 0.8em;
   line-height: 1.5;
