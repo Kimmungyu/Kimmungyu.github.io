@@ -386,7 +386,7 @@
 }
 .workflow-hover-effect .wrap-text .step-number {
   color: #fff;
-  background-color: #004bb7;
+  background-color: #21ABB0;
 }
 .workflow-hover-effect .description {
   visibility: visible;
@@ -413,7 +413,7 @@
 }
 .block-index-workflow .workflow-1:hover .wrap-text .step-number {
   color: #fff;
-  background-color: #004bb7;
+  background-color: #21ABB0;
 }
 .block-index-workflow .workflow-1:hover .description {
   visibility: visible;
@@ -427,7 +427,7 @@
 }
 .block-index-workflow .workflow-2:hover .wrap-text .step-number {
   color: #fff;
-  background-color: #004bb7;
+  background-color: #21ABB0;
 }
 .block-index-workflow .workflow-2:hover .description {
   visibility: visible;
@@ -441,7 +441,7 @@
 }
 .block-index-workflow .workflow-3:hover .wrap-text .step-number {
   color: #fff;
-  background-color: #004bb7;
+  background-color: #21ABB0;
 }
 .block-index-workflow .workflow-3:hover .description {
   visibility: visible;
@@ -569,26 +569,26 @@
   display: inline-block;
   width: 2.8em;
   height: 4px;
-  background-color: #004bb7;
+  background-color: #21ABB0;
   left: 100%;
 }
 .block-index-workflow .wrap-workflow .workflow-flowcircle-right {
   display: inline-block;
   background-color: #fff;
-  border: 4px solid #004bb7;
+  border: 4px solid #21ABB0;
   border-radius: 13px;
   left: 100%;
 }
 .block-index-workflow .wrap-workflow .workflow-flowcircle-left {
   display: inline-block;
   background-color: #fff;
-  border: 4px solid #004bb7;
+  border: 4px solid #21ABB0;
   border-radius: 13px;
   left: 0;
 }
 .block-index-workflow .active {
   color: #fff !important;
-  background-color: #004bb7;
+  background-color: #21ABB0;
 }
 .block-index-workflow .active .step-number,
 .block-index-workflow .active .step-title,
@@ -654,7 +654,7 @@
 }
 .bg-orange {
   color: #fff;
-  background-color: #004bb7;
+  background-color: #21ABB0;
 }
 .bg-orange h4 {
   color: #fff;
@@ -685,7 +685,7 @@
 }
 .bg-color-orange800 {
   color: #fff;
-  background-color: #004bb7;
+  background-color: #21ABB0;
 }
 .bg-color-red {
   color: #fff;
@@ -697,7 +697,7 @@
 }
 .bg-color-blue {
   color: #fff;
-  background-color: #004bb7;
+  background-color: #21ABB0;
 }
 .bg-color-orange {
   color: #fff;
@@ -730,7 +730,7 @@
 }
 .btn-orange {
   color: #fff;
-  background-color: #004bb7;
+  background-color: #21ABB0;
 }
 .btn-orange:hover,
 .btn-orange:active {
@@ -856,7 +856,7 @@ br {
 }
 .nav-grid .nav-wrap-items .active-menu {
   padding-top: 15px !important;
-  border-top: 5px solid #004bb7;
+  border-top: 5px solid #21ABB0;
 }
 .nav-grid .nav-wrap-items .nav-item-main {
   width: 150px;
@@ -990,7 +990,7 @@ br {
 }
 /* When the checkbox is checked, add a blue background */
 .wrap-checkbox-item input:checked ~ .checkmark {
-  background-color: #004bb7;
+  background-color: #21ABB0;
 }
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
@@ -1389,7 +1389,7 @@ br {
 .pricing-plan .pricing-terms .yearly:hover,
 .pricing-plan .pricing-terms .active {
   color: #fff;
-  background-color: #004bb7;
+  background-color: #21ABB0;
 }
 .pricing-plan .pricing-terms:after {
   display: block;
@@ -1413,7 +1413,7 @@ br {
   font-size: 1rem;
 }
 .pricing-plan .pricing-plan-box .price {
-  color: #004bb7;
+  color: #21ABB0;
   font-size: 2.4rem;
   margin: 0 0 -8px 0;
   padding: 0;
@@ -1595,7 +1595,7 @@ br {
   text-transform: uppercase;
 }
 .sub-menu .active {
-  color: #004bb7;
+  color: #21ABB0;
 }
 .wrap-sub-menu-alt {
   display: none;
@@ -1644,7 +1644,7 @@ br {
   letter-spacing: -0.005em;
 }
 .block-user-story .wrap-content h4 {
-  color: #004bb7;
+  color: #21ABB0;
   text-align: left;
 }
 .block-user-story .wrap-content p,
@@ -1658,7 +1658,7 @@ br {
   margin-top: 0;
 }
 .block-user-story .headcopy {
-  color: #004bb7;
+  color: #21ABB0;
   font-size: 36px;
   font-weight: bold;
   line-height: 1;
@@ -1716,7 +1716,7 @@ br {
   transition: all 0.5s;
 }
 .technical-documentation .document-list li:hover {
-  color: #004bb7;
+  color: #21ABB0;
 }
 .team-value .wrap-value {
   width: 100%;
@@ -1918,7 +1918,7 @@ br {
   transition: all 0.5s;
 }
 .timeline ::-webkit-scrollbar-thumb:hover {
-  background: #004bb7;
+  background: #21ABB0;
   transition: all 0.5s;
 }
 .timeline .arrow-right {
@@ -2054,7 +2054,7 @@ br {
 }
 .job-opening .job-opening-list .job-table .show-more {
   display: inline-block;
-  color: #004bb7;
+  color: #21ABB0;
   margin-top: 8px;
   font-size: 0.9em;
   float: right;
@@ -2158,7 +2158,7 @@ section.press-releases {
 }
 .press-releases-table .btn .btn-text,
 .company-news-table .btn .btn-text {
-  color: #004bb7;
+  color: #21ABB0;
   font-size: 0.8em;
   padding-right: 1em;
 }
