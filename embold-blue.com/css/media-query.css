@@ -1,6 +1,53 @@
+.sofia {
+  font-family: 'Sofia Pro', sans-serif;
+  letter-spacing: -0.005em;
+}
+.acumin {
+  font-family: 'Acumin Pro', sans-serif;
+}
+.background-no-repeat {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.text-center {
+  text-align: center;
+}
+.box-shadow {
+  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+}
+.box-shadow-none {
+  -webkit-box-shadow: 0 !important;
+  -moz-box-shadow: 0 !important;
+  box-shadow: 0 !important;
+}
+.transition {
+  transition: all 0.5s;
+}
+.icon {
+  width: 48px;
+  height: 48px;
+  margin-top: 4px;
+  margin-right: 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.body-illustration {
+  height: 300px;
+  background-size: auto 100%;
+}
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .container-fluid {
+    width: 100%;
+  }
   .index .block {
     padding: 24px 0;
+  }
+  .index .block .block-description {
+    width: 100%;
   }
   .index h2 {
     font-size: 2.4em;
@@ -10,10 +57,13 @@
   }
   .header-image {
     width: 100%;
-    height: 450px;
+    height: 400px;
     position: relative;
-    background-size: 160%;
-    background-position: top right;
+    background-size: 100%;
+    background-position: center;
+    background-image: url('../images/header-index-hero-mobile.png');
+    top: auto;
+    right: auto;
   }
   .block-index-hero {
     height: auto;
@@ -23,29 +73,174 @@
     margin-bottom: 0;
   }
   .block-index-hero .wrap-hero-content h1.headcopy {
-    font-size: 3.2em;
+    font-size: 3em;
+  }
+  .block-index-workflow {
+    background-color: #F5F6F8;
+  }
+  .block-index-workflow .wrap-workflow {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+  }
+  .block-index-workflow .wrap-workflow .wrap-animation {
+    display: block;
+    height: 230px;
+    position: relative;
+  }
+  .block-index-workflow .wrap-workflow .wrap-animation .item-logo {
+    height: 60px;
+    background-color: #fff;
+    margin-bottom: 0.8em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+    transition: all 0.5s;
+  }
+  .block-index-workflow .wrap-workflow .wrap-animation .logo-github {
+    width: 140px;
+    left: 3em;
+    position: absolute;
+    background-image: url('../images/logo-github.svg');
+    background-size: 90% auto;
+  }
+  .block-index-workflow .wrap-workflow .wrap-animation .logo-bitbucket {
+    width: 200px;
+    top: 72px;
+    right: 0.5em;
+    position: absolute;
+    background-image: url('../images/logo-bitbucket.svg');
+    background-size: 70% auto;
+  }
+  .block-index-workflow .wrap-workflow .wrap-animation .logo-jenkins {
+    width: 160px;
+    top: 144px;
+    left: 1em;
+    position: absolute;
+    background-image: url('../images/logo-jenkins.svg');
+    background-size: 70% auto;
+  }
+  .block-index-workflow .wrap-workflow .wrap-animation .logo-embold {
+    width: 80%;
+    height: 140px;
+    margin-left: 10%;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../images/logo-embold.svg');
+    background-size: 70% auto;
+    position: absolute;
+    top: 35px;
+    -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+  }
+  .block-index-workflow .wrap-workflow .wrap-animation .index-step-3 {
+    width: 200px;
+    height: 200px;
+    margin: auto auto;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+    border-radius: 8px;
+  }
+  .block-index-workflow .wrap-workflow .step-number {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    font-size: 2.4em;
+    margin: 0.4em;
+    font-weight: 300;
+    border-radius: 0.7em;
+    color: #fff !important;
+    background-color: #21ABB0;
+  }
+  .block-index-workflow .wrap-workflow .step-title {
+    margin: -9px 0 0 0;
+    padding: 0;
+    font-size: 1.4em;
+    font-family: 'Sofia Pro', sans-serif;
+    letter-spacing: -0.005em;
+  }
+  .block-index-workflow .wrap-workflow .description {
+    color: #A8ACB4;
+    font-size: 0.9em;
   }
   .block-index-workflow .index-arrow {
     display: none;
   }
-  .block-index-workflow .wrap-workflow {
-    height: auto;
+  .block-index-features .il-index-features {
+    width: 90%;
+    height: 270px;
+    margin-bottom: 1.5em;
+    background-size: auto 80%;
   }
-  .block-index-workflow .wrap-workflow .wrap-animation {
-    height: auto;
+  .block-index-features .description {
+    color: #A8ACB4;
+    margin-top: auto;
+    font-size: 1rem;
+    font-weight: normal;
   }
-  .block-index-workflow .wrap-workflow .wrap-animation .logo-jenkins:after {
-    display: block;
-    content: '';
-    clear: both;
-  }
-  .block-index-workflow .wrap-workflow .wrap-text .description {
-    visibility: visible;
-  }
-  .block-index-workflow .wrap-workflow .wrap-animation,
-  .block-index-workflow .wrap-workflow .wrap-text {
-    display: block;
+  .block-index-user-stories .wrap-user {
+    height: 120px;
+    padding: 1.4em;
+    background-image: none;
     position: relative;
+  }
+  .block-index-user-stories .wrap-user .role {
+    margin-top: 0;
+    font-size: 1.8em;
+  }
+  .block-index-user-stories .wrap-user .description {
+    display: block;
+    width: 100%;
+    height: 2em;
+    margin-top: 0.3em;
+    color: #7C808B;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .block-index-user-stories .wrap-user .link-arrow {
+    opacity: 1;
+    top: 24px;
+    left: auto;
+    right: 14px;
+  }
+  .block-index-partnership .wrap-logo {
+    display: none;
+  }
+  .block-footer {
+    display: none;
+  }
+  .block-footer-mobile {
+    display: block;
+    color: #A8ACB4;
+    font-size: 13px;
+    padding: 32px 0 48px 0;
+    background-color: #F5F6F8;
+  }
+  .block-footer-mobile .wrap-menu {
+    width: 50%;
+    margin-bottom: 16px;
+    float: left;
+    position: relative;
+  }
+  .block-footer-mobile .wrap-menu h4 {
+    color: #2A3141;
+    margin: 0 0 8px 0;
+    padding: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .block-footer-mobile .wrap-menu .nav-menu-link {
+    display: block;
+    margin-bottom: 5px;
   }
   .intercom {
     display: none;

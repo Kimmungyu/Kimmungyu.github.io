@@ -601,6 +601,10 @@ br {
   }
 }
 
+.block-footer-mobile {
+  display: none;
+}
+
 .block-copyright {
   color: @gray600;
   font-size: 13px;
@@ -722,10 +726,11 @@ br {
   }
 
   .wrap-logo {
-    width: 100%;
+    width: 25%;
     height: 7em;
     margin: 1.8em 0 0.6em 0;
     background-size: 70%;
+    float: left;
   }
 }
 
@@ -776,20 +781,22 @@ br {
       .background-no-repeat;
     }
   }
+}
 
-  .wrap-user:hover {
-    -webkit-filter: grayscale(0);
-    -webkit-filter: grayscale(0);
-       -moz-filter: grayscale(0);
+@media only screen and (min-device-width : 1025px) {
+    .wrap-user:hover {
+      -webkit-filter: grayscale(0);
+      -webkit-filter: grayscale(0);
+         -moz-filter: grayscale(0);
 
-    .description {
-      color: @gray700;
+      .description {
+        color: @gray700;
+      }
+
+      .link-arrow {
+        opacity: 1;
+      }
     }
-
-    .link-arrow {
-      opacity: 1;
-    }
-  }
 }
 
 .block-index-features {

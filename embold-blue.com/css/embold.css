@@ -379,234 +379,202 @@
   font-size: 0.8em;
   cursor: pointer;
 }
-.workflow-hover-effect .wrap-text {
-  top: 210px;
-  padding-bottom: 50px;
-  transition: all 0.5s;
-}
-.workflow-hover-effect .wrap-text .step-number {
-  color: #fff;
-  background-color: #21ABB0;
-}
-.workflow-hover-effect .description {
-  visibility: visible;
-  opacity: 1;
-  transition: all 0.5s;
-}
-.block-index-workflow {
-  height: 670px;
-  background-color: #F5F6F8;
-}
-.block-index-workflow .workflow-1:hover .wrap-animation .logo-github {
-  left: 4em;
-}
-.block-index-workflow .workflow-1:hover .wrap-animation .logo-bitbucket {
-  right: 1em;
-}
-.block-index-workflow .workflow-1:hover .wrap-animation .logo-jenkins {
-  left: 1.8em;
-}
-.block-index-workflow .workflow-1:hover .wrap-text {
-  top: 210px;
-  padding-bottom: 50px;
-  transition: all 0.5s;
-}
-.block-index-workflow .workflow-1:hover .wrap-text .step-number {
-  color: #fff;
-  background-color: #21ABB0;
-}
-.block-index-workflow .workflow-1:hover .description {
-  visibility: visible;
-  opacity: 1;
-  transition: all 0.5s;
-}
-.block-index-workflow .workflow-2:hover .wrap-text {
-  top: 210px;
-  padding-bottom: 50px;
-  transition: all 0.5s;
-}
-.block-index-workflow .workflow-2:hover .wrap-text .step-number {
-  color: #fff;
-  background-color: #21ABB0;
-}
-.block-index-workflow .workflow-2:hover .description {
-  visibility: visible;
-  opacity: 1;
-  transition: all 0.5s;
-}
-.block-index-workflow .workflow-3:hover .wrap-text {
-  top: 210px;
-  padding-bottom: 50px;
-  transition: all 0.5s;
-}
-.block-index-workflow .workflow-3:hover .wrap-text .step-number {
-  color: #fff;
-  background-color: #21ABB0;
-}
-.block-index-workflow .workflow-3:hover .description {
-  visibility: visible;
-  opacity: 1;
-  transition: all 0.5s;
-}
-.block-index-workflow .wrap-workflow {
-  width: 100%;
-  border-radius: 8px;
-  position: relative;
-  text-align: center;
-}
-.block-index-workflow .wrap-workflow .wrap-animation {
-  height: 240px;
-  position: relative;
-}
-.block-index-workflow .wrap-workflow .wrap-animation .item-logo {
-  height: 60px;
-  background-color: #fff;
-  margin-bottom: 0.8em;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  transition: all 0.5s;
-}
-.block-index-workflow .wrap-workflow .wrap-animation .logo-github {
-  width: 140px;
-  left: 3em;
-  position: absolute;
-  background-image: url('../images/logo-github.svg');
-  background-size: 90% auto;
-}
-.block-index-workflow .wrap-workflow .wrap-animation .logo-bitbucket {
-  width: 200px;
-  top: 72px;
-  right: 0.5em;
-  position: absolute;
-  background-image: url('../images/logo-bitbucket.svg');
-  background-size: 70% auto;
-}
-.block-index-workflow .wrap-workflow .wrap-animation .logo-jenkins {
-  width: 160px;
-  top: 144px;
-  left: 1em;
-  position: absolute;
-  background-image: url('../images/logo-jenkins.svg');
-  background-size: 70% auto;
-}
-.block-index-workflow .wrap-workflow .wrap-animation .logo-embold {
-  width: 80%;
-  height: 140px;
-  margin-left: 10%;
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url('../images/logo-embold.svg');
-  background-size: 70% auto;
-  position: absolute;
-  top: 35px;
-  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-}
-.block-index-workflow .wrap-workflow .wrap-animation .index-step-3 {
-  width: 200px;
-  height: 200px;
-  margin: auto auto;
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: auto 100%;
-  border-radius: 8px;
-}
-.block-index-workflow .wrap-workflow .wrap-text {
-  top: 250px;
-  position: absolute;
-}
-.block-index-workflow .wrap-workflow .icon {
-  display: block;
-  margin: 0 auto;
-}
-.block-index-workflow .wrap-workflow .step-number {
-  display: inline-block;
-  color: #A8ACB4;
-  width: 1.3em;
-  height: 1.3em;
-  font-size: 2.4em;
-  margin: 0.4em;
-  font-weight: 300;
-  border-radius: 0.7em;
-  font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.005em;
-  transition: all 0.5s;
-}
-.block-index-workflow .wrap-workflow .step-title {
-  margin: -9px 0 0 0;
-  padding: 0;
-  font-size: 1.4em;
-  font-family: 'Sofia Pro', sans-serif;
-  letter-spacing: -0.005em;
-}
-.block-index-workflow .wrap-workflow .description {
-  visibility: hidden;
-  color: #A8ACB4;
-  font-size: 0.9em;
-  opacity: 0;
-  transition: all 0.5s;
-}
-.block-index-workflow .wrap-workflow .workflow-flowline,
-.block-index-workflow .wrap-workflow .workflow-flowcircle-left,
-.block-index-workflow .wrap-workflow .workflow-flowcircle-right {
-  top: 50%;
-  position: absolute;
-}
-.block-index-workflow .wrap-workflow .workflow-flowcircle-left,
-.block-index-workflow .wrap-workflow .workflow-flowcircle-right {
-  width: 16px;
-  height: 16px;
-  margin-left: -8px;
-  margin-top: -6px;
-}
-.block-index-workflow .wrap-workflow .workflow-flowline {
-  display: inline-block;
-  width: 2.8em;
-  height: 4px;
-  background-color: #21ABB0;
-  left: 100%;
-}
-.block-index-workflow .wrap-workflow .workflow-flowcircle-right {
-  display: inline-block;
-  background-color: #fff;
-  border: 4px solid #21ABB0;
-  border-radius: 13px;
-  left: 100%;
-}
-.block-index-workflow .wrap-workflow .workflow-flowcircle-left {
-  display: inline-block;
-  background-color: #fff;
-  border: 4px solid #21ABB0;
-  border-radius: 13px;
-  left: 0;
-}
-.block-index-workflow .index-arrow {
-  width: 50px;
-  height: 30px;
-  background-image: url('../images/index-arrow.svg');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  position: absolute;
-  z-index: 9;
-}
-.block-index-workflow .arrow-1-2 {
-  right: -55px;
-  top: 96px;
-}
-.block-index-workflow .active {
-  color: #fff !important;
-  background-color: #21ABB0;
-}
-.block-index-workflow .active .step-number,
-.block-index-workflow .active .step-title,
-.block-index-workflow .active .description {
-  color: #fff;
+@media only screen and (min-device-width: 1025px) {
+  .workflow-hover-effect .wrap-text {
+    top: 210px;
+    padding-bottom: 50px;
+    transition: all 0.5s;
+  }
+  .workflow-hover-effect .wrap-text .step-number {
+    color: #fff;
+    background-color: #21ABB0;
+  }
+  .workflow-hover-effect .description {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+  }
+  .block-index-workflow {
+    height: 670px;
+    background-color: #F5F6F8;
+  }
+  .block-index-workflow .workflow-1:hover .wrap-animation .logo-github {
+    left: 4em;
+  }
+  .block-index-workflow .workflow-1:hover .wrap-animation .logo-bitbucket {
+    right: 1em;
+  }
+  .block-index-workflow .workflow-1:hover .wrap-animation .logo-jenkins {
+    left: 1.8em;
+  }
+  .block-index-workflow .workflow-1:hover .wrap-text {
+    top: 210px;
+    padding-bottom: 50px;
+    transition: all 0.5s;
+  }
+  .block-index-workflow .workflow-1:hover .wrap-text .step-number {
+    color: #fff;
+    background-color: #21ABB0;
+  }
+  .block-index-workflow .workflow-1:hover .description {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+  }
+  .block-index-workflow .workflow-2:hover .wrap-text {
+    top: 210px;
+    padding-bottom: 50px;
+    transition: all 0.5s;
+  }
+  .block-index-workflow .workflow-2:hover .wrap-text .step-number {
+    color: #fff;
+    background-color: #21ABB0;
+  }
+  .block-index-workflow .workflow-2:hover .description {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+  }
+  .block-index-workflow .workflow-3:hover .wrap-text {
+    top: 210px;
+    padding-bottom: 50px;
+    transition: all 0.5s;
+  }
+  .block-index-workflow .workflow-3:hover .wrap-text .step-number {
+    color: #fff;
+    background-color: #21ABB0;
+  }
+  .block-index-workflow .workflow-3:hover .description {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+  }
+  .block-index-workflow .wrap-workflow {
+    width: 100%;
+    border-radius: 8px;
+    position: relative;
+    text-align: center;
+  }
+  .block-index-workflow .wrap-workflow .wrap-animation {
+    height: 240px;
+    position: relative;
+  }
+  .block-index-workflow .wrap-workflow .wrap-animation .item-logo {
+    height: 60px;
+    background-color: #fff;
+    margin-bottom: 0.8em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+    transition: all 0.5s;
+  }
+  .block-index-workflow .wrap-workflow .wrap-animation .logo-github {
+    width: 140px;
+    left: 3em;
+    position: absolute;
+    background-image: url('../images/logo-github.svg');
+    background-size: 90% auto;
+  }
+  .block-index-workflow .wrap-workflow .wrap-animation .logo-bitbucket {
+    width: 200px;
+    top: 72px;
+    right: 0.5em;
+    position: absolute;
+    background-image: url('../images/logo-bitbucket.svg');
+    background-size: 70% auto;
+  }
+  .block-index-workflow .wrap-workflow .wrap-animation .logo-jenkins {
+    width: 160px;
+    top: 144px;
+    left: 1em;
+    position: absolute;
+    background-image: url('../images/logo-jenkins.svg');
+    background-size: 70% auto;
+  }
+  .block-index-workflow .wrap-workflow .wrap-animation .logo-embold {
+    width: 80%;
+    height: 140px;
+    margin-left: 10%;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../images/logo-embold.svg');
+    background-size: 70% auto;
+    position: absolute;
+    top: 35px;
+    -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+  }
+  .block-index-workflow .wrap-workflow .wrap-animation .index-step-3 {
+    width: 200px;
+    height: 200px;
+    margin: auto auto;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+    border-radius: 8px;
+  }
+  .block-index-workflow .wrap-workflow .wrap-text {
+    top: 250px;
+    position: absolute;
+  }
+  .block-index-workflow .wrap-workflow .icon {
+    display: block;
+    margin: 0 auto;
+  }
+  .block-index-workflow .wrap-workflow .step-number {
+    display: inline-block;
+    color: #A8ACB4;
+    width: 1.3em;
+    height: 1.3em;
+    font-size: 2.4em;
+    margin: 0.4em;
+    font-weight: 300;
+    border-radius: 0.7em;
+    font-family: 'Sofia Pro', sans-serif;
+    letter-spacing: -0.005em;
+    transition: all 0.5s;
+  }
+  .block-index-workflow .wrap-workflow .step-title {
+    margin: -9px 0 0 0;
+    padding: 0;
+    font-size: 1.4em;
+    font-family: 'Sofia Pro', sans-serif;
+    letter-spacing: -0.005em;
+  }
+  .block-index-workflow .wrap-workflow .description {
+    visibility: hidden;
+    color: #A8ACB4;
+    font-size: 0.9em;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .block-index-workflow .index-arrow {
+    width: 50px;
+    height: 30px;
+    background-image: url('../images/index-arrow.svg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 9;
+  }
+  .block-index-workflow .arrow-1-2 {
+    right: -55px;
+    top: 96px;
+  }
+  .block-index-workflow .active {
+    color: #fff !important;
+    background-color: #21ABB0;
+  }
+  .block-index-workflow .active .step-number,
+  .block-index-workflow .active .step-title,
+  .block-index-workflow .active .description {
+    color: #fff;
+  }
 }
 /* -- prefix --*/
 .sofia {
@@ -1094,6 +1062,9 @@ br {
   display: block;
   margin-bottom: 5px;
 }
+.block-footer-mobile {
+  display: none;
+}
 .block-copyright {
   color: #A8ACB4;
   font-size: 13px;
@@ -1194,10 +1165,11 @@ br {
   background-image: url('../images/photo-partnership-1.jpg');
 }
 .block-index-partnership .wrap-logo {
-  width: 100%;
+  width: 25%;
   height: 7em;
   margin: 1.8em 0 0.6em 0;
   background-size: 70%;
+  float: left;
 }
 .block-index-user-stories {
   background-color: #F5F6F8;
@@ -1249,15 +1221,17 @@ br {
   background-position: center center;
   background-size: cover;
 }
-.block-index-user-stories .wrap-user:hover {
-  -webkit-filter: grayscale(0);
-  -moz-filter: grayscale(0);
-}
-.block-index-user-stories .wrap-user:hover .description {
-  color: #7C808B;
-}
-.block-index-user-stories .wrap-user:hover .link-arrow {
-  opacity: 1;
+@media only screen and (min-device-width: 1025px) {
+  .wrap-user:hover {
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+  }
+  .wrap-user:hover .description {
+    color: #7C808B;
+  }
+  .wrap-user:hover .link-arrow {
+    opacity: 1;
+  }
 }
 .block-index-features .il-index-features {
   width: 100%;
