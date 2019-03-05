@@ -49,7 +49,7 @@
   background-size: auto 100%;
 }
 
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+@media only screen and (max-device-width : 812px) {
   .container-fluid {
     width: 100%;
   }
@@ -314,6 +314,16 @@
   .intercom {
     display: none;
   }
+
+  #nav-mobile ul > li:not(:first-child) {
+    display:none
+  }
+  #nav-mobile ul > li:last-of-type {
+    display: block
+  }
+  #nav-mobile ul input {
+    display: inline
+  }
 }
 
 
@@ -392,21 +402,8 @@
   flot: right;
   display: none
 }
-/* Start Menue Right */
 
-/* Start Media Query */
-@media screen and (max-width:680px){
-  #nav-mobile ul > li:not(:first-child) {
-    display:none
-  }
-  #nav-mobile ul > li:last-of-type {
-    display: block
-  }
-  #nav-mobile ul input {
-    display: inline
-  }
-}
-@media screen and (min-width:680px) {
+@media screen and (min-device-width:814px) {
   #nav-mobile ul > ol > li {
     display:none
   }
