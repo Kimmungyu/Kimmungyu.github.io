@@ -24,6 +24,20 @@
 </head>
 <body class="index">
   <div class="nav-index"></div>
+  <div id="nav-mobile">
+    <ul>
+      <li><a href="#"><img src="images/logo-embold.svg" width="100" height="auto" /></a></li>
+      <li><a href="product-overview.html">Product</a></li>
+      <li><a href="solutions-user-roles.html">Solutions</a></li>
+      <li><a href="resources-product.html">Resources</a></li>
+      <li><a href="company-about.html">Company</a></li>
+      <li>
+        <a href="#">
+          <i class="fa fa-bars"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-12" style="position: relative;">
@@ -256,20 +270,22 @@
       </div>
     </div>
   </section>
-  <!-- <div class="container-fluid block-footer-contact bg-orange">
+  <div class="container-fluid block-footer-contact bg-orange">
     <div class="bg-fw-half-left bg-color-gray800"></div>
     <div class="bg-fw-half-right bg-color-orange800"></div>
     <div class="container-fluid block">
       <div class="row">
         <div class="col-6 text-center">
-          <h4>Sign-Up</h4>
-          <h2>It is Free!</h2>
-          <p>
-            Embold is free for open source projects.<br />
-            Multiple cloud or on-premise plans are available.<br />
-            for commercial projects.
-          </p>
-          <button class="btn btn-dark btn-md btn-more" onclick="window.location.href='./resources-product.html'">Choose Plan</button>
+          <div class="block-mobile">
+            <h4>Sign-Up</h4>
+            <h2>It is Free!</h2>
+            <p>
+              Embold is free for open source projects.<br />
+              Multiple cloud or on-premise plans are available.<br />
+              for commercial projects.
+            </p>
+            <button class="btn btn-dark btn-md btn-more" onclick="window.location.href='./resources-product.html'">Choose Plan</button>
+          </div>
         </div>
         <div class="col-6 text-center">
           <h4>Contact us</h4>
@@ -282,7 +298,7 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
   <div class="container-fluid bg-light block-footer">
     <div class="container">
       <div class="row">
@@ -379,5 +395,26 @@
   </div>
   <div class="intercom"></div>
   <script src="js/main.js" type="text/javascript"></script>
+  <script>
+    $(function() {
+      var ulLi = $('#nav-mobile ul > li'),
+          fa = $('#nav-mobile ul > li:last-of-type a .fa');
+
+       $('#nav-mobile ul').append('<ol></ol>');
+
+       $('#nav-mobile').each(function() {
+         for (var i=0; i <= ulLi.length - 3; i++) {
+           $('#nav-mobile ul > ol').append("<li>"+ i +"</li>");
+           $('#nav-mobile ul > ol > li').eq(i).html(ulLi.eq(i+1).html());
+         }
+      });
+
+      $('#nav-mobile ul > li:last-of-type').on('click', function() {
+        fa.toggleClass('fa-bars');
+        fa.toggleClass('fa-times');
+        $(this).parent().children('ol').slideToggle(500);
+      });
+    });
+  </script>
 </body>
 </html>

@@ -1,20 +1,12 @@
-<nav class="nav nav-grid nav-index nav-default">
+<nav class="nav nav-grid nav-index nav-default topnav">
   <div class="nav-item-logo">
     <a href="index.html"><img src="images/logo-embold.svg" width="113" height="20" /></a>
   </div>
-  <div class="nav-wrap-items">
-    <div class="nav-item-main nav-item-main-product">
-      <span class="product" id="menu-item-product">Product <i class="fas fa-angle-down"></i></span>
-    </div>
-    <div class="nav-item-main nav-item-main-solutions ">
-      <span class="user-stories" id="menu-item-solutions">Solutions <i class="fas fa-angle-down"></i></span>
-    </div>
-    <div class="nav-item-main nav-item-main-resources">
-      <span class="resources"id="menu-item-resources">Resources <i class="fas fa-angle-down"></i></span>
-    </div>
-    <div class="nav-item-main nav-item-main-company">
-      <span class="company"id="menu-item-company">Company <i class="fas fa-angle-down"></i></span>
-    </div>
+  <div class="nav-wrap-items" id="myLinks">
+    <a href="product.html" class="nav-item-main nav-item-main-product"><span class="product" id="menu-item-product">Product <i class="fas fa-angle-down"></i></span></a>
+    <a href="product.html" class="nav-item-main nav-item-main-product"><span class="user-stories" id="menu-item-solutions">Solutions <i class="fas fa-angle-down"></i></span></a>
+    <a href="product.html" class="nav-item-main nav-item-main-product"><span class="resources"id="menu-item-resources">Resources <i class="fas fa-angle-down"></i></span></a>
+    <a href="product.html" class="nav-item-main nav-item-main-product"><span class="company"id="menu-item-company">Company <i class="fas fa-angle-down"></i></span></a>
   </div>
   <div class="nav-item-sign">
     Sign-in
@@ -169,4 +161,16 @@
   </div>
 </div>
 <script src="js/nav.js">
+</script>
+<script>
+
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 </script>

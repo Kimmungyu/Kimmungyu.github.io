@@ -801,6 +801,9 @@ nav .nav-wrap-items .nav-item-main {
   text-transform: uppercase;
   cursor: pointer;
 }
+#nav-mobile {
+  display: none;
+}
 br {
   line-height: 1.2;
 }
