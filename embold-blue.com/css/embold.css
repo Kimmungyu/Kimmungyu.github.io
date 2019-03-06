@@ -1515,9 +1515,13 @@ br {
   font-family: 'Sofia Pro', sans-serif;
   font-weight: bold;
 }
+.tab-role .tab-wrap {
+  margin: 0;
+  padding: 0;
+}
 .tab-role .tab-wrap .tab-item {
   margin-right: 16px;
-  min-width: 240px;
+  min-width: 21%;
   display: inline-block;
   padding: 24px 24px 20px 20px;
   background-color: #F5F6F8;
@@ -1525,13 +1529,9 @@ br {
   position: relative;
   cursor: pointer;
 }
-.tab-role .tab-wrap .tab-item .tab-item-icon {
-  width: 24px;
-  height: 24px;
+.tab-role .tab-wrap .tab-item img {
   margin-right: 4px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  vertical-align: middle;
 }
 .tab-role .tab-wrap .tab-item .tab-item-icon,
 .tab-role .tab-wrap .tab-item span {
@@ -1669,8 +1669,9 @@ br {
 }
 .block-user-story .tab-user-story .tab-item {
   display: inline-block;
-  width: 250px;
+  width: 100%;
   margin-right: 8px;
+  margin-bottom: 12px;
   padding: 16px 14px 14px 14px;
   background-color: #F5F6F8;
   border-radius: 6px;
@@ -2500,6 +2501,9 @@ section.press-releases {
   .bg-fw-half-right {
     display: none;
   }
+  .block-header-sub {
+    height: auto;
+  }
   .block-header-sub .header-sub-title {
     padding-top: 75px;
     font-size: 2.3em;
@@ -2518,6 +2522,59 @@ section.press-releases {
   .block-section-sub .section-title {
     font-size: 1.8em;
     margin-top: 0;
+  }
+  .wrap-sub-menu-alt {
+    top: 0;
+    z-index: 997;
+  }
+  .wrap-sub-menu-alt ul {
+    display: none;
+  }
+  .tab-role {
+    margin: 0;
+  }
+  .tab-role .tab-wrap {
+    height: 90px;
+    margin: 0;
+    padding: 0;
+  }
+  .tab-role .tab-wrap .tab-item {
+    display: none;
+    margin-right: 0;
+  }
+  .tab-role .tab-wrap .tab-item img {
+    vertical-align: bottom;
+    margin-right: 8px;
+  }
+  .tab-role ul.tab-wrap li.tab-item {
+    color: #2A3141;
+    background-color: #F5F6F8;
+  }
+  .tab-role ul.tab-wrap li.tab-item:hover,
+  .tab-role ul.tab-wrap li.tab-item:active {
+    color: #2A3141;
+    background-color: #ECEDEF;
+  }
+  .tab-role ul.tab-wrap li.tab-item {
+    z-index: 3;
+    padding: 24px;
+    margin: 0;
+    display: none;
+    list-style: none;
+    position: relative;
+  }
+  .tab-role ul.tab-wrap li.tab-item:first-child {
+    display: block;
+  }
+  .tab-role ul.tab-wrap li.tab-item {
+    cursor: default;
+  }
+  .block-lists .wrap-item .arrow {
+    right: 0;
+  }
+  .block-lists .wrap-item .paragraph .btn-more {
+    display: block;
+    margin: 0 auto;
   }
   .intercom {
     display: none;

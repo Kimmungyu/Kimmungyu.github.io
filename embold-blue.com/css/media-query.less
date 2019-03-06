@@ -329,6 +329,8 @@
   }
 
   .block-header-sub {
+    height: auto;
+
     .header-sub-title {
       padding-top: 75px;
       font-size: 2.3em;
@@ -351,6 +353,78 @@
     .section-title {
       font-size: 1.8em;
       margin-top: 0;
+    }
+  }
+
+  .wrap-sub-menu-alt {
+    top: 0;
+    z-index: 997;
+
+    ul {
+      display: none;
+    }
+  }
+
+  .tab-role {
+    margin: 0;
+
+    .tab-wrap {
+      height: 90px;
+      margin: 0;
+      padding: 0;
+
+      .tab-item {
+        display: none;
+        margin-right: 0;
+
+        img {
+          vertical-align: bottom;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  .tab-role ul.tab-wrap li.tab-item {
+    color: @gray800;
+    background-color: @gray200;
+  }
+
+  .tab-role ul.tab-wrap li.tab-item:hover,
+  .tab-role ul.tab-wrap li.tab-item:active {
+    color: @gray800;
+    background-color: @gray300;
+  }
+
+  .tab-role ul.tab-wrap li.tab-item {
+    z-index: 3;
+    padding: 24px;
+    margin: 0;
+    display: none;
+    list-style: none;
+    position: relative;
+  }
+
+  .tab-role ul.tab-wrap li.tab-item:first-child {
+    display: block;
+  }
+
+  .tab-role ul.tab-wrap li.tab-item {
+    cursor: default;
+  }
+
+  .block-lists {
+    .wrap-item {
+      .arrow {
+        right: 0;
+      }
+
+      .paragraph {
+        .btn-more {
+          display: block;
+          margin: 0 auto;
+        }
+      }
     }
   }
 

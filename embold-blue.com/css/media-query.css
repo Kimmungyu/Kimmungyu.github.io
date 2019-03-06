@@ -276,6 +276,9 @@
   .bg-fw-half-right {
     display: none;
   }
+  .block-header-sub {
+    height: auto;
+  }
   .block-header-sub .header-sub-title {
     padding-top: 75px;
     font-size: 2.3em;
@@ -294,6 +297,59 @@
   .block-section-sub .section-title {
     font-size: 1.8em;
     margin-top: 0;
+  }
+  .wrap-sub-menu-alt {
+    top: 0;
+    z-index: 997;
+  }
+  .wrap-sub-menu-alt ul {
+    display: none;
+  }
+  .tab-role {
+    margin: 0;
+  }
+  .tab-role .tab-wrap {
+    height: 90px;
+    margin: 0;
+    padding: 0;
+  }
+  .tab-role .tab-wrap .tab-item {
+    display: none;
+    margin-right: 0;
+  }
+  .tab-role .tab-wrap .tab-item img {
+    vertical-align: bottom;
+    margin-right: 8px;
+  }
+  .tab-role ul.tab-wrap li.tab-item {
+    color: #2A3141;
+    background-color: #F5F6F8;
+  }
+  .tab-role ul.tab-wrap li.tab-item:hover,
+  .tab-role ul.tab-wrap li.tab-item:active {
+    color: #2A3141;
+    background-color: #ECEDEF;
+  }
+  .tab-role ul.tab-wrap li.tab-item {
+    z-index: 3;
+    padding: 24px;
+    margin: 0;
+    display: none;
+    list-style: none;
+    position: relative;
+  }
+  .tab-role ul.tab-wrap li.tab-item:first-child {
+    display: block;
+  }
+  .tab-role ul.tab-wrap li.tab-item {
+    cursor: default;
+  }
+  .block-lists .wrap-item .arrow {
+    right: 0;
+  }
+  .block-lists .wrap-item .paragraph .btn-more {
+    display: block;
+    margin: 0 auto;
   }
   .intercom {
     display: none;
