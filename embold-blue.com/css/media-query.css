@@ -320,6 +320,8 @@
     top: 24px;
     right: 24px;
     position: absolute;
+    border: 0;
+    background-color: transparent;
   }
   .nav-mobile-full-screen--sub {
     color: #fff;
