@@ -379,7 +379,7 @@
   font-size: 0.8em;
   cursor: pointer;
 }
-@media only screen and (min-device-width: 1025px) {
+@media only screen and (min-width: 813px) {
   .workflow-hover-effect .wrap-text {
     top: 210px;
     padding-bottom: 50px;
@@ -1930,6 +1930,9 @@ br {
 }
 .timeline .arrow-right:hover {
   opacity: 1;
+}
+.bg-gray {
+  background-color: #F5F6F8;
 }
 .company-offices .wrap-office {
   width: 100%;

@@ -24,19 +24,9 @@
 </head>
 <body class="index">
   <div class="nav-index"></div>
-  <div id="nav-mobile">
-    <ul>
-      <li><a href="#"><img src="images/logo-embold.svg" width="100" height="auto" /></a></li>
-      <li><a href="product-overview.html">Product</a></li>
-      <li><a href="solutions-user-roles.html">Solutions</a></li>
-      <li><a href="resources-product.html">Resources</a></li>
-      <li><a href="company-about.html">Company</a></li>
-      <li>
-        <a href="#">
-          <i class="fa fa-bars"></i>
-        </a>
-      </li>
-    </ul>
+  <div class="nav-mobile" id="nav-mobile">
+    <img src="images/logo-embold.svg" width="100" />
+    <button class="menu-toggle btn-mobile-nav"></button>
   </div>
   <div class="container">
     <div class="row">
@@ -394,27 +384,31 @@
     </div>
   </div>
   <div class="intercom"></div>
+  <div class="nav-mobile-full-screen" id="nav-mobile-full-screen-top">
+    <div class="nav-mobile-full-screen--middle">
+      <img src="images/logo-embold-wh.svg" width="120" height="auto" class="logo-embold" />
+      <button class="menu-toggle menu-toggle--close mobile-nav--close" id="mobile-nav--close"><img src="images/ic-md-close-wh.svg" width="24" /></button>
+      <ul class="mobile-main-nav">
+        <li class="primary-menu" id="menu-toggle-product"><a href="#">Product</a></li>
+        <li class="primary-menu"><a href="#">Use Cases</a></li>
+        <li class="primary-menu"><a href="#">Resources</a></li>
+        <li class="primary-menu"><a href="#">Company</a></li>
+      </ul><!-- /.main nav -->
+    </div><!-- /.full menu middle -->
+  </div>
+  <div class="nav-mobile-full-screen nav-mobile-full-screen--sub nav-mobile-full-screen--product" id="nav-mobile-full-screen--product">
+    <div class="nav-mobile-full-screen--middle">
+      <div class="title" id="close-2nd-menu">
+        Product
+      </div>
+      <button class="menu-toggle--close mobile-nav--close" id="mobile-nav--close"><img src="images/ic-md-close-wh.svg" width="24" /></button>
+      <ul class="mobile-main-nav">
+        <li ><a href="#">About Gamma</a></li>
+        <li ><a href="#">Use Cases</a></li>
+        <li ><a href="#">Pricing</a></li>
+      </ul><!-- /.main nav -->
+    </div><!-- /.full menu middle -->
+  </div>
   <script src="js/main.js" type="text/javascript"></script>
-  <script>
-    $(function() {
-      var ulLi = $('#nav-mobile ul > li'),
-          fa = $('#nav-mobile ul > li:last-of-type a .fa');
-
-       $('#nav-mobile ul').append('<ol></ol>');
-
-       $('#nav-mobile').each(function() {
-         for (var i=0; i <= ulLi.length - 3; i++) {
-           $('#nav-mobile ul > ol').append("<li>"+ i +"</li>");
-           $('#nav-mobile ul > ol > li').eq(i).html(ulLi.eq(i+1).html());
-         }
-      });
-
-      $('#nav-mobile ul > li:last-of-type').on('click', function() {
-        fa.toggleClass('fa-bars');
-        fa.toggleClass('fa-times');
-        $(this).parent().children('ol').slideToggle(500);
-      });
-    });
-  </script>
 </body>
 </html>

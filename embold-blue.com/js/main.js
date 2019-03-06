@@ -105,3 +105,19 @@ $("#useCases").click(function() {
 $("#contactSales").click(function() {
     $('html, body').animate({scrollTop: $("#section-contactSales").offset().top -140 }, 200);
 });
+
+
+
+$('.menu-toggle').on('click', function(){
+  $('#nav-mobile-full-screen-top').toggleClass('nav-mobile-full-screen-open');
+})
+$('#menu-toggle-product').on('click', function(){
+  $('.nav-mobile-full-screen--product').toggleClass('nav-mobile-full-screen-open');
+})
+$('#close-2nd-menu').on('click', function(){
+  $('#nav-mobile-full-screen--product').removeClass('nav-mobile-full-screen-open');
+})
+$('.mobile-nav--close').on('click', function(){
+  $('#nav-mobile-full-screen-top').removeClass('nav-mobile-full-screen-open');
+  $('#nav-mobile-full-screen--product').removeClass('nav-mobile-full-screen-open');
+})

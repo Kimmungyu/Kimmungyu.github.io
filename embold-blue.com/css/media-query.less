@@ -49,7 +49,7 @@
   background-size: auto 100%;
 }
 
-@media only screen and (max-device-width : 812px) {
+@media only screen and (max-width : 813px) {
   .container-fluid {
     width: 100%;
   }
@@ -74,10 +74,23 @@
 
   #nav-mobile {
     display: block;
-    padding: 0 0 0 0.8em;
+    padding: 16px 16px 8px 16px;
     position: relative;
     z-index: 5;
     .box-shadow;
+
+    .btn-mobile-nav {
+      width: 36px;
+      height: 36px;
+      top: 5px;
+      right: 8px;
+      background-image: url('../images/ic-md-nav.svg');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      border: 0;
+      position: absolute;
+      background-color: transparent;
+    }
   }
 
   .header-image {
@@ -315,97 +328,98 @@
     display: none;
   }
 
-  #nav-mobile ul > li:not(:first-child) {
-    display:none
+  .nav-mobile-full-screen {
+    color: @white;
+    background-color: @gray800;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    z-index: 999;
+    visibility: hidden;
+    .transition;
+
+    .nav-mobile-full-screen--middle {
+      padding: 2em;
+
+      ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+          width: 100%;
+          margin-bottom: 16px;
+          padding-bottom: 16px;
+          list-style: none;
+          border-bottom: 1px solid #3C4352;
+          font-size: 1.8em;
+          .sofia;
+        }
+
+        li.primary-menu {
+          background-image: url('../images/ic-md-arrow-right-no-line-wh.svg');
+          background-position: top 4px right;
+          background-repeat: no-repeat;
+          background-size: auto 50%;
+        }
+      }
+
+      .logo-embold {
+        margin-bottom: 48px;
+      }
+
+      .menu-toggle--close {
+        color: @white;
+        top: 24px;
+        right: 24px;
+        position: absolute;
+      }
+    }
   }
-  #nav-mobile ul > li:last-of-type {
-    display: block
+
+  .nav-mobile-full-screen--sub {
+    color: @white;
+    background-color: @blue800;
+    z-index: 1000;
+    .transition;
+
+    .title {
+      font-size: 1.2em;
+      margin-bottom: 50px;
+      padding-left: 24px;
+      .sofia;
+      background-image: url('../images/ic-md-arrow-left-no-line-wh.svg');
+      background-repeat: no-repeat;
+      background-position: top left -4px;
+      background-size: auto 90%;
+    }
+
+    ul {
+
+      li {
+        border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+      }
+    }
   }
-  #nav-mobile ul input {
-    display: inline
+
+  .nav-mobile-full-screen-open{
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  .scroll-off {
+    display: none;
   }
 }
 
 
-#nav-mobile ul li a {
-  color: @gray800;
-  text-decoration: none;
-  .sofia;
-}
-/* End General */
-
-/* Start #nav-mobilebar */
-#nav-mobile ul {
-  width: 100%;
-  background-color: white;
-  margin: 0;
-  padding: 0.8em 0.8em 0.6em 0.4em;
-  z-index: 4;
-  position: relative;
-}
-#nav-mobile ul > li {
-  padding: 0;
-  display: inline-block;
-  transition: all .3s ease;
-  margin-left: -5px
-}
-#nav-mobile ul > li:not(:last-of-type):hover {
-  background-color: @gray200;
-}
-#nav-mobile ul > li:first-of-type {
-  margin-top: 3px;
-
-}
-#nav-mobile ul > li:last-of-type {
-  float: right;
-}
-#nav-mobile ul > li:last-of-type a .fa {
-  font-size: 21px;
-}
-/* End #nav-mobilebar */
-
-/* Start Menue Right */
-#nav-mobile ul > li:last-of-type {
-  position: relative;
-  display: none;
-}
-#nav-mobile ul > ol {
-  position: absolute;
-  top: 54px;
-  right: 0;
-  background: @gray300;
-  text-align: center;
-  list-style: none;
-  display: none;
-  .box-shadow;
-}
-#nav-mobile ul > ol > li {
-  width: 100vw;
-  color: #FFF;
-  margin: 0;
-  padding: 0;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid @white;
-  transition: all .3s ease;
-}
-#nav-mobile ul > ol > li:hover a {
-  margin: 20px;
-}
-#nav-mobile ul > ol > li:hover {
-  background: #000;
-  cursor: pointer
-}
-#nav-mobile ul input {
-  opacity: .7;
-  padding: 5px;
-  flot: right;
-  display: none
-}
-
-@media screen and (min-device-width:814px) {
+@media screen and (min-width:814px) {
   #nav-mobile ul > ol > li {
     display:none
   }
 }
-/* End Media Query */
