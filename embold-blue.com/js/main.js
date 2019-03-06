@@ -1,9 +1,10 @@
-$('.nav-index').load('../embold.com/nav.html');
-$('.nav-product').load('../embold.com/nav-product.html');
-$('.nav-solutions').load('../embold.com/nav-solutions.html');
-$('.nav-resources').load('../embold.com/nav-resources.html');
-$('.nav-company').load('../embold.com/nav-company.html');
-$('#nav-sub-solutions').load('../embold.com/nav-sub-solutions.html');
+$('.nav-index').load('../embold-blue.com/nav.html');
+$('.nav-product').load('../embold-blue.com/nav-product.html');
+$('.nav-solutions').load('../embold-blue.com/nav-solutions.html');
+$('.nav-resources').load('../embold-blue.com/nav-resources.html');
+$('.nav-company').load('../embold-blue.com/nav-company.html');
+$('#nav-sub-solutions').load('../embold-blue.com/nav-sub-solutions.html');
+$('#nav-mobile-full-screen-top').load('../embold-blue.com/nav-mobile.html');
 
 $(window).on("scroll", function() {
   if($(window).scrollTop() > 300) {
@@ -105,19 +106,3 @@ $("#useCases").click(function() {
 $("#contactSales").click(function() {
     $('html, body').animate({scrollTop: $("#section-contactSales").offset().top -140 }, 200);
 });
-
-
-
-$('.menu-toggle').on('click', function(){
-  $('#nav-mobile-full-screen-top').toggleClass('nav-mobile-full-screen-open');
-})
-$('#menu-toggle-product').on('click', function(){
-  $('.nav-mobile-full-screen--product').toggleClass('nav-mobile-full-screen-open');
-})
-$('#close-2nd-menu').on('click', function(){
-  $('#nav-mobile-full-screen--product').removeClass('nav-mobile-full-screen-open');
-})
-$('.mobile-nav--close').on('click', function(){
-  $('#nav-mobile-full-screen-top').removeClass('nav-mobile-full-screen-open');
-  $('#nav-mobile-full-screen--product').removeClass('nav-mobile-full-screen-open');
-})

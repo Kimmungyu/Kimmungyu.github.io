@@ -38,3 +38,23 @@ $('#menu-item-company').click(function(){
   $('.nav-item-main-company').toggleClass('active');
   $('.nav-sub-company').fadeToggle(200);
 });
+$('.container').click(function() {
+  $('.nav-sub-product').hide();
+  $('.nav-sub-resources').hide();
+  $('.nav-sub-solutions').hide();
+  $('.nav-sub-company').hide();
+  $('.nav-item-main-solutions').removeClass('active');
+  $('.nav-item-main-resources').removeClass('active');
+  $('.nav-item-main-product').removeClass('active');
+  $('.nav-item-main-company').removeClass('active');
+});
+$('.container-fluid').click(function() {
+  $('.nav-sub-product').hide();
+  $('.nav-sub-resources').hide();
+  $('.nav-sub-solutions').hide();
+  $('.nav-sub-company').hide();
+  $('.nav-item-main-solutions').removeClass('active');
+  $('.nav-item-main-resources').removeClass('active');
+  $('.nav-item-main-product').removeClass('active');
+  $('.nav-item-main-company').removeClass('active');
+});

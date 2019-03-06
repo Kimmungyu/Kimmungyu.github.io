@@ -66,6 +66,17 @@
     h2 {
       font-size: 2.4em;
     }
+
+    .header-image {
+      width: 100%;
+      height: 340px;
+      position: relative;
+      background-size: 100%;
+      background-position: center;
+      background-image: url('../images/header-index-hero-mobile.png');
+      top: auto;
+      right: auto;
+    }
   }
 
   .nav-index {
@@ -95,17 +106,6 @@
 
   .nav-mobile-full-screen {
     display: block;
-  }
-
-  .header-image {
-    width: 100%;
-    height: 340px;
-    position: relative;
-    background-size: 100%;
-    background-position: center;
-    background-image: url('../images/header-index-hero-mobile.png');
-    top: auto;
-    right: auto;
   }
 
   .block-index-hero {
@@ -328,6 +328,32 @@
     display: none;
   }
 
+  .block-header-sub {
+    .header-sub-title {
+      padding-top: 75px;
+      font-size: 2.3em;
+      text-align: center !important;
+      line-height: 1.3;
+      z-index: 5;
+      position: relative;
+    }
+
+    .header-image {
+      width: 100% !important;
+      height: 180px !important;
+      background-position: top center !important;
+      top: -24px !important;
+      z-index: 1 !important;
+    }
+  }
+
+  .block-section-sub {
+    .section-title {
+      font-size: 1.8em;
+      margin-top: 0;
+    }
+  }
+
   .intercom {
     display: none;
   }
@@ -387,7 +413,7 @@
 
       .wrap-sign {
         width: 100%;
-        padding: 16px;
+        padding: 24px 16px;
         bottom: 0;
         left: 0;
         position: fixed;
@@ -442,12 +468,5 @@
 
   .scroll-off {
     display: none;
-  }
-}
-
-
-@media screen and (min-width:814px) {
-  #nav-mobile ul > ol > li {
-    display:none
   }
 }

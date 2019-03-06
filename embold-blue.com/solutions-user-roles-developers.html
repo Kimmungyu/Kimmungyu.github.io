@@ -12,6 +12,8 @@
   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
   crossorigin="anonymous"></script>
+  <script src="js/slippry.min.js"></script>
+  <link rel="stylesheet" href="css/slippry.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -22,11 +24,16 @@
 </head>
 <body>
   <div class="nav-solutions"></div>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="index.html"><img src="images/logo-embold.svg" width="100" /></a>
+    <button class="menu-toggle btn-mobile-nav"></button>
+  </div>
+
   <div class="wrap-sub-menu-alt">
     <div class="container">
       <div class="row">
         <div class="col-3">
-          Excutives
+          Developers
         </div>
         <div class="col-9">
           <ul class="sub-menu-alt">
@@ -63,10 +70,10 @@
             <div class="tab-item" onclick="window.location.href='./user-stories-user-roles-architects.html'">
               <div class="tab-item-icon ic-sm-user-architect"></div> <span>Architects</span>
             </div>
-            <div class="tab-item active" onclick="window.location.href='./user-stories-user-roles.html'">
+            <div class="tab-item" onclick="window.location.href='./user-stories-user-roles.html'">
               <div class="tab-item-icon ic-sm-user-executive"></div> <span>Executive</span>
             </div>
-            <div class="tab-item" onclick="window.location.href='./user-stories-user-roles-developers.html'">
+            <div class="tab-item active" onclick="window.location.href='./user-stories-user-roles-developers.html'">
               <div class="tab-item-icon ic-sm-user-developer"></div> <span>Developers</span>
             </div>
             <div class="tab-item" onclick="window.location.href='./user-stories-user-roles-pm.html'">
@@ -83,7 +90,7 @@
       <div class="row">
         <div class="col-12">
           <div class="block-user-story">
-            <div class="wrap-content headcopy">
+            <div class="wrap-content headcopy wrap-content-alt">
               “You are a Good Executive<br />
               But, you have a chance to be Great Executive”
             </div>
@@ -102,97 +109,131 @@
         </div>
         <div class="col-6">
           <div class="block-user-story">
-            <div class="wrap-content actual-story wrap-content-alt" id="section-customerStories">
+            <div class="wrap-content actual-story wrap-content-alt" style="border-bottom: 0;" id="section-customerStories">
               <h4>Customer Stories</h4>
-              <div id="slider">
-                <a class="control_next"></a>
-                <a class="control_prev"></a>
-                <ul>
-                  <li>
-                    <h3>Task Force Software Recovery</h3>
+              <div class="block-lists">
+                <div class="wrap-item" id="as-content-1">
+                  <h3 class="click">Task Force Software Recovery</h3>
+                  <div class="arrow click">
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="paragraph">
                     <p>
                       Your SOP date is getting closer and closer and your software is still not fully working as required? Over the last nine years we have built a lot of experience in supporting software suppliers and Tier-1s in achieving their target software delivery dates. We come in on short notice, assess the software system down to the source code level and give clear recommendations on how to achieve the desired quality in the available time.<br />
                       <br />
                       Our Task Force Software Recover projects been proven to be very efficient and successful in development projects of car multimedia systems, Heads-up displays, camera systems, car networking and autonomous driving.
                     </p>
-                    <div class="block-quote">
-                      <button class="btn btn-default btn-md btn-more">Find out Use cases</button>
-                    </div>
-                  </li>
-                  <li>
-                    <h3>Automotive Software Supplier Assessment</h3>
+                    <button class="btn btn-default btn-md btn-more">Find out Use cases</button>
+                  </div>
+                </div>
+                <div class="wrap-item" id="as-content-2">
+                  <h3 class="click">Automotive Software Supplier Assessment</h3>
+                  <div class="arrow click">
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="paragraph">
                     <p>
-                      You are not sure if your software supplier is delivering the promised code quality? You are considering changing suppliers for a follow-on project? We have experience in assessing the overall software quality of your supplier source code. Our projects a fixed priced and time-bound to give you quick decision support when you need it!<br />
+                      Your SOP date is getting closer and closer and your software is still not fully working as required? Over the last nine years we have built a lot of experience in supporting software suppliers and Tier-1s in achieving their target software delivery dates. We come in on short notice, assess the software system down to the source code level and give clear recommendations on how to achieve the desired quality in the available time.<br />
                       <br />
-                      In the past Embold helped our customers to gain full transparency on the software quality on multiple key performance indicators such as maintainability and extensibility of a delivered software system. After that the different alternatives shown, and recommendations given were used by the client to make a profound and confident decision on the future steps.
+                      Our Task Force Software Recover projects been proven to be very efficient and successful in development projects of car multimedia systems, Heads-up displays, camera systems, car networking and autonomous driving.
                     </p>
-                    <div class="block-quote">
-                      <button class="btn btn-default btn-md btn-more">Find out Use cases</button>
-                    </div>
-                  </li>
-                  <li>
-                    <h3>Automotive Software Supplier Management</h3>
+                    <button class="btn btn-default btn-md btn-more">Find out Use cases</button>
+                  </div>
+                </div>
+                <div class="wrap-item" id="as-content-3">
+                  <h3 class="click">Automotive Software Supplier Management</h3>
+                  <div class="arrow click">
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="paragraph">
                     <p>
-                      You are consistently facing quality problems with the software that is being delivered to you? You want to establish a central quality management process for all your software supplier to ensure a high standard? With our intelligent software analysis platform Embold we can be your partner and build a central software quality platform for all your supplier projects.<br />
+                      Your SOP date is getting closer and closer and your software is still not fully working as required? Over the last nine years we have built a lot of experience in supporting software suppliers and Tier-1s in achieving their target software delivery dates. We come in on short notice, assess the software system down to the source code level and give clear recommendations on how to achieve the desired quality in the available time.<br />
                       <br />
-                      In the past we have assisted our customers in analyzing their supplier management processes and defining clear quality metrics against which Suppliers should be measured. Embold was then introduced as part of the Supplier Quality Assurance process, to assess each software delivery transparently against the defined metrics. This has shown to improve the interaction with suppliers significantly and to increase to overall software quality and satifisfaction.
+                      Our Task Force Software Recover projects been proven to be very efficient and successful in development projects of car multimedia systems, Heads-up displays, camera systems, car networking and autonomous driving.
                     </p>
-                    <div class="block-quote">
-                      <button class="btn btn-default btn-md btn-more">Find out Use cases</button>
-                    </div>
-                  </li>
-                  <li>
-                    <h3>Software Architecture Improvement</h3>
+                    <button class="btn btn-default btn-md btn-more">Find out Use cases</button>
+                  </div>
+                </div>
+                <div class="wrap-item" id="as-content-4">
+                  <h3 class="click">Software Architecture Improvement</h3>
+                  <div class="arrow click">
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="paragraph">
                     <p>
                       You are planning to take a major architecture decision for one of your legacy applications? You are considering splitting a monolith application into smaller micro-serves and/or moving it to the cloud? With the help of Gamma and our experience in projects across industries we can support architecture decisions and help to plan software re-factoring.<br />
                       <br />
                       In one project with assisted an automotive manufacturing customer with a software project on Product Lifecycle Management. It was a very big legacy project and they were facing multiple software and architecture issues. After fully assessing the existing software structure with the help of Embold, we helped our customer to assess the benefit of different architectural changes. As a result, a clear architecture roadmap was developed.
                     </p>
-                    <div class="block-quote">
-                      <button class="btn btn-default btn-md btn-more">Find out Use cases</button>
-                    </div>
-                  </li>
-                </ul>
+                    <button class="btn btn-default btn-md btn-more">Find out Use cases</button>
+                  </div>
+                </div>
+                <div class="wrap-item" id="as-content-5">
+                  <h3 class="click">Core Software Development Platform</h3>
+                  <div class="arrow click">
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="paragraph">
+                    <p>
+                      You are facing software quality issues in your internal software development? You cannot meet the required quality standard in your delivery? Embold has shown that it can significantly improve the overall software quality in automotive R&D departments, by increasing the productivity at the same time. In addition, Gamma can especially help suppliers to prove their quality improvements to customers, and also support with MISRA compliance.<br />
+                      <br />
+                      One of our customer is an automotive supplier and has introduced Embold as central development platform for their entire R&D department. They are simultaneously running projects with almost all major car manufacturing companies, where they deliver in-car chipsets. Embold is used to ensure that quality standard of their different customers can be met. In addition it showed that it can significantly increase the development efficiency.
+                    </p>
+                    <button class="btn btn-default btn-md btn-more">Find out Use cases</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-12">
-          <div class="block-user-story">
-            <div class="wrap-content user-story wrap-content-alt" id="section-useCases">
+          <div class="block-user-story" style="padding:0;margin:0;border:0;">
+            <div class="wrap-content user-story wrap-content-alt" style="padding:0;margin:0;border:0;" id="section-useCases">
               <h4>Use Cases</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="block-user-story">
+            <div class="user-story wrap-content-alt">
               <div class="tab-user-story">
-                <div class="tab-item active">
+                <div class="tab-item active" style="margin-bottom: 0.5em; width: 19em;">
                   <div class="logo logo-small-deutsche-leasing">
                   </div>
                   <div class="case-number">
                     Case 1
                   </div>
-                  <div class="company-name">
-                    Deutsche Leasing
+                  <div class="company-name" style="font-size: 1em;">
+                    Core Development Platform
                   </div>
                 </div>
-                <div class="tab-item">
+                <div class="tab-item" style="margin-bottom: 0.5em; width: 19em;">
                   <div class="logo logo-small-deutsche-leasing">
                   </div>
                   <div class="case-number">
-                    Case 1
+                    Case 2
                   </div>
-                  <div class="company-name">
-                    Deutsche Leasing
+                  <div class="company-name" style="font-size: 1em;">
+                    Core Development Platform
                   </div>
                 </div>
-                <div class="tab-item">
+                <div class="tab-item" style="margin-bottom: 0.5em; width: 19em;">
                   <div class="logo logo-small-deutsche-leasing">
                   </div>
                   <div class="case-number">
-                    Case 1
+                    Case 3
                   </div>
-                  <div class="company-name">
-                    Deutsche Leasing
+                  <div class="company-name" style="font-size: 1em;">
+                    Core Development Platform
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="block-user-story">
+            <div class="wrap-content user-story wrap-content-alt">
               <h3>
                 Deutsche Leasing
               </h3>
@@ -221,6 +262,8 @@
                 </p>
               </div>
             </div>
+          </div>
+          <div class="block-user-story">
             <div class="wrap-content contact-sales" id="section-contactSales">
               <h4>Contact Sales</h4>
               <div class="block-contact-sales">
@@ -308,6 +351,7 @@
       </div>
     </div>
   </div>
+  <div class="nav-mobile-full-screen" id="nav-mobile-full-screen-top"></div>
   <script src="js/main.js" type="text/javascript"></script>
   <script>
   $(window).on("scroll", function() {
@@ -324,77 +368,6 @@
     }
   });
   </script>
-  <style>
-  #slider {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    margin: 0 auto 0 0;
-    border-radius: 4px;
-  }
 
-  #slider ul {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    height: 200px;
-    list-style: none;
-  }
-
-  #slider ul li {
-    position: relative;
-    display: block;
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 500px;
-  }
-
-  a.control_prev, a.control_next {
-    position: absolute;
-    top: -0.25em;
-    z-index: 3;
-    display: block;
-    padding: 0.8em;
-    width: 2em;
-    height: 2em;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1em;
-    opacity: 0.8;
-    cursor: pointer;
-  }
-
-  a.control_prev:hover, a.control_next:hover {
-    opacity: 1;
-    -webkit-transition: all 0.2s ease;
-  }
-
-  a.control_prev {
-    right: 1.6em;
-    background-image: url('images/ic-md-arrow-right-no-line.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-
-  a.control_next {
-    right: 0;
-    background-image: url('images/ic-md-arrow-right-no-line.svg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center center;
-  }
-
-  .slider_option {
-    position: relative;
-    margin: 10px auto;
-    width: 160px;
-    font-size: 18px;
-  }
-  </style>
 </body>
 </html>

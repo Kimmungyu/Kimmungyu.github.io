@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>embold | Next Generation Static Analysis Tool</title>
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="css/embold.css">
+  <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="css/media-query.css">
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="css/simple-grid.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -22,6 +23,10 @@
 </head>
 <body>
   <div class="nav-product"></div>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="index.html"><img src="images/logo-embold.svg" width="100" /></a>
+    <button class="menu-toggle btn-mobile-nav"></button>
+  </div>
 
   <div class="container block block-header-sub">
     <div class="row">
@@ -105,68 +110,15 @@
     </div>
   </section>
   <a name="scoring"></a>
-  <section class="container block block-section-sub block-section-left">
+  <section class="container block block-section-sub block-section-right">
     <div class="row">
       <div class="col-6">
+        <div class="il-alt background-no-repeat body-illustration"></div>
+      </div>
+      <div class="col-5">
         <!-- <h4>Language Support</h4> -->
         <h2 class="section-title">Integrates well</h2>
         <p class="description">embold is trusted by 1,000+ developers and 10+ Mega Companies. They are improving their codes and applications via embold. And also many developers and project managers want to use Embold to improve a progress in writing codes</p>
-      </div>
-      <div class="col-5">
-        <div class="il-alt background-no-repeat body-illustration"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="container block block-section-sub">
-    <div class="row">
-      <div class="col-2">
-
-      </div>
-      <div class="col-8">
-        <!-- <h4>Language Support</h4> -->
-        <h2 class="section-title" style="color:blue;font-size:2.4em;">More than Analysis</h2>
-        <p class="description">embold is designed to be the most beautiful and user-friendly platform of its kind. By using powerful visualizations, design and A.I. to augment the development and code review process for everyone, we make static analysis accessible to all stakeholders. From the developer to the busy CTO.</p>
-      </div>
-    </div>
-  </section>
-  <section class="container block block-section-sub block-section-left">
-    <div class="row">
-      <div class="col-6">
-        <!-- <h4>Language Support</h4> -->
-        <h2 class="section-title">Bug Prediction</h2>
-        <p class="description">embold is designed to be the most beautiful and user-friendly platform of its kind. By using powerful visualizations, design and A.I. to augment the development and code review process for everyone, we make static analysis accessible to all stakeholders. From the developer to the busy CTO.</p>
-      </div>
-      <div class="col-5">
-        <div class="il-product-overview-ruleless-static background-no-repeat body-illustration"></div>
-      </div>
-    </div>
-  </section>
-  <section class="container block block-section-sub block-section-right">
-    <div class="row">
-      <div class="col-1">
-
-      </div>
-      <div class="col-5">
-        <div class="il-alt background-no-repeat body-illustration"></div>
-      </div>
-      <div class="col-6">
-        <!-- <h4>Language Support</h4> -->
-        <h2 class="section-title">Recommendation Engine</h2>
-        <p class="description">embold is trusted by 1,000+ developers and 10+ Mega Companies. They are improving their codes and applications via embold. And also many developers and project managers want to use Embold to improve a progress in writing codes</p>
-      </div>
-    </div>
-  </section>
-  <a name="scoring"></a>
-  <section class="container block block-section-sub block-section-left">
-    <div class="row">
-      <div class="col-6">
-        <!-- <h4>Language Support</h4> -->
-        <h2 class="section-title">Intelligent Refactoring</h2>
-        <p class="description">embold is trusted by 1,000+ developers and 10+ Mega Companies. They are improving their codes and applications via embold. And also many developers and project managers want to use Embold to improve a progress in writing codes</p>
-      </div>
-      <div class="col-5">
-        <div class="il-alt background-no-repeat body-illustration"></div>
       </div>
     </div>
   </section>
@@ -225,6 +177,42 @@
       </div>
     </div>
   </div>
+  <div class="container-fluid bg-light block-footer-mobile">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <img src="images/logo-embold.svg" width="90" />
+        </div>
+        <div class="col-12">
+          <div class="wrap-menu">
+            <h4 class="footer-header-links">Product</h4>
+            <a href="#" class="nav-menu-link">About Gamma</a>
+            <a href="#" class="nav-menu-link">Use Cases</a>
+            <a href="#" class="nav-menu-link">Pricing</a>
+          </div>
+          <div class="wrap-menu">
+            <h4 class="footer-header-links">Solutions</h4>
+            <a href="#" class="nav-menu-link">By User Role</a>
+            <a href="#" class="nav-menu-link">By Team Size</a>
+            <a href="#" class="nav-menu-link">By Industry</a>
+            <a href="#" class="nav-menu-link">Solution Approach</a>
+          </div>
+          <div class="wrap-menu">
+            <h4 class="footer-header-links">Resources</h4>
+            <a href="#" class="nav-menu-link">Product</a>
+            <a href="#" class="nav-menu-link">Download</a>
+          </div>
+          <div class="wrap-menu">
+            <h4 class="footer-header-links">Company</h4>
+            <a href="#" class="nav-menu-link">About</a>
+            <a href="#" class="nav-menu-link">Team</a>
+            <a href="#" class="nav-menu-link">Careers</a>
+            <a href="#" class="nav-menu-link">News</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container-fluid bg-light block-copyright">
     <div class="container">
       <div class="row">
@@ -246,6 +234,7 @@
       </div>
     </div>
   </div>
+  <div class="nav-mobile-full-screen" id="nav-mobile-full-screen-top"></div>
   <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
