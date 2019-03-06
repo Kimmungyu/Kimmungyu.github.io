@@ -2215,3 +2215,6 @@ section.press-releases {
   border-radius: 30px;
   z-index: 30;
 }
+.nav-mobile-full-screen {
+  display: none;
+}
