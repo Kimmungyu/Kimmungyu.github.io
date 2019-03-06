@@ -343,10 +343,12 @@
     position: fixed;
     z-index: 999;
     visibility: hidden;
+
     .transition;
 
     .nav-mobile-full-screen--middle {
       padding: 2em;
+      position: relative;
 
       ul {
         margin: 0;
@@ -381,6 +383,26 @@
         position: absolute;
         border: 0;
         background-color: transparent;
+      }
+
+      .wrap-sign {
+        width: 100%;
+        padding: 16px;
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        text-align: center;
+
+        .btn-sign-up {
+          display: block;
+          width: 100%;
+          margin-bottom: 16px;
+          font-size: 1.2em;
+        }
+
+        .btn-text {
+          text-align: center;
+        }
       }
     }
   }

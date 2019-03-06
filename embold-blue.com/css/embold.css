@@ -709,10 +709,13 @@
 .btn-default:active {
   background-color: #151A24;
 }
+.btn-secondary,
 .btn-orange {
   color: #fff;
   background-color: #21ABB0;
 }
+.btn-secondary:hover,
+.btn-secondary:active,
 .btn-orange:hover,
 .btn-orange:active {
   background-color: #2B7D86;

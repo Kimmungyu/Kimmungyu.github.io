@@ -294,6 +294,7 @@
   }
   .nav-mobile-full-screen .nav-mobile-full-screen--middle {
     padding: 2em;
+    position: relative;
   }
   .nav-mobile-full-screen .nav-mobile-full-screen--middle ul {
     margin: 0;
@@ -325,6 +326,23 @@
     position: absolute;
     border: 0;
     background-color: transparent;
+  }
+  .nav-mobile-full-screen .nav-mobile-full-screen--middle .wrap-sign {
+    width: 100%;
+    padding: 16px;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+  }
+  .nav-mobile-full-screen .nav-mobile-full-screen--middle .wrap-sign .btn-sign-up {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    font-size: 1.2em;
+  }
+  .nav-mobile-full-screen .nav-mobile-full-screen--middle .wrap-sign .btn-text {
+    text-align: center;
   }
   .nav-mobile-full-screen--sub {
     color: #fff;
