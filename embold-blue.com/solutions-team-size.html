@@ -60,6 +60,7 @@
     </div>
   </div>
   <script>
+  if (document.body.clientWidth < 814) {
     $("ul.tab-wrap").on("click", ".init", function() {
       $(this).closest("ul").children('li:not(.init)').toggle();
     });
@@ -71,6 +72,7 @@
       $("ul").children('.init').html($(this).html());
       allOptions.toggle();
     });
+  }
   </script>
 
   <section class="block block-sub-user-stories">
