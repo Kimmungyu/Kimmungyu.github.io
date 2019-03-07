@@ -791,19 +791,23 @@ br {
 }
 
 @media only screen and (min-device-width : 1025px) {
-    .wrap-user:hover {
-      -webkit-filter: grayscale(0);
-      -webkit-filter: grayscale(0);
-         -moz-filter: grayscale(0);
+  .wrap-user:hover {
+    -webkit-filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+       -moz-filter: grayscale(0);
 
-      .description {
-        color: @gray700;
-      }
-
-      .link-arrow {
-        opacity: 1;
-      }
+    .description {
+      color: @gray700;
     }
+
+    .link-arrow {
+      opacity: 1;
+    }
+  }
+
+  .media-query-mobile-only {
+    display: none;
+  }
 }
 
 .block-index-features {
@@ -1114,6 +1118,7 @@ br {
 
     .tab-item {
       margin-right: 16px;
+      margin-bottom: 12px;
       min-width: 21%;
       display: inline-block;
       padding: 24px 24px 20px 20px;

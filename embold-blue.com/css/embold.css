@@ -1239,6 +1239,9 @@ br {
   .wrap-user:hover .link-arrow {
     opacity: 1;
   }
+  .media-query-mobile-only {
+    display: none;
+  }
 }
 .block-index-features .il-index-features {
   width: 100%;
@@ -1521,6 +1524,7 @@ br {
 }
 .tab-role .tab-wrap .tab-item {
   margin-right: 16px;
+  margin-bottom: 12px;
   min-width: 21%;
   display: inline-block;
   padding: 24px 24px 20px 20px;
@@ -2224,6 +2228,9 @@ section.press-releases {
   display: none;
 }
 @media only screen and (max-width: 813px) {
+  .media-query-pc-only {
+    display: none;
+  }
   .container-fluid {
     width: 100%;
   }
@@ -2251,7 +2258,7 @@ section.press-releases {
   }
   #nav-mobile {
     display: block;
-    padding: 16px 16px 8px 16px;
+    padding: 16px 16px 8px 20px;
     position: relative;
     z-index: 5;
     -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
@@ -2261,8 +2268,8 @@ section.press-releases {
   #nav-mobile .btn-mobile-nav {
     width: 36px;
     height: 36px;
-    top: 5px;
-    right: 8px;
+    top: 7px;
+    right: 12px;
     background-image: url('../images/ic-md-nav.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -2670,7 +2677,7 @@ section.press-releases {
     transition: all 0.5s;
   }
   .nav-mobile-full-screen .nav-mobile-full-screen--middle {
-    padding: 2em;
+    padding: 1.3em;
     position: relative;
   }
   .nav-mobile-full-screen .nav-mobile-full-screen--middle ul {
@@ -2698,8 +2705,8 @@ section.press-releases {
   }
   .nav-mobile-full-screen .nav-mobile-full-screen--middle .menu-toggle--close {
     color: #fff;
-    top: 24px;
-    right: 24px;
+    top: 18px;
+    right: 18px;
     position: absolute;
     border: 0;
     background-color: transparent;

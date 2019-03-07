@@ -1,4 +1,8 @@
 @media only screen and (max-width : 813px) {
+  .media-query-pc-only {
+    display: none;
+  }
+
   .container-fluid {
     width: 100%;
   }
@@ -34,7 +38,7 @@
 
   #nav-mobile {
     display: block;
-    padding: 16px 16px 8px 16px;
+    padding: 16px 16px 8px 20px;
     position: relative;
     z-index: 5;
     .box-shadow;
@@ -42,8 +46,8 @@
     .btn-mobile-nav {
       width: 36px;
       height: 36px;
-      top: 5px;
-      right: 8px;
+      top: 7px;
+      right: 12px;
       background-image: url('../images/ic-md-nav.svg');
       background-repeat: no-repeat;
       background-size: 100% 100%;
@@ -560,7 +564,7 @@
     .transition;
 
     .nav-mobile-full-screen--middle {
-      padding: 2em;
+      padding: 1.3em;
       position: relative;
 
       ul {
@@ -591,8 +595,8 @@
 
       .menu-toggle--close {
         color: @white;
-        top: 24px;
-        right: 24px;
+        top: 18px;
+        right: 18px;
         position: absolute;
         border: 0;
         background-color: transparent;

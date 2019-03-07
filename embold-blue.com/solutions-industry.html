@@ -38,62 +38,154 @@
         <div class="col-12">
           <div class="tab-title">
             <img src="./images/ic-md-arrow-slim-right.svg" width="40" height="40" /><br />
-            Select a your role
+            Select a your Industry
           </div>
-          <div class="tab-wrap">
-            <div class="tab-item active" onclick="window.location.href='./user-stories-industry.html'">
-              <div class="tab-item-icon ic-sm-user-executive"></div> <span>Automotive</span>
-            </div>
-            <div class="tab-item" onclick="window.location.href='./user-stories-industry-energy.html'">
-              <div class="tab-item-icon ic-sm-user-developer"></div> <span>Energy</span>
-            </div>
-            <div class="tab-item" onclick="window.location.href='./user-stories-industry-financial.html'">
-              <div class="tab-item-icon ic-sm-user-architect"></div> <span>Financial and Insurance</span>
-            </div>
-            <div class="tab-item" onclick="window.location.href='./user-stories-industry-tmt.html'">
-              <div class="tab-item-icon ic-sm-user-pm"></div> <span>TMT</span>
-            </div>
-            <div class="tab-item" onclick="window.location.href='./user-stories-industry-natural.html'">
-              <div class="tab-item-icon ic-sm-user-pm"></div> <span>Natural Resources</span>
-            </div>
-          </div>
+          <ul class="tab-wrap">
+            <li class="tab-item init active">
+              <img src="images/ic-sm-user-executive.svg" width="24" /> Automotive
+            </li>
+            <li class="tab-item">
+              <img src="images/ic-sm-user-developer.svg" width="24" /> Financial
+            </li>
+            <li class="tab-item">
+              <img src="images/ic-sm-user-architect.svg" width="24" /> Industrial
+            </li>
+            <li class="tab-item">
+              <img src="images/ic-sm-user-pm.svg" width="24" /> Technology/Telecom
+            </li>
+            <li class="tab-item">
+              <img src="images/ic-sm-user-pm.svg" width="24" /> Others
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
+  <script>
+    $("ul.tab-wrap").on("click", ".init", function() {
+      $(this).closest("ul").children('li:not(.init)').toggle();
+    });
+
+    var allOptions = $("ul").children('li:not(.init)');
+    $("ul.tab-wrap").on("click", "li:not(.init)", function() {
+      allOptions.removeClass('selected');
+      $(this).addClass('selected');
+      $("ul").children('.init').html($(this).html());
+      allOptions.toggle();
+    });
+  </script>
 
   <section class="block block-sub-user-stories">
     <div class="container">
       <div class="row">
-        <div class="col-3">
-          <div class="block-sub-menu" id="nav-sub-solutions"></div>
-        </div>
-        <div class="col-9">
+        <div class="col-12">
           <div class="block-user-story">
-            <div class="wrap-content headcopy">
+            <div class="wrap-content headcopy wrap-content-alt">
               “You are a Good Executive<br />
               But, you have a chance to be Great Executive”
             </div>
-            <div class="wrap-content overall">
-              <h4>Overall</h4>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="block-user-story">
+            <div class="wrap-content overall wrap-content-alt" id="section-summary">
+              <h4>Summary</h4>
               <h3>EMBOLD For Excutives</h3>
               <p>
-                As software has become the backbone of competitive advantage in all industries, bugs have become a monster of the modern executive. But while executive careers increasingly hinge on their IT and software infrastructure, most executives do not feel empowered to talk with their IT and feel distached from the risk they carry.
+                Embold has been build with a decade of experience in supporting automotive manufacturing companies and automotive suppliers in a large variety of projects. We have a lot of experience both with in-car software, like car multimedia systems, camera or networking firmware, and corporate software, like logistics, Product Lifecycle Management and more. If you would like to hear more, please reach out to us and we will connect you to one of our Automotive Experts.
               </p>
             </div>
-            <div class="wrap-content actual-story">
-              <h4>Actual Stories</h4>
-              <h3>EMBOLD</h3>
-              <p>
-                - A looking glass for executives to understand the risk and rewards of their software operations<br />
-                - Reconnects executives with their most relevant resources: The developers
-              </p>
-              <div class="block-quote">
-                Content from quotation
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="block-user-story">
+            <div class="wrap-content actual-story wrap-content-alt" style="border-bottom: 0;" id="section-customerStories">
+              <h4>Customer Stories</h4>
+              <div class="block-lists">
+                <div class="wrap-item" id="as-content-1">
+                  <h3 class="click">Task Force Software Recovery</h3>
+                  <div class="arrow click">
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="paragraph">
+                    <p>
+                      Your SOP date is getting closer and closer and your software is still not fully working as required? Over the last nine years we have built a lot of experience in supporting software suppliers and Tier-1s in achieving their target software delivery dates. We come in on short notice, assess the software system down to the source code level and give clear recommendations on how to achieve the desired quality in the available time.<br />
+                      <br />
+                      Our Task Force Software Recover projects been proven to be very efficient and successful in development projects of car multimedia systems, Heads-up displays, camera systems, car networking and autonomous driving.
+                    </p>
+                    <button class="btn btn-default btn-md btn-more">Find out Use cases</button>
+                  </div>
+                </div>
+                <div class="wrap-item" id="as-content-2">
+                  <h3 class="click">Automotive Software Supplier Assessment</h3>
+                  <div class="arrow click">
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="paragraph">
+                    <p>
+                      Your SOP date is getting closer and closer and your software is still not fully working as required? Over the last nine years we have built a lot of experience in supporting software suppliers and Tier-1s in achieving their target software delivery dates. We come in on short notice, assess the software system down to the source code level and give clear recommendations on how to achieve the desired quality in the available time.<br />
+                      <br />
+                      Our Task Force Software Recover projects been proven to be very efficient and successful in development projects of car multimedia systems, Heads-up displays, camera systems, car networking and autonomous driving.
+                    </p>
+                    <button class="btn btn-default btn-md btn-more">Find out Use cases</button>
+                  </div>
+                </div>
+                <div class="wrap-item" id="as-content-3">
+                  <h3 class="click">Automotive Software Supplier Management</h3>
+                  <div class="arrow click">
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="paragraph">
+                    <p>
+                      Your SOP date is getting closer and closer and your software is still not fully working as required? Over the last nine years we have built a lot of experience in supporting software suppliers and Tier-1s in achieving their target software delivery dates. We come in on short notice, assess the software system down to the source code level and give clear recommendations on how to achieve the desired quality in the available time.<br />
+                      <br />
+                      Our Task Force Software Recover projects been proven to be very efficient and successful in development projects of car multimedia systems, Heads-up displays, camera systems, car networking and autonomous driving.
+                    </p>
+                    <button class="btn btn-default btn-md btn-more">Find out Use cases</button>
+                  </div>
+                </div>
+                <div class="wrap-item" id="as-content-4">
+                  <h3 class="click">Software Architecture Improvement</h3>
+                  <div class="arrow click">
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="paragraph">
+                    <p>
+                      You are planning to take a major architecture decision for one of your legacy applications? You are considering splitting a monolith application into smaller micro-serves and/or moving it to the cloud? With the help of Gamma and our experience in projects across industries we can support architecture decisions and help to plan software re-factoring.<br />
+                      <br />
+                      In one project with assisted an automotive manufacturing customer with a software project on Product Lifecycle Management. It was a very big legacy project and they were facing multiple software and architecture issues. After fully assessing the existing software structure with the help of Embold, we helped our customer to assess the benefit of different architectural changes. As a result, a clear architecture roadmap was developed.
+                    </p>
+                    <button class="btn btn-default btn-md btn-more">Find out Use cases</button>
+                  </div>
+                </div>
+                <div class="wrap-item" id="as-content-5">
+                  <h3 class="click">Core Software Development Platform</h3>
+                  <div class="arrow click">
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="paragraph">
+                    <p>
+                      You are facing software quality issues in your internal software development? You cannot meet the required quality standard in your delivery? Embold has shown that it can significantly improve the overall software quality in automotive R&D departments, by increasing the productivity at the same time. In addition, Gamma can especially help suppliers to prove their quality improvements to customers, and also support with MISRA compliance.<br />
+                      <br />
+                      One of our customer is an automotive supplier and has introduced Embold as central development platform for their entire R&D department. They are simultaneously running projects with almost all major car manufacturing companies, where they deliver in-car chipsets. Embold is used to ensure that quality standard of their different customers can be met. In addition it showed that it can significantly increase the development efficiency.
+                    </p>
+                    <button class="btn btn-default btn-md btn-more">Find out Use cases</button>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="wrap-content user-story">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="block-user-story" style="padding:0;margin:0;border:0;">
+            <div class="wrap-content user-story wrap-content-alt" style="padding:0;margin:0;border:0;" id="section-useCases">
               <h4>Use Cases</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="block-user-story">
+            <div class="user-story wrap-content-alt">
               <div class="tab-user-story">
                 <div class="tab-item active">
                   <div class="logo logo-small-deutsche-leasing">
@@ -101,47 +193,68 @@
                   <div class="case-number">
                     Case 1
                   </div>
-                  <div class="company-name">
-                    Deutsche Leasing
+                  <div class="company-name" style="font-size: 1em;">
+                    Core Development Platform
                   </div>
                 </div>
                 <div class="tab-item">
                   <div class="logo logo-small-deutsche-leasing">
                   </div>
                   <div class="case-number">
-                    Case 1
+                    Case 2
                   </div>
-                  <div class="company-name">
-                    Deutsche Leasing
+                  <div class="company-name" style="font-size: 1em;">
+                    Core Development Platform
                   </div>
                 </div>
                 <div class="tab-item">
                   <div class="logo logo-small-deutsche-leasing">
                   </div>
                   <div class="case-number">
-                    Case 1
+                    Case 3
                   </div>
-                  <div class="company-name">
-                    Deutsche Leasing
+                  <div class="company-name" style="font-size: 1em;">
+                    Core Development Platform
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="block-user-story">
+            <div class="wrap-content user-story wrap-content-alt">
               <h3>
                 Deutsche Leasing
               </h3>
               <div class="paragraph">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet risus vitae nisl egestas luctus. Nulla tempus tortor a dui fringilla tincidunt. Cras consequat sed nulla eu eleifend. Nullam consectetur lacus dolor, et consectetur enim accumsan at. Aenean commodo molestie lectus, venenatis fermentum nisl pellentesque vel. Proin eros ipsum, feugiat vitae urna eget, pellentesque porttitor metus. Aenean eleifend sed enim ut pharetra. Nullam molestie nunc ante, eu maximus diam ultrices sit amet. Integer fermentum posuere nisi, non placerat felis condimentum fringilla. Proin tincidunt ante dolor, non lobortis nibh porttitor et. Donec fringilla rhoncus consequat. Duis maximus sodales elementum. Nulla pharetra tortor dapibus, maximus quam dignissim, molestie purus. Morbi ut auctor neque, at aliquet eros.
+                With the Embold platform, not only can customer discover critical hotspots in their software systems, it can be a platform to drive innovation and improve software quality and transparency within research and development division.<br />
+                Embold looks at the code from multiple dimensions:
                 </p>
+                  <ul>
+                    <li>
+                     Design: Design issues are patterns that seem to work but are counter-productive and far from optimal in practice. Design issues can easily result in un-maintainable and error-prone solutions. Embold identifies multiple class and method level anti-patterns in the code which takes dependencies, inheritance hierarchy and important software metrics into consideration. Few Examples: God class, Brain methods, Local breakable, Local butterfly, Shotgun surgery.
+                    </li>
+                    <li>
+                      Metrics: Metrics are a way to control quality. A Software Metric is a measure of some property of a piece of software or its specifications. It compresses system traits into numbers
+                    </li>
+                    <li>
+                      Duplication: Duplicate Code or a Clone is a piece of software code that occurs more than once, either within a same component (which could be a single class, source code file, a module) or across multiple components of an application or even across multiple applications owned or maintained by the same entity. Code Duplication refers to not just exact matching between two identical pieces of code, but also to the matching functionality, which can be possibly extracted out into a separate component.
+                    </li>
+                    <li>
+                      Code Issues: Code issues are programming flaws like inefficient coding practices, sub-optimal resource utilization, improper exception handling, etc. These flaws affect KPIs like robustness, accuracy, efficiency, maintainability, reliability, understandability etc.
+                    </li>
+                  </ul>
                 <p>
-                  Aenean nec quam eget felis varius dictum vel quis nibh. Vestibulum accumsan urna ac dui sagittis tempus. Nulla interdum malesuada odio facilisis volutpat. Mauris pellentesque et felis nec ornare. Suspendisse libero ante, vestibulum in ligula id, rhoncus consectetur neque. Suspendisse in erat ac ligula pretium facilisis ac nec ante. Suspendisse egestas iaculis justo, in hendrerit metus placerat in. Vestibulum ac ultricies mauris, eu viverra odio. Phasellus sit amet aliquet erat. Duis cursus euismod enim, id pellentesque orci porta sit amet. Fusce felis nunc, pretium sit amet elit id, porta accumsan mauris. In faucibus mauris ut egestas hendrerit. Sed ac laoreet est. Donec elit tellus, imperdiet et risus hendrerit, rhoncus laoreet nisi. Mauris tincidunt diam quis orci gravida, ut eleifend mauris fermentum. Nunc finibus vehicula justo, elementum iaculis libero laoreet ac.
-                </p>
-                <p>
-                  Nullam eu bibendum ante. Pellentesque eget scelerisque sem. Nam sollicitudin felis nunc, sed vehicula ex sollicitudin id. Nulla arcu nulla, condimentum sit amet lacus in, accumsan dictum turpis. Nulla at tincidunt arcu. Proin ac magna libero. In lacus elit, facilisis vitae odio a, auctor iaculis sem. In iaculis ex diam, eget pharetra augue blandit eu.
+                Embold uses a proprietary ‘multi-vector’ diagnostic technology to combine those different dimensions to analyse and prioritize hotspots in software components. This helps you fix the biggest issues first.<br><br>
+                After introducing Embold as core development platform, clients have observed a significant improvement in their overall software quality regarding several different metrics and KPIs. In addition, the number of raised issues by their customers have significantly decreased, leading to reduced costs and a higher customer’s satisfaction. As a side effect, after making the Embold rating a part of the developer’s regular performance evaluations, their skillset has noticeably increased leading to a higher development quality.
                 </p>
               </div>
             </div>
-            <div class="wrap-content contact-sales">
+          </div>
+          <div class="block-user-story">
+            <div class="wrap-content contact-sales" id="section-contactSales">
               <h4>Contact Sales</h4>
               <div class="block-contact-sales">
                 Benjamin
@@ -228,6 +341,7 @@
       </div>
     </div>
   </div>
+  <div class="nav-mobile-full-screen" id="nav-mobile-full-screen-top"></div>
   <script src="js/main.js" type="text/javascript"></script>
   <script>
   $(window).on("scroll", function() {
@@ -244,5 +358,6 @@
     }
   });
   </script>
+
 </body>
 </html>
