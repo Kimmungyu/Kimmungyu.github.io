@@ -86,6 +86,10 @@
   color: @white;
   background-color: @blue800;
 
+  h2 {
+    color: @white;
+  }
+
   h4 {
     color: @white;
   }
@@ -236,10 +240,11 @@ button:focus {
 
 * {
   box-sizing: border-box;
+  line-height: 1.8;
 }
 
 body {
-  color: @gray800;
+  color: @gray700;
   font-family: 'Acumin Pro', sans-serif;
   font-size: 13px;
   font-weight: normal;
@@ -252,11 +257,16 @@ a {
 }
 
 h2 {
+  color: @gray800;
   font-size: 3rem;
   font-family: 'Sofia Pro', sans-serif;
   margin: 8px 0 24px 0;
   line-height: 1.2;
   letter-spacing: -0.025em;
+}
+
+h3 {
+  color: @gray800;
 }
 
 h4 {
@@ -281,6 +291,7 @@ nav {
     width: 150px;
 
     .nav-item-main {
+      color: @gray800;
       font-weight: bold;
       text-transform: uppercase;
       cursor: pointer;
@@ -659,6 +670,7 @@ br {
     // .box-shadow;
 
     h1.headcopy {
+      color: @gray800;
       margin: 0;
       padding: 0;
       font-size: 4em;
@@ -704,7 +716,7 @@ br {
 
     .paragraph {
       color: @gray700;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 300;
     }
 
@@ -751,8 +763,8 @@ br {
     padding: 1.6em;
     background-color: @white;
     background-repeat: no-repeat;
-    background-position: right -3px bottom;
-    background-size: 50%;
+    background-position: right -12px bottom -24px;
+    background-size: 68%;
     -webkit-filter: grayscale(1);
     -webkit-filter: grayscale(100%);
        -moz-filter: grayscale(100%);
@@ -1035,6 +1047,7 @@ br {
   position: relative;
 
   .header-sub-title {
+    color: @gray800;
     margin-top: 80px;
     font-family: 'Sofia Pro', sans-serif;
     font-size: 3em;
@@ -1244,24 +1257,32 @@ br {
       text-align: left;
     }
 
-    p,
-    .paragraph {
-      color: @gray600;
+    .paragraph-use-cases,
+    .paragraph-use-cases p {
       font-size: 1rem;
       font-weight: 400;
-      line-height: 1.6;
+      line-height: 1.8;
+      margin: 2em 0;
+
+      strong {
+        color: @gray800;
+      }
     }
   }
 
   .wrap-content-alt {
     margin-top: 0;
+
+    .wrap-use-case-body {
+      display: none;
+    }
   }
 
   .headcopy {
     color: @blue800;
     font-size: 36px;
     font-weight: bold;
-    line-height: 1;
+    line-height: 1.3;
     margin-top: 0;
     .sofia;
   }

@@ -68,7 +68,6 @@ jQuery(document).ready(function ($) {
 
 });
 
-
 $( "#as-content-1 .click" ).click(function() {
    $('#as-content-1 .paragraph').slideToggle();
    $('#as-content-1 .arrow').toggleClass('active');
@@ -105,4 +104,29 @@ $("#useCases").click(function() {
 });
 $("#contactSales").click(function() {
     $('html, body').animate({scrollTop: $("#section-contactSales").offset().top -140 }, 200);
+});
+
+$('#btn-1').click(function() {
+  $('#btn-1').addClass('active');
+  $('#btn-2').removeClass('active');
+  $('#btn-3').removeClass('active');
+  $('#use-case-1').addClass('display');
+  $('#use-case-2').removeClass('display');
+  $('#use-case-3').removeClass('display');
+});
+$('#btn-2').click(function() {
+  $('#btn-1').removeClass('active');
+  $('#btn-2').addClass('active');
+  $('#btn-3').removeClass('active');
+  $('#use-case-1').removeClass('display');
+  $('#use-case-2').addClass('display');
+  $('#use-case-3').removeClass('display');
+});
+$('#btn-3').click(function() {
+  $('#btn-1').removeClass('active');
+  $('#btn-2').removeClass('active');
+  $('#btn-3').addClass('active');
+  $('#use-case-1').removeClass('display');
+  $('#use-case-2').removeClass('display');
+  $('#use-case-3').addClass('display');
 });
