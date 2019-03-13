@@ -93,6 +93,11 @@ $( "#as-content-5 .click" ).click(function() {
    $('#as-content-5 .arrow').toggleClass('active');
 });
 
+$( "#as-content-6 .click" ).click(function() {
+   $('#as-content-6 .paragraph').slideToggle();
+   $('#as-content-6 .arrow').toggleClass('active');
+});
+
 $("#summary").click(function() {
     $('html, body').animate({scrollTop: $("#section-summary").offset().top -140 }, 200);
 });

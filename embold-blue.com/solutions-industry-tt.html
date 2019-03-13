@@ -22,6 +22,10 @@
 </head>
 <body>
   <div class="nav-solutions"></div>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="index.html"><img src="images/logo-embold.svg" width="100" /></a>
+    <button class="menu-toggle btn-mobile-nav"></button>
+  </div>
 
   <div class="container block block-header-sub">
     <div class="row">
@@ -37,111 +41,215 @@
       <div class="row">
         <div class="col-12">
           <div class="tab-title">
-            <img src="./images/ic-md-arrow-slim-right.svg" width="40" height="40" /><br />
-            Select a your role
+            Select a your Industry <img src="./images/ic-md-arrow-slim-right.svg" width="24" height="24" />
           </div>
-          <div class="tab-wrap">
-            <div class="tab-item" onclick="window.location.href='./user-stories-industry.html'">
-              <div class="tab-item-icon ic-sm-user-executive"></div> <span>Automotive</span>
-            </div>
-            <div class="tab-item" onclick="window.location.href='./user-stories-industry-energy.html'">
-              <div class="tab-item-icon ic-sm-user-developer"></div> <span>Energy</span>
-            </div>
-            <div class="tab-item" onclick="window.location.href='./user-stories-industry-financial.html'">
-              <div class="tab-item-icon ic-sm-user-architect"></div> <span>Financial and Insurance</span>
-            </div>
-            <div class="tab-item active" onclick="window.location.href='./user-stories-industry-tmt.html'">
-              <div class="tab-item-icon ic-sm-user-pm"></div> <span>TMT</span>
-            </div>
-            <div class="tab-item" onclick="window.location.href='./user-stories-industry-natural.html'">
-              <div class="tab-item-icon ic-sm-user-pm"></div> <span>Natural Resources</span>
-            </div>
-          </div>
+          <ul class="tab-wrap">
+            <li class="tab-item init">
+              <img src="images/ic-sm-user-executive.svg" width="24" /> Automotive
+            </li>
+            <li class="tab-item">
+              <img src="images/ic-sm-user-developer.svg" width="24" /> Financial
+            </li>
+            <li class="tab-item">
+              <img src="images/ic-sm-user-architect.svg" width="24" /> Industrial
+            </li>
+            <li class="tab-item active">
+              <img src="images/ic-sm-user-pm.svg" width="24" /> Technology/Telecom
+            </li>
+            <li class="tab-item">
+              <img src="images/ic-sm-user-pm.svg" width="24" /> Others
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
+  <script>
+  if (document.body.clientWidth < 814) {
+    $("ul.tab-wrap").on("click", ".init", function() {
+      $(this).closest("ul").children('li:not(.init)').toggle();
+    });
+
+    var allOptions = $("ul").children('li:not(.init)');
+    $("ul.tab-wrap").on("click", "li:not(.init)", function() {
+      allOptions.removeClass('selected');
+      $(this).addClass('selected');
+      $("ul").children('.init').html($(this).html());
+      allOptions.toggle();
+    });
+  }
+  </script>
 
   <section class="block block-sub-user-stories">
     <div class="container">
       <div class="row">
-        <div class="col-3">
-          <div class="block-sub-menu" id="nav-sub-solutions"></div>
-        </div>
-        <div class="col-9">
+        <div class="col-12">
           <div class="block-user-story">
-            <div class="wrap-content headcopy">
-              “You are a Good Executive<br />
-              But, you have a chance to be Great Executive”
+            <div class="wrap-content headcopy wrap-content-alt">
+              “Innovation distinguishes between a leader and a follower."
             </div>
-            <div class="wrap-content overall">
-              <h4>Overall</h4>
-              <h3>EMBOLD For Excutives</h3>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="block-user-story">
+            <div class="wrap-content overall wrap-content-alt" id="section-summary">
+              <h4>Summary</h4>
+              <h3>EMBOLD For Technology and Telecom Industry</h3>
               <p>
-                As software has become the backbone of competitive advantage in all industries, bugs have become a monster of the modern executive. But while executive careers increasingly hinge on their IT and software infrastructure, most executives do not feel empowered to talk with their IT and feel distached from the risk they carry.
+                There is a high pressure to innovate, especially in the technology and telecommunication industry. The time-to-market for new products is often very short or regulatory requirements enforce software changes at short notice. At the same time, finding and hiring high qualified developers is increasingly harder.
+              </p>
+              <p>
+                Very often this leads to compromises in the quality of the developed software, which in turn has an impact on the ability to innovate in the future, since technical debt accumulates. Embold has helped different customers both in technology and telecommunication with these challenges.
               </p>
             </div>
-            <div class="wrap-content actual-story">
-              <h4>Actual Stories</h4>
-              <h3>EMBOLD</h3>
-              <p>
-                - A looking glass for executives to understand the risk and rewards of their software operations<br />
-                - Reconnects executives with their most relevant resources: The developers
-              </p>
-              <div class="block-quote">
-                Content from quotation
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="block-user-story">
+            <div class="wrap-content actual-story wrap-content-alt" style="border-bottom: 0;" id="section-customerStories">
+              <h4>Customer Stories</h4>
+              <div class="block-lists">
+                <div class="wrap-item" id="as-content-1">
+                  <h3 class="click">Product Lifecycle Management (PLM) Systems</h3>
+                  <div class="arrow click">
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="paragraph">
+                    <p>
+                      Embold helped our customers to identify issues around maintainability, extensibility and software design in their PLM systems. With the recommended changes, the time required to add features or fix bugs decreased significantly.
+                    </p>
+                    <button class="btn btn-default btn-md btn-more">Read More Case Studies</button>
+                  </div>
+                </div>
+                <div class="wrap-item" id="as-content-2">
+                  <h3 class="click">Real time monitoring systems</h3>
+                  <div class="arrow click">
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="paragraph">
+                    <p>
+                      Embold helped to identify design issues, code issues and duplication in real time monitoring systems of our clients. This helped to increase the system throughput and reduce downtimes, so that the target systems stay monitored continuously.
+                    </p>
+                    <button class="btn btn-default btn-md btn-more">Find out Use cases</button>
+                  </div>
+                </div>
+                <div class="wrap-item" id="as-content-3">
+                  <h3 class="click">SMS Services</h3>
+                  <div class="arrow click">
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="paragraph">
+                    <p>
+                      Embold helped our telecommunication customers to identify run-time issues in SMS service systems that affected robustness, stability and throughput. Design-level recommendations were derived in order to remove the bottlenecks and achieve desired quality goals.
+                    </p>
+                    <button class="btn btn-default btn-md btn-more">Find out Use cases</button>
+                  </div>
+                </div>
+                <div class="wrap-item" id="as-content-3">
+                  <h3 class="click">Legacy System Replacement</h3>
+                  <div class="arrow click">
+                    <i class="fas fa-angle-down"></i>
+                  </div>
+                  <div class="paragraph">
+                    <p>
+                      Embold helped our customers to replace critical legacy applications that reached the end of their lifetime. It ensures high development velocity and software quality, especially when the timeline, budget and resources are short.
+                    </p>
+                    <button class="btn btn-default btn-md btn-more">Find out Use cases</button>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="wrap-content user-story">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="block-user-story" style="padding:0;margin:0;border:0;">
+            <div class="wrap-content user-story wrap-content-alt" style="padding:0;margin:0;border:0;" id="section-useCases">
               <h4>Use Cases</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="block-user-story">
+            <div class="user-story wrap-content-alt">
               <div class="tab-user-story">
-                <div class="tab-item active">
-                  <div class="logo logo-small-deutsche-leasing">
-                  </div>
-                  <div class="case-number">
-                    Case 1
-                  </div>
-                  <div class="company-name">
-                    Deutsche Leasing
+                <div class="tab-item active" id="btn-1">
+                  <div class="company-name" style="font-size: 1em;">
+                    Innovation
                   </div>
                 </div>
-                <div class="tab-item">
-                  <div class="logo logo-small-deutsche-leasing">
-                  </div>
-                  <div class="case-number">
-                    Case 1
-                  </div>
-                  <div class="company-name">
-                    Deutsche Leasing
+                <div class="tab-item" id="btn-2">
+                  <div class="company-name" style="font-size: 1em;">
+                    Project Quality Awareness
                   </div>
                 </div>
-                <div class="tab-item">
-                  <div class="logo logo-small-deutsche-leasing">
-                  </div>
-                  <div class="case-number">
-                    Case 1
-                  </div>
-                  <div class="company-name">
-                    Deutsche Leasing
+                <div class="tab-item" id="btn-3">
+                  <div class="company-name" style="font-size: 1em;">
+                    Project Steering + Timeliness
                   </div>
                 </div>
-              </div>
-              <h3>
-                Deutsche Leasing
-              </h3>
-              <div class="paragraph">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquet risus vitae nisl egestas luctus. Nulla tempus tortor a dui fringilla tincidunt. Cras consequat sed nulla eu eleifend. Nullam consectetur lacus dolor, et consectetur enim accumsan at. Aenean commodo molestie lectus, venenatis fermentum nisl pellentesque vel. Proin eros ipsum, feugiat vitae urna eget, pellentesque porttitor metus. Aenean eleifend sed enim ut pharetra. Nullam molestie nunc ante, eu maximus diam ultrices sit amet. Integer fermentum posuere nisi, non placerat felis condimentum fringilla. Proin tincidunt ante dolor, non lobortis nibh porttitor et. Donec fringilla rhoncus consequat. Duis maximus sodales elementum. Nulla pharetra tortor dapibus, maximus quam dignissim, molestie purus. Morbi ut auctor neque, at aliquet eros.
-                </p>
-                <p>
-                  Aenean nec quam eget felis varius dictum vel quis nibh. Vestibulum accumsan urna ac dui sagittis tempus. Nulla interdum malesuada odio facilisis volutpat. Mauris pellentesque et felis nec ornare. Suspendisse libero ante, vestibulum in ligula id, rhoncus consectetur neque. Suspendisse in erat ac ligula pretium facilisis ac nec ante. Suspendisse egestas iaculis justo, in hendrerit metus placerat in. Vestibulum ac ultricies mauris, eu viverra odio. Phasellus sit amet aliquet erat. Duis cursus euismod enim, id pellentesque orci porta sit amet. Fusce felis nunc, pretium sit amet elit id, porta accumsan mauris. In faucibus mauris ut egestas hendrerit. Sed ac laoreet est. Donec elit tellus, imperdiet et risus hendrerit, rhoncus laoreet nisi. Mauris tincidunt diam quis orci gravida, ut eleifend mauris fermentum. Nunc finibus vehicula justo, elementum iaculis libero laoreet ac.
-                </p>
-                <p>
-                  Nullam eu bibendum ante. Pellentesque eget scelerisque sem. Nam sollicitudin felis nunc, sed vehicula ex sollicitudin id. Nulla arcu nulla, condimentum sit amet lacus in, accumsan dictum turpis. Nulla at tincidunt arcu. Proin ac magna libero. In lacus elit, facilisis vitae odio a, auctor iaculis sem. In iaculis ex diam, eget pharetra augue blandit eu.
-                </p>
               </div>
             </div>
-            <div class="wrap-content contact-sales">
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="block-user-story">
+            <div class="wrap-content user-story wrap-content-alt">
+              <!-- block -->
+              <div id="use-case-1" class="wrap-use-case-body display">
+                <h3>
+                  Innovation
+                </h3>
+                <div class="paragraph-use-cases">
+                  <p>
+                    Innovation in code is a use case where we as Embold helps you to innovate your code base and architecture.
+                  </p>
+                  <img src="images/embedded-software-engineering-table.png" width="100%" height="auto" />
+                  <p>
+                    With use cases like technology migrations to stay state-of-the-art, micro-service introductions to gain performance, using our AI to help you to achieve readiness for cloud migrations to cut costs or certification of your codebase to enter new regulated markets. If it has code, we help you to innovate it, while staying in command of the process instead of being a hostage of your technology.
+                  </p>
+                  <p>
+                    We take pride in being partner of innovative companies advancing together with Embold to new technologies. Join us in a new age of coding.
+                  </p>
+                </div>
+              </div>
+              <!-- block -->
+              <!-- block -->
+              <div id="use-case-2" class="wrap-use-case-body">
+                <h3>
+                  Project Quality Awareness
+                </h3>
+                <div class="paragraph-use-cases">
+                  <p>
+                    Embold, helps you to understand the code and architectural quality in your code landscape and projects. It shows at a glance through the Gamma Score, which projects are suffering from high technical debt on code level.
+                  </p>
+                  <p>
+                    By this you can embolden your developers with better resource allocation and create a positive eustress instead of vicious cycles that burn developers and project milestones. This favors a higher satisfaction of customers and developers.
+                  </p>
+                </div>
+              </div>
+              <!-- block -->
+              <!-- block -->
+              <div id="use-case-3" class="wrap-use-case-body display">
+                <h3>
+                  Project Steering + Timeliness
+                </h3>
+                <div class="paragraph-use-cases">
+                  <p>
+                    Embold gives you at a glance assessments for software and keeps projects in the right QA orbit and speed.
+                  </p>
+                  <p>
+                    Timeliness for projects is often a problem, because of imperfect information. Developers and project managers gut-feeling is data-driven. These sub-conscious processes are only as reliable as the information based on, a QA score and an issue radar where to look in the code for problems make assessment faster and more accurate.
+                  </p>
+                  <p>
+                    Trend analytics that shows real-time how different metrics and KPIs are evolving gives good data if the project runs in the habitable zone, or already left orbit. Enabling to steer projects through hard seas of bad quality without losing speed, due to an appropriate resource allocation in your own projects or at your vendors.
+                  </p>
+                </div>
+              </div>
+              <!-- block -->
+            </div>
+          </div>
+          <div class="block-user-story">
+            <div class="wrap-content contact-sales" id="section-contactSales">
               <h4>Contact Sales</h4>
               <div class="block-contact-sales">
                 Benjamin
@@ -228,6 +336,7 @@
       </div>
     </div>
   </div>
+  <div class="nav-mobile-full-screen" id="nav-mobile-full-screen-top"></div>
   <script src="js/main.js" type="text/javascript"></script>
   <script>
   $(window).on("scroll", function() {
@@ -244,5 +353,6 @@
     }
   });
   </script>
+
 </body>
 </html>
