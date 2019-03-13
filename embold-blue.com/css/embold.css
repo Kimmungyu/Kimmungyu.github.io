@@ -103,6 +103,24 @@
 .ic-sm-user-pm-wh {
   background-image: url('../images/ic-sm-user-pm-wh.svg');
 }
+.ic-sm-builind-big {
+  background-image: url('../images/ic-sm-builind-big.svg');
+}
+.ic-sm-builind-medium {
+  background-image: url('../images/ic-sm-builind-medium.svg');
+}
+.ic-sm-builind-small {
+  background-image: url('../images/ic-sm-builind-small.svg');
+}
+.ic-sm-builind-big-wh {
+  background-image: url('../images/ic-sm-builind-big-wh.svg');
+}
+.ic-sm-builind-medium-wh {
+  background-image: url('../images/ic-sm-builind-medium-wh.svg');
+}
+.ic-sm-builind-small-wh {
+  background-image: url('../images/ic-sm-builind-small-wh.svg');
+}
 .ic-sm-copy {
   background-image: url('../images/ic-sm-copy.svg');
 }
