@@ -1133,7 +1133,7 @@ br {
       color: @gray800;
       margin-right: 2%;
       margin-bottom: 12px;
-      min-width: 21%;
+      min-width: 23%;
       display: inline-block;
       padding: 24px 24px 20px 20px;
       background-color: @gray200;
@@ -1153,6 +1153,10 @@ br {
         vertical-align: middle;
         .sofia;
       }
+    }
+
+    .tab-item:nth-of-type(4) {
+      margin-right: 0;
     }
 
     .active,
@@ -1496,11 +1500,11 @@ br {
 .company-about-status {
   .block-column {
     display: inline-block;
-    width: 16em;
+    min-width: 240px;
     margin-top: 48px;
-    margin-right: 0.6em;
+    margin-right: 16px;
     padding-top: 0.4em;
-    padding-right: 0.8em;
+    padding-right: 16px;
     border-right: 1px solid @gray300;
 
     .icon {
@@ -1508,17 +1512,19 @@ br {
       height: 48px;
       margin-top: 0;
       margin-right: 0.2em;
-      float: left;
+      marginb-bottom: 0.3em;
     }
 
     .title {
       color: @gray800;
-      font-size: 1.3em;
+      font-size: 1.2em;
       font-weight: bold;
+      margin-bottom: -4px;
       .sofia;
     }
 
     .description {
+      color: @gray800;
       font-size: 0.8em;
     }
   }
