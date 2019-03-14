@@ -788,7 +788,7 @@ button:focus {
 }
 * {
   box-sizing: border-box;
-  line-height: 1.8;
+  line-height: 1.5;
 }
 body {
   color: #7C808B;
@@ -1181,7 +1181,7 @@ br {
 }
 .block-index-partnership .partnership-review .paragraph {
   color: #7C808B;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
 }
 .block-index-partnership .partnership-review .name {
@@ -1205,6 +1205,9 @@ br {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('../images/photo-partnership-1.jpg');
+}
+.block-index-partnership .partnership-photo .name {
+  color: #fff;
 }
 .block-index-partnership .wrap-logo {
   width: 25%;
