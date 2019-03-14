@@ -467,6 +467,12 @@
     opacity: 1;
     transition: all 0.5s;
   }
+  .block-index-workflow .workflow-1 .wrap-animation object,
+  .block-index-workflow .workflow-2 .wrap-animation object {
+    width: 210px;
+    height: auto;
+    border-radius: 105px;
+  }
   .block-index-workflow .wrap-workflow {
     width: 100%;
     border-radius: 8px;
@@ -483,9 +489,9 @@
     margin-bottom: 0.8em;
     background-repeat: no-repeat;
     background-position: center center;
-    -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-    -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
     transition: all 0.5s;
   }
   .block-index-workflow .wrap-workflow .wrap-animation .logo-github {
@@ -522,9 +528,9 @@
     background-size: 70% auto;
     position: absolute;
     top: 35px;
-    -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-    -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
   }
   .block-index-workflow .wrap-workflow .wrap-animation .index-step-3 {
     width: 200px;
@@ -547,12 +553,12 @@
   .block-index-workflow .wrap-workflow .step-number {
     display: inline-block;
     color: #A8ACB4;
-    width: 1.3em;
-    height: 1.3em;
-    font-size: 2.4em;
+    width: 1.6em;
+    height: 1.6em;
+    font-size: 2.1em;
     margin: 0.4em;
     font-weight: 300;
-    border-radius: 0.7em;
+    border-radius: 0.9em;
     font-family: 'Sofia Pro', sans-serif;
     letter-spacing: -0.005em;
     transition: all 0.5s;
@@ -568,13 +574,14 @@
     visibility: hidden;
     color: #A8ACB4;
     font-size: 0.9em;
+    line-height: 1.5;
     opacity: 0;
     transition: all 0.5s;
   }
   .block-index-workflow .index-arrow {
     width: 50px;
     height: 30px;
-    background-image: url('../images/index-arrow.svg');
+    background-image: url('../images/il-index-arrow.svg');
     background-size: 100% auto;
     background-repeat: no-repeat;
     position: absolute;
@@ -611,9 +618,9 @@
   text-align: center;
 }
 .box-shadow {
-  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
 }
 .box-shadow-none {
   -webkit-box-shadow: 0 !important;
@@ -896,9 +903,9 @@ br {
   background-color: #ECEDEF;
   border-bottom: 2px solid #21ABB0;
   z-index: 998;
-  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
 }
 .nav-sub .nav-menu-link {
   color: #111317;
@@ -1221,9 +1228,9 @@ br {
   -webkit-filter: grayscale(1);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
-  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
   transition: all 0.5s;
 }
 .block-index-user-stories .wrap-user .role {
@@ -1329,9 +1336,9 @@ br {
   border-radius: 8px;
   cursor: pointer;
   text-align: center;
-  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
   transition: all 0.5s;
 }
 .product-pricing .pricing-tab .icon-md {
@@ -1431,9 +1438,9 @@ br {
   padding: 24px;
   margin-right: -4px;
   background-color: #fff;
-  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
   text-align: center;
 }
 .pricing-plan .pricing-plan-box .plan-name {
@@ -1642,9 +1649,9 @@ br {
   padding-top: 0.5em;
   background-color: #2A3141;
   z-index: 1;
-  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
   font-family: 'Sofia Pro', sans-serif;
   letter-spacing: -0.005em;
   transition: all 0.5s;
@@ -1765,9 +1772,9 @@ br {
   width: 100%;
   margin-bottom: 36px;
   padding-bottom: 24px;
-  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
 }
 .team-value .wrap-value .photo {
   width: 100%;
@@ -1988,9 +1995,9 @@ br {
   margin-top: 3em;
   margin-bottom: 3em;
   padding-bottom: 24px;
-  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
 }
 .company-offices .wrap-office .photo {
   width: 100%;
@@ -2301,9 +2308,9 @@ section.press-releases {
     padding: 16px 16px 8px 20px;
     position: relative;
     z-index: 5;
-    -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-    -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
   }
   #nav-mobile .btn-mobile-nav {
     width: 36px;
@@ -2351,9 +2358,9 @@ section.press-releases {
     margin-bottom: 0.8em;
     background-repeat: no-repeat;
     background-position: center center;
-    -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-    -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
     transition: all 0.5s;
   }
   .block-index-workflow .wrap-workflow .wrap-animation .logo-github {
@@ -2390,9 +2397,9 @@ section.press-releases {
     background-size: 70% auto;
     position: absolute;
     top: 35px;
-    -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-    -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
-    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.09);
   }
   .block-index-workflow .wrap-workflow .wrap-animation .index-step-3 {
     width: 200px;
