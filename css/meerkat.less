@@ -1,6 +1,6 @@
 // out: meerkat.css
 
-@width: 500px;
+@width: 450px;
 
 * {
 	box-sizing: border-box;
@@ -21,9 +21,9 @@ body {
 		color: #3b444d;
 		margin-top: 32px;
 		margin-bottom: 16px;
-		font-size: 53px;
+		font-size: 45px;
 		font-weight: 700;
-		line-height: 1.3em;
+		line-height: 1.2em;
 		letter-spacing: -0.04em;
 	}
 
@@ -123,6 +123,7 @@ body {
 
 	.block-btn {
 		margin-bottom: 48px;
+		text-align: center;
 
 		.btn-print {
 			color: #fff;
@@ -135,6 +136,12 @@ body {
 			font-family: "Sofia Pro";
 			cursor: pointer;
 			outline: none;
+			margin-bottom: 8px;
+		}
+
+		a {
+			color: #000000;
+			text-decoration: underline;
 		}
 
 		.btn-print:hover,
@@ -171,4 +178,36 @@ body {
 
 .body-4 {
 	background-image: url('../svg/body-4.svg');
+}
+
+@media print {
+	body {
+		margin: 15mm !important;
+	}
+
+	.container {
+		margin: 0;
+	}
+
+	.result-display {
+		width: 89mm !important;
+		height: 54mm !important;
+
+		.display-face,
+		.display-body,
+		.display-text {
+			width: 89mm !important;
+			height: 54mm !important;
+			background-size: auto 100% !important;
+			background-position: center center !important;
+			background-repeat: no-repeat;
+		}
+	}
+
+	.title,
+	.selector-face,
+	.selector-body,
+	.block-btn {
+		display: none !important;
+	}
 }
