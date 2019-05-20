@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="ROBOTS" content="ALL">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="color,colors,palette,colorchart,pantone,webcolor,appcolor,colorcollection">
+    <meta name="description" content="Webchips is a free color collection for using in applications for digital display.">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://use.typekit.net/cwa2ewg.css">
+
+    <title itemprop="name">EmboldKat</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/meerkat.css">
+    <link rel="stylesheet" href="css/webchips_mungyukim.css">
+
+    <!-- Bootstrap Core JavaScript -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130770440-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-130770440-1');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://unpkg.com/clipboard@2.0.0/dist/clipboard.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div class="container">
+        <div class="title">
+            How to kill the bugs on your code?
+        </div>
+        <div class="result-display">
+            <div class="display-face face-1" id="display-face">
+
+            </div>
+            <div class="display-body body-1" id="display-body">
+
+            </div>
+            <div class="display-text" id="display-text">
+
+            </div>
+
+        </div>
+        <div class="selector-face">
+            <h4>Select your Face</h4>
+            <div class="selector btn-face-1" id="btn-face-1">
+
+            </div>
+            <div class="selector btn-face-2" id="btn-face-2">
+
+            </div>
+            <div class="selector btn-face-3" id="btn-face-3">
+
+            </div>
+        </div>
+        <div class="selector-body">
+            <h4>Select your Weapon</h4>
+            <div class="selector btn-body-1" id="btn-body-1">
+
+            </div>
+            <div class="selector btn-body-2" id="btn-body-2">
+
+            </div>
+            <div class="selector btn-body-3" id="btn-body-3">
+
+            </div>
+            <div class="selector btn-body-4" id="btn-body-4">
+
+            </div>
+        </div>
+        <div class="block-btn">
+            <input type="button" class="btn btn-print" value="Print it!" onclick="window.print()"/>
+        </div>
+    </div>
+  </body>
+  <script src="wantone.js"></script>
+  <script>
+    $( "#btn-face-1" ).click(function() {
+        $('.display-face').removeClass('face-2 face-3').addClass('face-1');
+    });
+    $( "#btn-face-2" ).click(function() {
+        $('.display-face').removeClass('face-1 face-3').addClass('face-2');
+    });
+    $( "#btn-face-3" ).click(function() {
+        $('.display-face').removeClass('face-1 face-2').addClass('face-3');
+    });
+    $( "#btn-body-1" ).click(function() {
+        $('.display-body').removeClass('body-2 body-3 body-4').addClass('body-1');
+    });
+    $( "#btn-body-2" ).click(function() {
+        $('.display-body').removeClass('body-1 body-3 body-4').addClass('body-2');
+    });
+    $( "#btn-body-3" ).click(function() {
+        $('.display-body').removeClass('body-1 body-2 body-4').addClass('body-3');
+    });
+    $( "#btn-body-4" ).click(function() {
+        $('.display-body').removeClass('body-1 body-2 body-3').addClass('body-4');
+    });
+  </script>
+</html>

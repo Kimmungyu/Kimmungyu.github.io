@@ -1,0 +1,174 @@
+// out: meerkat.CSS
+
+@width: 500px;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Sofia Pro";
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: @width;
+	margin: 0 auto;
+
+	.title {
+		color: #3b444d;
+		margin-top: 32px;
+		margin-bottom: 16px;
+		font-size: 53px;
+		font-weight: 700;
+		line-height: 1.3em;
+		letter-spacing: -0.04em;
+	}
+
+	h4 {
+		color: #919294;
+		letter-spacing: 1.5px;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 8px;
+	}
+
+	.result-display {
+		position: relative;
+		width: @width;
+		height: @width;
+		border: 1px solid #e1e2e4;
+
+		.display-face {
+			position:absolute;
+			z-index: 30;
+			width: @width;
+			height: @width;
+		}
+
+		.display-body {
+			position:absolute;
+			z-index: 20;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			width: @width;
+			height: @width;
+		}
+
+		.display-text {
+			position:absolute;
+			z-index: 10;
+			width: @width;
+			height: @width;
+		}
+	}
+
+	.selector {
+		display: inline-block;
+		width: 52px;
+		height: 52px;
+		margin-right: 8px;
+		border: 2px solid #e2e3e4;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+
+	.selector-face {
+		padding: 8px 0;
+
+		.selector {
+			background-image: url('../svg/btn-face.svg');
+			background-size: auto 48px;
+		}
+
+		.btn-face-1 {
+			background-position: left 0 top 0;
+		}
+
+		.btn-face-2 {
+			background-position: left -48px top 0;
+		}
+
+		.btn-face-3 {
+			background-position: left -96px top 0;
+		}
+	}
+
+	.selector-body {
+		padding: 8px 0;
+
+		.selector {
+			background-image: url('../svg/btn-weapon.svg');
+			background-size: auto 48px;
+		}
+
+		.btn-body-1 {
+			background-position: left 0 top 0;
+		}
+
+		.btn-body-2 {
+			background-position: left -48px top 0;
+		}
+
+		.btn-body-3 {
+			background-position: left -96px top 0;
+		}
+
+		.btn-body-4 {
+			background-position: left -144px top 0;
+		}
+	}
+
+	.block-btn {
+		margin-bottom: 48px;
+
+		.btn-print {
+			color: #fff;
+			width:100%;
+			border:0;
+			border-radius: 4px;
+			background-color: #3FC38F;
+			font-size: 20px;
+			padding: 20px 16px 16px 16px;
+			font-family: "Sofia Pro";
+			cursor: pointer;
+			outline: none;
+		}
+
+		.btn-print:hover,
+		.btn-print:active {
+			background-color: #35AF7A;
+			outline: none;
+		}
+	}
+}
+
+.face-1 {
+	content: "Face-1"
+}
+
+.face-2 {
+	background-image: url('../svg/face-2.svg');
+}
+
+.face-3 {
+	background-image: url('../svg/face-3.svg');
+}
+
+.body-1 {
+	background-image: url('../svg/body-1.svg');
+}
+
+.body-2 {
+	background-image: url('../svg/body-2.svg');
+}
+
+.body-3 {
+	background-image: url('../svg/body-3.svg');
+}
+
+.body-4 {
+	background-image: url('../svg/body-4.svg');
+}
