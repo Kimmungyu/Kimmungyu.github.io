@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Sofia Pro";
+  font-family: "Sofia Pro", Helvetica, Sans-serif;
   font-size: 14px;
   margin: 0;
   padding: 0;
@@ -36,6 +36,8 @@ body {
 .container .result-display .display-face {
   position: absolute;
   z-index: 30;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   width: 450px;
   height: 450px;
 }
@@ -52,6 +54,10 @@ body {
   z-index: 10;
   width: 450px;
   height: 450px;
+  background-image: url('../svg/logo-embold.svg');
+  background-position: right 16px bottom 16px;
+  background-size: 86px auto;
+  background-repeat: no-repeat;
 }
 .container .selector {
   display: inline-block;
@@ -107,9 +113,10 @@ body {
   border: 0;
   border-radius: 4px;
   background-color: #3FC38F;
+  background-image: none;
   font-size: 20px;
   padding: 20px 16px 16px 16px;
-  font-family: "Sofia Pro";
+  font-family: "Sofia Pro", Helvetica, Sans-serif;
   cursor: pointer;
   outline: none;
   margin-bottom: 8px;
@@ -144,6 +151,33 @@ body {
 .body-4 {
   background-image: url('../svg/body-4.svg');
 }
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 18px !important;
+  }
+  .container .title {
+    margin-top: 8px;
+    font-size: 24px;
+  }
+  .container .result-display {
+    width: 100%;
+    height: 320px;
+  }
+  .container .result-display .display-face {
+    width: 100%;
+    height: 320px;
+  }
+  .container .result-display .display-body {
+    width: 100%;
+    height: 320px;
+  }
+  .container .result-display .display-text {
+    width: 100%;
+    height: 320px;
+  }
+}
 @media print {
   body {
     margin: 15mm !important;
@@ -156,12 +190,17 @@ body {
     height: 54mm !important;
   }
   .result-display .display-face,
-  .result-display .display-body,
-  .result-display .display-text {
+  .result-display .display-body {
     width: 89mm !important;
     height: 54mm !important;
     background-size: auto 100% !important;
     background-position: center center !important;
+    background-repeat: no-repeat;
+  }
+  .result-display .display-text {
+    width: 89mm !important;
+    height: 54mm !important;
+    background-size: 24mm auto !important;
     background-repeat: no-repeat;
   }
   .title,

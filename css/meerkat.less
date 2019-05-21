@@ -7,7 +7,7 @@
 }
 
 body {
-	font-family: "Sofia Pro";
+	font-family: "Sofia Pro", Helvetica, Sans-serif;
 	font-size: 14px;
 	margin: 0;
 	padding: 0;
@@ -44,6 +44,8 @@ body {
 		.display-face {
 			position:absolute;
 			z-index: 30;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
 			width: @width;
 			height: @width;
 		}
@@ -62,6 +64,10 @@ body {
 			z-index: 10;
 			width: @width;
 			height: @width;
+			background-image: url('../svg/logo-embold.svg');
+			background-position: right 16px bottom 16px;
+			background-size: 86px auto;
+			background-repeat: no-repeat;
 		}
 	}
 
@@ -131,9 +137,10 @@ body {
 			border:0;
 			border-radius: 4px;
 			background-color: #3FC38F;
+			background-image: none;
 			font-size: 20px;
 			padding: 20px 16px 16px 16px;
-			font-family: "Sofia Pro";
+			font-family: "Sofia Pro", Helvetica, Sans-serif;
 			cursor: pointer;
 			outline: none;
 			margin-bottom: 8px;
@@ -180,6 +187,41 @@ body {
 	background-image: url('../svg/body-4.svg');
 }
 
+@media only screen and (max-width: 480px) {
+	@width: 100%;
+
+	.container {
+		width: @width;
+		margin: 0 auto;
+		padding: 18px !important;
+
+		.title {
+			margin-top: 8px;
+			font-size: 24px;
+		}
+
+		.result-display {
+			width: @width;
+			height: 320px;
+
+			.display-face {
+				width: @width;
+				height: 320px;
+			}
+
+			.display-body {
+				width: @width;
+				height: 320px;
+			}
+
+			.display-text {
+				width: @width;
+				height: 320px;
+			}
+		}
+	}
+}
+
 @media print {
 	body {
 		margin: 15mm !important;
@@ -194,12 +236,18 @@ body {
 		height: 54mm !important;
 
 		.display-face,
-		.display-body,
-		.display-text {
+		.display-body {
 			width: 89mm !important;
 			height: 54mm !important;
 			background-size: auto 100% !important;
 			background-position: center center !important;
+			background-repeat: no-repeat;
+		}
+
+		.display-text {
+			width: 89mm !important;
+			height: 54mm !important;
+			background-size: 24mm auto !important;
 			background-repeat: no-repeat;
 		}
 	}
