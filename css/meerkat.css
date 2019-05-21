@@ -84,6 +84,9 @@ body {
 .container .selector-face .btn-face-3 {
   background-position: left -96px top 0;
 }
+.container .selector-face .btn-face-4 {
+  background-position: left -144px top 0;
+}
 .container .selector-body {
   padding: 8px 0;
 }
@@ -138,6 +141,9 @@ body {
 }
 .face-3 {
   background-image: url('../svg/face-3.svg');
+}
+.face-4 {
+  background-image: url('../svg/face-4.svg');
 }
 .body-1 {
   background-image: url('../svg/body-1.svg');

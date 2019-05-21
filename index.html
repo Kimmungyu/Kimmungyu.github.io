@@ -51,6 +51,9 @@
             <div class="selector btn-face-3" id="btn-face-3">
 
             </div>
+            <div class="selector btn-face-4" id="btn-face-4">
+
+            </div>
         </div>
         <div class="selector-body">
             <h4>Select your Weapon</h4>
@@ -76,13 +79,16 @@
   <script src="wantone.js"></script>
   <script>
     $( "#btn-face-1" ).click(function() {
-        $('.display-face').removeClass('face-2 face-3').addClass('face-1');
+        $('.display-face').removeClass('face-2 face-3 face-4').addClass('face-1');
     });
     $( "#btn-face-2" ).click(function() {
-        $('.display-face').removeClass('face-1 face-3').addClass('face-2');
+        $('.display-face').removeClass('face-1 face-3 face-4').addClass('face-2');
     });
     $( "#btn-face-3" ).click(function() {
-        $('.display-face').removeClass('face-1 face-2').addClass('face-3');
+        $('.display-face').removeClass('face-1 face-2 face-4').addClass('face-3');
+    });
+    $( "#btn-face-4" ).click(function() {
+        $('.display-face').removeClass('face-1 face-2 face-3').addClass('face-4');
     });
     $( "#btn-body-1" ).click(function() {
         $('.display-body').removeClass('body-2 body-3 body-4').addClass('body-1');
@@ -110,6 +116,7 @@
 				"/svg/face-1.svg",
                 "/svg/face-2.svg",
                 "/svg/face-3.svg",
+                "/svg/face-4.svg",
                 "/svg/body-1.svg",
                 "/svg/body-2.svg",
                 "/svg/body-3.svg",
