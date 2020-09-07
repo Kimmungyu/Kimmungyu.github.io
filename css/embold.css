@@ -1,6 +1,9 @@
 .color-failed {
   color: #D21111 !important;
 }
+.color-blue {
+  color: #17298E;
+}
 .tpgp-h3 {
   font-size: 15px;
   font-weight: bold;
@@ -164,4 +167,133 @@ body {
   left: 320px;
   z-index: 666;
   display: none;
+}
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: none;
+  background-size: 100% 100%;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.icon-xs {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  background-repeat: none;
+  background-size: 100% 100%;
+  background-color: rgba(255, 0, 0, 0.3);
+  vertical-align: top;
+}
+.block-repository .section-title span {
+  float: left;
+}
+.block-repository .section-title .icon {
+  margin-right: 8px;
+}
+.block-repository .section-title .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 9px;
+  margin-top: -4px;
+}
+.block-repository .section-title .version {
+  display: block;
+  color: #fff;
+  clear: both;
+  font-size: 12px;
+  margin-left: 32px;
+  padding: 2px 7px;
+  background-color: #B0B3B9;
+  border-radius: 3px;
+}
+.block-repository .section-title .rating-medium {
+  margin-top: 0;
+}
+.block-repository .section-divider {
+  border-bottom: 1px solid #ECEDF0;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+}
+.block-repository .section-divider:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.block-repository h5 {
+  color: #A2A5AA;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.block-repository .date {
+  width: 40%;
+}
+.block-repository .date h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.block-repository .date span {
+  color: #17298E;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.block-repository .date-left {
+  float: left;
+}
+.block-repository .date-right {
+  float: right;
+  text-align: right;
+}
+.block-repository .section-information {
+  color: #85888E;
+  font-family: 'Proxima Nova Condensed', sans-serif;
+  font-weight: 600;
+}
+.block-repository .section-information .block-data {
+  display: inline-block;
+  width: 30%;
+  margin-right: 9px;
+  padding-right: 9px;
+  border-right: 1px solid #DDDEE2;
+  text-align: center;
+}
+.block-repository .section-information .block-data .icon-with-text {
+  font-size: 12px;
+}
+.block-repository .section-information .block-data:last-of-type {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: 0;
+}
+.rating-medium {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 7px;
+  border-radius: 14px;
+}
+.tag-small {
+  font-family: 'Proxima Nova Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 14px;
+}
+.tag-green {
+  color: #fff;
+  background-color: #00CA35;
+}
+.tag-yellow {
+  color: #D07310;
+  background-color: #FCEDD4;
+}
+.tag-greenish {
+  color: #0E7444;
+  background-color: #A1D7BF;
+}
+.tag-purple {
+  color: #7433CA;
+  background-color: #EBDBFD;
 }

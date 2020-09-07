@@ -208,3 +208,161 @@ body {
   z-index: 666;
   display: none;
 }
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: none;
+  background-size: 100% 100%;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.icon-xs {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  background-repeat: none;
+  background-size: 100% 100%;
+  background-color: rgba(255, 0, 0, 0.3);
+  vertical-align: top;
+}
+
+.block-repository {
+  .section-title {
+    span {
+      float: left;
+    }
+
+    .icon {
+      margin-right: 8px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 9px;
+      margin-top: -4px;
+    }
+
+    .version {
+      display: block;
+      color: #fff;
+      clear: both;
+      font-size: 12px;
+      margin-left: 32px;
+      padding: 2px 7px;
+      background-color: #B0B3B9;
+      border-radius: 3px;
+    }
+
+    .rating-medium {
+      margin-top: 0;
+    }
+  }
+
+  .section-divider {
+    border-bottom: 1px solid @ac-gray-100;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+  }
+
+  .section-divider:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  h5 {
+    color: @ac-gray-300;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .date {
+    width: 40%;
+
+    h5 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    span {
+      color: @ac-blue-600;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  .date-left {
+    float: left;
+  }
+
+  .date-right {
+    float: right;
+    text-align: right;
+  }
+
+  .section-information {
+    color: @ac-gray-400;
+    font-family: 'Proxima Nova Condensed', sans-serif;
+    font-weight: 600;
+
+    .block-data {
+      display: inline-block;
+      width: 30%;
+      margin-right: 9px;
+      padding-right: 9px;
+      border-right: 1px solid @ac-gray-150;
+      text-align: center;
+
+      .icon-with-text {
+        font-size: 12px;
+      }
+    }
+
+    .block-data:last-of-type {
+      margin-right: 0;
+      padding-right: 0;
+      border-right: 0;
+    }
+  }
+}
+
+.rating-medium {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 7px;
+  border-radius: 14px;
+}
+
+.tag-small {
+  font-family: 'Proxima Nova Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 14px;
+}
+
+.tag-green {
+  color: #fff;
+  background-color: #00CA35;
+}
+
+.tag-yellow {
+  color: #D07310;
+  background-color: #FCEDD4;
+}
+
+.tag-greenish {
+  color: #0E7444;
+  background-color: #A1D7BF;
+}
+
+.tag-purple {
+  color: #7433CA;
+  background-color: #EBDBFD;
+}

@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/embold.css">
   <link rel="icon" href="/icon.svg">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
   <title>Embold</title>
 </head>
 <body>
@@ -124,8 +125,49 @@
     </div>
     <div class="row">
       <div class="col-lg-3 col-md-3">
-        <div class="box-style">
-          test
+        <div class="box-style block-repository">
+          <div class="section-title clearfix section-divider">
+            <span class="icon"></span>
+            <span class="title">Redwood</span>
+            <span class="rating-medium tag-green">
+              4.8
+            </span>
+            <span class="version">LAST SCANNED: 0.2.0.1</span>
+          </div>
+          <div class="section-divider">
+            <h5>Ratings in last 5 scans</h5>
+            <canvas id="myChart1" height="60px"></canvas>
+          </div>
+          <div class="section-divider section-information">
+            <div class="block-data">
+              <span class="icon-with-text"><span class="icon-xs"></span><span class="color-blue">1.4M</span> LOC</span>
+            </div>
+            <div class="block-data">
+              <span class="icon-with-text"><span class="icon-xs"></span><span class="color-blue">149</span> ISSUES</span>
+            </div>
+            <div class="block-data">
+              <span class="icon-with-text"><span class="icon-xs"></span><span class="color-blue">20%</span> COVERAGE</span>
+            </div>
+          </div>
+          <div class="section-divider">
+            <h5>Language</h5>
+            <div class="block-tag">
+              <span class="tag-small tag-greenish">PHP</span>
+              <span class="tag-small tag-purple">C</span>
+              <span class="tag-small tag-yellow">SQL</span>
+              <span class="tag-small tag-greenish">C#</span>
+            </div>
+          </div>
+          <div class="section-divider clearfix">
+            <div class="date-left date">
+              <h5>Created</h5>
+              <span>23. Jan. 2020</span>
+            </div>
+            <div class="date-right date">
+              <h5>Last scan</h5>
+              <span>07. Feb. 2020</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-lg-3 col-md-3">
@@ -145,6 +187,51 @@
       </div>
     </div>
   </div>
+  <script>
+  var ctx = document.getElementById('myChart1').getContext('2d');
+  var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['5', '4', '3', '2', '1'],
+        datasets: [{
+            label: 'Redwood Ratings',
+            backgroundColor: 'rgba(255, 223, 150, 0.5)',
+            borderColor: 'rgba(249, 174, 47, 1)',
+            data: [-3, 4, 5, -4, -1]
+        }]
+    },
+
+    // Configuration options go here
+    options: {
+      legend: {
+        display: false,
+      },
+      scales: {
+        xAxes: [{
+          gridLines: {
+            display: false
+          },
+          ticks: {
+            display: false //this will remove only the label
+          }
+        }],
+        yAxes: [{
+          display: true,
+          ticks: {
+            fontSize: 9,
+            fontFamily: "'Proxima Nova Bold',sans-serif",
+            stepSize: 5,
+            suggestedMin: -5,    // minimum will be 0, unless there is a lower value.
+            suggestedMax: 5
+          }
+        }]
+      }
+    }
+  });
+  </script>
   <script src="bootstrap.min.js"></script>
 </body>
 </html>
