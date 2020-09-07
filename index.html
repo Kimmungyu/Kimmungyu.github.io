@@ -1,127 +1,150 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
-    <meta name="ROBOTS" content="no">
-    <link rel="stylesheet" href="https://use.typekit.net/cwa2ewg.css">
-
-    <title itemprop="name">EmboldKat</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/meerkat.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="https://unpkg.com/clipboard@2.0.0/dist/clipboard.min.js"></script>
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-  <script
-  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
-  crossorigin="anonymous"></script>
-
-  </head>
-  <body>
-    <div class="container">
-        <div class="title">
-            How to kill the bugs on your code?
-        </div>
-        <div class="result-display">
-            <div class="display-face face-1" id="display-face">
-
-            </div>
-            <div class="display-body body-1" id="display-body">
-
-            </div>
-            <div class="display-text" id="display-text">
-
-            </div>
-
-        </div>
-        <div class="selector-face">
-            <h4>Select your Face</h4>
-            <div class="selector btn-face-1" id="btn-face-1">
-
-            </div>
-            <div class="selector btn-face-2" id="btn-face-2">
-
-            </div>
-            <div class="selector btn-face-3" id="btn-face-3">
-
-            </div>
-            <div class="selector btn-face-4" id="btn-face-4">
-
-            </div>
-        </div>
-        <div class="selector-body">
-            <h4>Select your Weapon</h4>
-            <div class="selector btn-body-1" id="btn-body-1">
-
-            </div>
-            <div class="selector btn-body-2" id="btn-body-2">
-
-            </div>
-            <div class="selector btn-body-3" id="btn-body-3">
-
-            </div>
-            <div class="selector btn-body-4" id="btn-body-4">
-
-            </div>
-        </div>
-        <div class="block-btn">
-            <input type="button" class="btn btn-print" value="Print it!" onclick="window.print()"/>
-            <span>We 💚 <a href="https://embold.io" target="_blank">Embold</a></span>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/embold.css">
+  <link rel="icon" href="/icon.svg">
+  <title>Embold</title>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top navbar-primary">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="padding-top: 16px;padding-left: 16px;"><img src="img/logo-white.svg" width="100" height="28" /></a>
     </div>
-  </body>
-  <script src="wantone.js"></script>
-  <script>
-    $( "#btn-face-1" ).click(function() {
-        $('.display-face').removeClass('face-2 face-3 face-4').addClass('face-1');
-    });
-    $( "#btn-face-2" ).click(function() {
-        $('.display-face').removeClass('face-1 face-3 face-4').addClass('face-2');
-    });
-    $( "#btn-face-3" ).click(function() {
-        $('.display-face').removeClass('face-1 face-2 face-4').addClass('face-3');
-    });
-    $( "#btn-face-4" ).click(function() {
-        $('.display-face').removeClass('face-1 face-2 face-3').addClass('face-4');
-    });
-    $( "#btn-body-1" ).click(function() {
-        $('.display-body').removeClass('body-2 body-3 body-4').addClass('body-1');
-    });
-    $( "#btn-body-2" ).click(function() {
-        $('.display-body').removeClass('body-1 body-3 body-4').addClass('body-2');
-    });
-    $( "#btn-body-3" ).click(function() {
-        $('.display-body').removeClass('body-1 body-2 body-4').addClass('body-3');
-    });
-    $( "#btn-body-4" ).click(function() {
-        $('.display-body').removeClass('body-1 body-2 body-3').addClass('body-4');
-    });
-  </script>
-  <script type="text/javascript">
-		<!--//--><![CDATA[//><!--
-			var images = new Array()
-			function preload() {
-				for (i = 0; i < preload.arguments.length; i++) {
-					images[i] = new Image()
-					images[i].src = preload.arguments[i]
-				}
-			}
-			preload(
-				"/svg/face-1.svg",
-                "/svg/face-2.svg",
-                "/svg/face-3.svg",
-                "/svg/face-4.svg",
-                "/svg/body-1.svg",
-                "/svg/body-2.svg",
-                "/svg/body-3.svg",
-				"/svg/body-4.svg"
-			)
-		//--><!]]>
-	</script>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav menu menu-main">
+        <li class="active"><a href="#">Dashboard</a></li>
+        <li><a href="#">Repositories</a></li>
+        <li><a href="#">Scans</a></li>
+        <li><a href="#">Admin</a></li>
+      </ul>
+
+
+      <ul class="nav navbar-nav navbar-right menu icon">
+        <li><a href="#"><img src="img/profile.svg" width="20px" height="20px" /></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right menu icon" style="margin-left:-4px;">
+        <li><a href="#"><img src="img/icon-noti-on.svg" width="24px" height="24px" /></a></li>
+      </ul>
+      <form class="navbar-form navbar-right menu menu-icon" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control search-global" placeholder="Search">
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right menu icon">
+        <li><a href="#"><img src="img/icon-help.svg" width="24px" height="24px" /></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+    <div id="navbar-second">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 navbar-second-title">
+            Repository
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container wrap-summary clearfix">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="box-style full-width">
+          <div class="col-5th">
+            <div class="header-block">
+              <span class="icon"><img src="img/icon-repositories.svg" /></span>
+              <span class="title">Repository</span>
+            </div>
+            <div class="content">
+              test
+            </div>
+          </div>
+          <div class="col-5th">
+            <div class="header-block">
+              <span class="icon"><img src="img/icon-overall-rating-1.svg" /></span>
+              <span class="title">Overall Rating</span>
+            </div>
+            <div class="content">
+              test
+            </div>
+          </div>
+          <div class="col-5th">
+            <div class="header-block">
+              <span class="icon"><img src="img/icon-loc.svg" /></span>
+              <span class="title">Lines of Code</span>
+            </div>
+            <div class="content">
+              test
+            </div>
+          </div>
+          <div class="col-5th">
+            <div class="header-block">
+              <span class="icon"><img src="img/icon-qc.svg" /></span>
+              <span class="title">Quality Checkpoint</span>
+            </div>
+            <div class="content">
+              test
+            </div>
+          </div>
+          <div class="col-5th clearfix">
+            <div class="header-block">
+              <span class="icon"><img src="img/icon-language.svg" /></span>
+              <span class="title">Languages</span>
+            </div>
+            <div class="content">
+              test
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="title-section">
+          Repositories
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="box-style">
+          Filter
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-3">
+        <div class="box-style">
+          test
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <div class="box-style">
+          test
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <div class="box-style">
+          test
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
+        <div class="box-style">
+          test
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="bootstrap.min.js"></script>
+</body>
 </html>

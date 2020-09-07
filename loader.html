@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/embold.css">
+  <link rel="icon" href="/icon.svg">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <title>Embold</title>
+</head>
+<body style="padding-top:0 !important;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Loader Sample</h2>
+      </div>
+      <div class="col-md-3">
+        <h4>Loader 1</h4>
+        <lottie-player src="/json/Loader-Type-1.json"  background="transparent"  speed="0.8"  style="width: 80px; height: 80px;"  loop  autoplay></lottie-player>
+      </div>
+      <div class="col-md-3">
+        <h4>Loader 2</h4>
+        <lottie-player src="/json/Loader-Type-2.json"  background="transparent"  speed="0.8"  style="width: 80px; height: 80px;"  loop  autoplay></lottie-player>
+      </div>
+      <div class="col-md-3">
+        <h4>Loader 3</h4>
+        <lottie-player src="/json/Loader-Type-3.json"  background="transparent"  speed="0.8"  style="width: 80px; height: 80px;"  loop  autoplay></lottie-player>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Scan Progress</h2>
+      </div>
+      <div class="col-md-3">
+        <div class="box-style" style="width:367px;height:486px;margin-top: 14px; background-image:url('./img/image-repository.png');background-repeat: no-repeat;background-size:367px 486px;position:relative;" id="repository-off">
+          <div class="click-area" style="width:36px;height:36px;top:20px;right:20px;cursor: pointer !important;" id="more">
+          </div>
+          <div class="box-style context context-repository" id="context">
+            <ul>
+              <li>
+                <a href="#" id="scan">Scan repository</a>
+              </li>
+              <li>
+                <a href="#">Manage repository</a>
+              </li>
+              <li>
+                <a href="#" class="color-failed">Delete repository</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="repository-on">
+          <div class="box-style" style="width:367px;height:502px;margin-top:0;padding-top:48px;background-image:url('./img/image-repository.png');background-repeat: no-repeat;background-position: 0 14px; background-size:367px 486px;position:relative;">
+            <div class="progress-scan">
+              59% in scanning
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#scan").click(function(){
+      $("#repository-on").show();
+     $("#repository-off").hide();
+    });
+  });
+  </script>
+  <script>
+  $(document).ready(function(){
+    $("#more").click(function(){
+      $("#context").toggle();
+    });
+  });
+  </script>
+</body>
+</html>
