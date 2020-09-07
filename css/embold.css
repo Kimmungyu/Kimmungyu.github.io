@@ -19,7 +19,8 @@ body {
   padding-left: 8px;
   padding-right: 0;
 }
-#repository-on {
+#repository-on,
+#repository-on-2 {
   display: none;
 }
 .progress-scan {
@@ -29,6 +30,25 @@ body {
   width: 100%;
   height: 16px;
   background-image: url('/img/image-progress.gif');
+  background-repeat: no-repeat;
+  background-size: 581px 16px;
+  background-position: -360px 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 16px;
+  border-radius: 6px 6px 0 0;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.progress-scan-2 {
+  color: #fff;
+  font-size: 10.5px;
+  font-weight: bold;
+  width: 100%;
+  height: 16px;
+  background-image: url('/img/image-progress-2.gif');
   background-repeat: no-repeat;
   background-size: 581px 16px;
   background-position: -360px 0;
