@@ -4,21 +4,37 @@
 .color-blue {
   color: #17298E;
 }
-.tag-green {
+.color-tag-green {
   color: #fff;
   background-color: #00CA35;
 }
-.tag-yellow {
+.color-tag-yellow {
   color: #D07310;
   background-color: #FCEDD4;
 }
-.tag-greenish {
+.color-tag-greenish {
   color: #0E7444;
   background-color: #A1D7BF;
 }
-.tag-purple {
+.color-tag-purple {
   color: #7433CA;
   background-color: #EBDBFD;
+}
+.color-tag-sky {
+  color: #0D88B1;
+  background-color: #D2EFFC;
+}
+.color-tag-brown {
+  color: #947964;
+  background-color: #F2ECE8;
+}
+.color-tag-gray {
+  color: #676B72;
+  background-color: #DDDEE2;
+}
+.color-tag-red {
+  color: #9E0D0D;
+  background-color: #FCE0E0;
 }
 .color-rating-red {
   color: #fff;
