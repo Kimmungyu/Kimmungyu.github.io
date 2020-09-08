@@ -2,6 +2,7 @@
 
 @import "colors";
 @import "typography";
+@import "icon";
 
 body {
   background-color: #F8F8FB;
@@ -120,6 +121,9 @@ body {
 
 .menu-main {
   margin-left: 240px;
+  @media (min-width: 768px) and (max-width: 1300px) {
+    margin-left: 24px;
+  }
 }
 
 .search-global {
@@ -128,18 +132,20 @@ body {
   background-color: #3E444F;
   font-size: 15px;
   border: none;
+
+  @media (min-width: 768px) and (max-width: 1084px) {
+    display: none !important;
+  }
 }
 
 .wrap-summary {
-  .col-5th {
-    display: inline-block;
-    width: 17%;
-    margin: 0 18px;
-    flex: auto;
+  .block-summary {
+    height: 140px;
+    border-right: 1px solid @ac-gray-50;
 
     .header-block {
       text-align: center;
-      margin-bottom: 18px;
+      margin-bottom: 9px;
 
       .icon {
         display: block;
@@ -162,6 +168,110 @@ body {
 
     .content {
       text-align: center;
+    }
+
+    .content-summary-repository {
+      .tpgp-h1();
+      color: @ac-blue-500;
+      margin-top: 0;
+    }
+
+    .content-summary-rating {
+      display: inline-block;
+      margin-top: 9px;
+      padding-right: 24px;
+      .rating-xl();
+    }
+
+    .image-container {
+      width: 200px;
+      height: 60px;
+      margin: auto auto;
+      background-image: url('../img/image-loc-big.svg');
+      background-repeat: no-repeat;
+      background-size: 104px 48px;
+      background-position: 75% center;
+
+      .content-summary-loc {
+        .tpgp-h2();
+        display: inline-block;
+        padding-right: 48px;
+      }
+    }
+  }
+
+  .block-summary:last-of-type {
+    border-right: 0;
+  }
+  @media (max-width: 991px) {
+    .block-summary {
+      height: inherit;
+
+      .header-block {
+        display: inline-block;
+        text-align: center;
+        margin: 8px 0;
+
+        .icon {
+          display: inline-block;
+          width: 28px;
+          height: 28px;
+          margin: 6px auto;
+
+          img {
+            widht: 28px;
+            height: 28px;
+          }
+        }
+
+        .title {
+          display: inline-block;
+          .tpgp-h3();
+          text-transform: uppercase;
+        }
+      }
+
+      .content {
+        display: inline-block;
+        text-align: center;
+        left: 200px;
+        position: absolute;
+
+        .content-summary-repository {
+          .tpgp-h2();
+          display: inline-block;
+          margin-top: 6px;
+        }
+
+        .content-summary-rating {
+          .rating-lg();
+          display: inline-block;
+          margin-top: 12px;
+        }
+
+        .image-container {
+          margin: inherit;
+          width: auto;
+          background-repeat: no-repeat;
+          background-size: 84px auto;
+          background-position: right;
+
+          .content-summary-loc {
+            .tpgp-h2();
+            display: inline-block;
+            margin-top: 6px;
+          }
+        }
+      }
+    }
+
+    .block-summary:nth-of-type(even) {
+      border-right: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .block-summary {
+      border-right: 0;
     }
   }
 }
@@ -215,21 +325,27 @@ body {
   height: 24px;
   background-repeat: none;
   background-size: 100% 100%;
-  background-color: rgba(255, 0, 0, 0.3);
 }
 
 .icon-xs {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
   margin-right: 6px;
   background-repeat: none;
   background-size: 100% 100%;
-  background-color: rgba(255, 0, 0, 0.3);
   vertical-align: top;
 }
 
+.wrap-repository-list {
+  margin-top: 18px;
+}
+
 .block-repository {
+  position: relative;
+  margin-bottom: 16px;
+
   .section-title {
     span {
       float: left;
@@ -259,6 +375,13 @@ body {
 
     .rating-medium {
       margin-top: 0;
+    }
+
+    .icon-context {
+      top: 14px;
+      right: 12px;
+      position: absolute;
+      cursor: pointer;
     }
   }
 
@@ -307,15 +430,18 @@ body {
   }
 
   .section-information {
+    display: flex;
+    flex-wrap: wrap;
     color: @ac-gray-400;
-    font-family: 'Proxima Nova Condensed', sans-serif;
+    font-family: proxima-nova-condensed, sans-serif !important;
     font-weight: 600;
+    font-style: normal;
 
     .block-data {
-      display: inline-block;
-      width: 30%;
-      margin-right: 9px;
-      padding-right: 9px;
+      flex-grow: 3;
+      width: auto;
+      margin-right: 3px;
+      padding-right: 3px;
       border-right: 1px solid @ac-gray-150;
       text-align: center;
 
@@ -330,39 +456,51 @@ body {
       border-right: 0;
     }
   }
+
+  @media (min-width: 992px) and (max-width: 1390px) {
+    .section-information {
+      .block-data {
+        .icon-xs {
+          display: none !important;
+        }
+      }
+    }
+  }
 }
 
-.rating-medium {
+.rating-md {
   font-size: 14px;
+  font-weight: bold;
+  padding: 2px 9px 2px 7px;
+  border-radius: 14px;
+}
+
+.rating-lg {
+  font-size: 18px;
   font-weight: bold;
   padding: 2px 7px;
   border-radius: 14px;
 }
 
-.tag-small {
-  font-family: 'Proxima Nova Condensed', sans-serif;
-  font-size: 14px;
+.rating-xl {
+  font-size: 24px;
   font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 40px;
+}
+
+.tag-small {
+  font-family: proxima-nova-condensed, sans-serif !important;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
   padding: 4px 12px;
   border-radius: 14px;
 }
 
-.tag-green {
-  color: #fff;
-  background-color: #00CA35;
-}
-
-.tag-yellow {
-  color: #D07310;
-  background-color: #FCEDD4;
-}
-
-.tag-greenish {
-  color: #0E7444;
-  background-color: #A1D7BF;
-}
-
-.tag-purple {
-  color: #7433CA;
-  background-color: #EBDBFD;
+.tag-xl {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 40px;
 }

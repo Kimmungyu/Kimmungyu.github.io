@@ -1067,7 +1067,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Proxima Nova", Helvetica, Arial, sans-serif;
+  font-family: proxima-nova, Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -1570,17 +1570,17 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 743px;
+    width: 98%;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 963px;
+    width: 98%;
   }
 }
 @media (min-width: 1580px) {
   .container {
-    width: 1603px;
+    width: 1540px;
   }
 }
 .container-fluid {

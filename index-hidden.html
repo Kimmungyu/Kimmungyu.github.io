@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/embold.css">
+  <link rel="stylesheet" href="https://use.typekit.net/cwa2ewg.css">
   <link rel="icon" href="/icon.svg">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
   <title>Embold</title>
@@ -63,49 +64,44 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="box-style full-width">
-          <div class="col-5th">
-            <div class="header-block">
-              <span class="icon"><img src="img/icon-repositories.svg" /></span>
-              <span class="title">Repository</span>
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 block-summary">
+              <div class="header-block">
+                <span class="icon"><img src="img/icon-repositories.svg" /></span>
+                <span class="title">Repository</span>
+              </div>
+              <div class="content">
+                <span class="content-summary-repository">4</span>
+              </div>
             </div>
-            <div class="content">
-              test
+            <div class="col-lg-3 col-md-3 col-sm-6 block-summary">
+              <div class="header-block">
+                <span class="icon"><img src="img/icon-overall-rating-1.svg" /></span>
+                <span class="title">Overall Rating</span>
+              </div>
+              <div class="content">
+                <span class="tag-green content-summary-rating">4.8</span>
+              </div>
             </div>
-          </div>
-          <div class="col-5th">
-            <div class="header-block">
-              <span class="icon"><img src="img/icon-overall-rating-1.svg" /></span>
-              <span class="title">Overall Rating</span>
+            <div class="col-lg-3 col-md-3 col-sm-6 block-summary">
+              <div class="header-block">
+                <span class="icon"><img src="img/icon-loc.svg" /></span>
+                <span class="title">Lines of Code</span>
+              </div>
+              <div class="content">
+                <div class="image-container">
+                  <span class="content-summary-loc">1.5M</span>
+                </div>
+              </div>
             </div>
-            <div class="content">
-              test
-            </div>
-          </div>
-          <div class="col-5th">
-            <div class="header-block">
-              <span class="icon"><img src="img/icon-loc.svg" /></span>
-              <span class="title">Lines of Code</span>
-            </div>
-            <div class="content">
-              test
-            </div>
-          </div>
-          <div class="col-5th">
-            <div class="header-block">
-              <span class="icon"><img src="img/icon-qc.svg" /></span>
-              <span class="title">Quality Checkpoint</span>
-            </div>
-            <div class="content">
-              test
-            </div>
-          </div>
-          <div class="col-5th clearfix">
-            <div class="header-block">
-              <span class="icon"><img src="img/icon-language.svg" /></span>
-              <span class="title">Languages</span>
-            </div>
-            <div class="content">
-              test
+            <div class="col-lg-3 col-md-3 col-sm-6 block-summary clearfix">
+              <div class="header-block">
+                <span class="icon"><img src="img/icon-language.svg" /></span>
+                <span class="title">Languages</span>
+              </div>
+              <div class="content">
+                test
+              </div>
             </div>
           </div>
         </div>
@@ -123,16 +119,18 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-3">
+    <div class="row wrap-repository-list">
+      <!-- Repository -->
+      <div class="col-lg-3 col-md-3 col-sm-6">
         <div class="box-style block-repository">
           <div class="section-title clearfix section-divider">
-            <span class="icon"></span>
+            <span class="icon ic-github"></span>
             <span class="title">Redwood</span>
-            <span class="rating-medium tag-green">
+            <span class="rating-md tag-green">
               4.8
             </span>
             <span class="version">LAST SCANNED: 0.2.0.1</span>
+            <span class="icon ic-more icon-context"></span>
           </div>
           <div class="section-divider">
             <h5>Ratings in last 5 scans</h5>
@@ -140,13 +138,13 @@
           </div>
           <div class="section-divider section-information">
             <div class="block-data">
-              <span class="icon-with-text"><span class="icon-xs"></span><span class="color-blue">1.4M</span> LOC</span>
+              <span class="icon-with-text"><span class="icon-xs ic-loc-minimum"></span><span class="color-blue">1.4M</span> LOC</span>
             </div>
             <div class="block-data">
-              <span class="icon-with-text"><span class="icon-xs"></span><span class="color-blue">149</span> ISSUES</span>
+              <span class="icon-with-text"><span class="icon-xs ic-issues-minimum"></span><span class="color-blue">149</span> ISSUES</span>
             </div>
             <div class="block-data">
-              <span class="icon-with-text"><span class="icon-xs"></span><span class="color-blue">20%</span> COVERAGE</span>
+              <span class="icon-with-text"><span class="color-blue">20%</span> COVERAGE</span>
             </div>
           </div>
           <div class="section-divider">
@@ -170,68 +168,157 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-3">
-        <div class="box-style">
-          test
+      <!-- Repository -->
+      <!-- Repository -->
+      <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="box-style block-repository">
+          <div class="section-title clearfix section-divider">
+            <span class="icon ic-github"></span>
+            <span class="title">Sonar</span>
+            <span class="rating-md tag-green">
+              4.8
+            </span>
+            <span class="version">LAST SCANNED: 0.2.0.1</span>
+            <span class="icon ic-more icon-context"></span>
+          </div>
+          <div class="section-divider">
+            <h5>Ratings in last 3 scans</h5>
+            <canvas id="myChart2" height="60px"></canvas>
+          </div>
+          <div class="section-divider section-information">
+            <div class="block-data">
+              <span class="icon-with-text"><span class="icon-xs ic-loc-minimum"></span><span class="color-blue">1.4M</span> LOC</span>
+            </div>
+            <div class="block-data">
+              <span class="icon-with-text"><span class="icon-xs ic-issues-minimum"></span><span class="color-blue">149</span> ISSUES</span>
+            </div>
+            <div class="block-data">
+              <span class="icon-with-text"><span class="color-blue">20%</span> COVERAGE</span>
+            </div>
+          </div>
+          <div class="section-divider">
+            <h5>Language</h5>
+            <div class="block-tag">
+              <span class="tag-small tag-greenish">PHP</span>
+              <span class="tag-small tag-purple">C</span>
+              <span class="tag-small tag-yellow">SQL</span>
+              <span class="tag-small tag-greenish">C#</span>
+            </div>
+          </div>
+          <div class="section-divider clearfix">
+            <div class="date-left date">
+              <h5>Created</h5>
+              <span>23. Jan. 2020</span>
+            </div>
+            <div class="date-right date">
+              <h5>Last scan</h5>
+              <span>07. Feb. 2020</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-3">
-        <div class="box-style">
-          test
+      <!-- Repository -->
+      <!-- Repository -->
+      <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="box-style block-repository">
+          <div class="section-title clearfix section-divider">
+            <span class="icon ic-github"></span>
+            <span class="title">Apple</span>
+            <span class="rating-md color-rating-red">
+              -3.6
+            </span>
+            <span class="version">LAST SCANNED: 0.2.0.1</span>
+            <span class="icon ic-more icon-context"></span>
+          </div>
+          <div class="section-divider">
+            <h5>Ratings in last 5 scans</h5>
+            <canvas id="myChart3" height="60px"></canvas>
+          </div>
+          <div class="section-divider section-information">
+            <div class="block-data">
+              <span class="icon-with-text"><span class="icon-xs ic-loc-minimum"></span><span class="color-blue">1.4M</span> LOC</span>
+            </div>
+            <div class="block-data">
+              <span class="icon-with-text"><span class="icon-xs ic-issues-minimum"></span><span class="color-blue">149</span> ISSUES</span>
+            </div>
+            <div class="block-data">
+              <span class="icon-with-text"><span class="color-blue">20%</span> COVERAGE</span>
+            </div>
+          </div>
+          <div class="section-divider">
+            <h5>Language</h5>
+            <div class="block-tag">
+              <span class="tag-small tag-greenish">PHP</span>
+              <span class="tag-small tag-purple">C</span>
+              <span class="tag-small tag-yellow">SQL</span>
+              <span class="tag-small tag-greenish">C#</span>
+            </div>
+          </div>
+          <div class="section-divider clearfix">
+            <div class="date-left date">
+              <h5>Created</h5>
+              <span>23. Jan. 2020</span>
+            </div>
+            <div class="date-right date">
+              <h5>Last scan</h5>
+              <span>07. Feb. 2020</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-3">
-        <div class="box-style">
-          test
+      <!-- Repository -->
+      <!-- Repository -->
+      <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="box-style block-repository">
+          <div class="section-title clearfix section-divider">
+            <span class="icon ic-github"></span>
+            <span class="title">Kafka</span>
+            <span class="rating-md color-rating-orange">
+              -2.4
+            </span>
+            <span class="version">LAST SCANNED: 0.2.0.1</span>
+            <span class="icon ic-more icon-context"></span>
+          </div>
+          <div class="section-divider">
+            <h5>Ratings in last 5 scans</h5>
+            <canvas id="myChart4" height="60px"></canvas>
+          </div>
+          <div class="section-divider section-information">
+            <div class="block-data">
+              <span class="icon-with-text"><span class="icon-xs ic-loc-minimum"></span><span class="color-blue">1.4M</span> LOC</span>
+            </div>
+            <div class="block-data">
+              <span class="icon-with-text"><span class="icon-xs ic-issues-minimum"></span><span class="color-blue">149</span> ISSUES</span>
+            </div>
+            <div class="block-data">
+              <span class="icon-with-text"><span class="color-blue">20%</span> COVERAGE</span>
+            </div>
+          </div>
+          <div class="section-divider">
+            <h5>Language</h5>
+            <div class="block-tag">
+              <span class="tag-small tag-greenish">PHP</span>
+              <span class="tag-small tag-purple">C</span>
+              <span class="tag-small tag-yellow">SQL</span>
+              <span class="tag-small tag-greenish">C#</span>
+            </div>
+          </div>
+          <div class="section-divider clearfix">
+            <div class="date-left date">
+              <h5>Created</h5>
+              <span>23. Jan. 2020</span>
+            </div>
+            <div class="date-right date">
+              <h5>Last scan</h5>
+              <span>07. Feb. 2020</span>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- Repository -->
     </div>
   </div>
-  <script>
-  var ctx = document.getElementById('myChart1').getContext('2d');
-  var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'bar',
-
-    // The data for our dataset
-    data: {
-        labels: ['5', '4', '3', '2', '1'],
-        datasets: [{
-            label: 'Redwood Ratings',
-            backgroundColor: 'rgba(255, 223, 150, 0.5)',
-            borderColor: 'rgba(249, 174, 47, 1)',
-            data: [-3, 4, 5, -4, -1]
-        }]
-    },
-
-    // Configuration options go here
-    options: {
-      legend: {
-        display: false,
-      },
-      scales: {
-        xAxes: [{
-          gridLines: {
-            display: false
-          },
-          ticks: {
-            display: false //this will remove only the label
-          }
-        }],
-        yAxes: [{
-          display: true,
-          ticks: {
-            fontSize: 9,
-            fontFamily: "'Proxima Nova Bold',sans-serif",
-            stepSize: 5,
-            suggestedMin: -5,    // minimum will be 0, unless there is a lower value.
-            suggestedMax: 5
-          }
-        }]
-      }
-    }
-  });
-  </script>
+  <script src="graph.js"></script>
   <script src="bootstrap.min.js"></script>
 </body>
 </html>
